@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcout icon" href="../images/favicon-32x32.png">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <title>Eleve Negocios Inmobiliarios</title>
+    <script src="https://kit.fontawesome.com/11d6824348.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!--INICIO DEL HEADER-->
+    <header>
+        <!--INICIO DEL MENU-->
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <a href="#" class="enlace">
+                <img src="../img/logo blanco.png" alt="" class="logo">
+            </a>
+            <ul>
+                <li><a class="active" href="../index.html">INICIO</a></li>
+                <li><a href="../pages/quienessomos.html">QUIENES SOMOS</a></li>
+                <li><a href="../pages/administracion.html">ADMINISTRACIÓN</a></li>
+                <li><a href="../pages/alquiler.html">ALQUILER</a>
+                    <ul class="hidden">
+                        <li><a href="../pages/alquiler.html">Un dormitorio</a></li>
+                        <li><a href="../pages/alquiler.html">Dos dormitorios</a></li>
+                        <li><a href="../pages/alquiler.html">Tres Dormitorios</a></li>
+                    </ul>
+                </li>
+                <li><a href="../pages/venta.html">VENTA</a>
+                    <ul class="hidden">
+                        <li><a href="../pages/venta.html">Un dormitorio</a></li>
+                        <li><a href="../pages/venta.html">Dos dormitorios</a></li>
+                        <li><a href="../pages/venta.html">Tres Dormitorios</a></li>
+                    </ul>
+                </li>
+                <li><a href="../pages/contacto.html">CONTACTO</a></li>
+            </ul>
+        </nav>
+        <!--FIN DEL MENU-->
+    </header>
+    <!--FIN DEL HEADER-->
+
+    <!--INICIO DEL MAIN-->
+    <main>
+        <!--propiedades alquiler-->
+        <section class="propiedadesfondo">
+            <div class="titulopropiedades">
+                <h1>PROPIEDADES EN ALQUILER</h1>
+            </div>
+        </section>
+
+        <!--BUSCADOR DE PROPIEDADES-->
+        <section class="buscadorfondoprop">
+            <div class="buscadortituloprop">
+                <h3>BUSCADOR DE PROPIEDADES</h3>
+            </div>
+            <div class="wrapper-prop">
+                <h2>EL LUGAR QUE<span></span></h2>
+                <p>ENCONTRALO ACA:</p>
+            </div>
+            <div class="fondopropiedadesalqventa">
+                <div class="formulario">
+                <label for="operacion"></label>
+                <select name="operacion" id="operacion">
+                    <option hidden selected>Operación</option>
+                    <option value="Venta">Venta</option>
+                    <option value="Alquiler">Alquiler</option>
+                    <option value="Alquiler Temporario">Alquiler Temporario</option>
+                </select>
+            </div>
+            <div>
+                <label for="tipopropiedad"></label>
+                <select name="tipopropiedad" id="tipopropiedad">
+                    <option hidden selected>Tipo de Propiedad</option>
+                    <option value="casa">Casa</option>
+                    <option value="cochera">Cochera</option>
+                    <option value="departamento">Departamento</option>
+                    <option value="deposito">Deposito</option>
+                    <option value="galpón">Galpón</option>
+                    <option value="localcomercial">Local Comercial</option>
+                    <option value="oficinas">Oficina</option>
+                    <option value="PH">PH</option>
+                    <option value="terrenolote">Terreno o Lote</option>
+                </select>
+            </div>
+            <form class="formulario" call="button" action="../../form-result.php" method="get" target="_blank">
+                <div class="col">
+                    <input type="search" name="busqueda" placeholder="Ubicación o palabra clave">
+                </div>
+            </form>
+            <div class="col">
+                <input type="submit" value="Buscar" class="button">
+            </div>
+        </div>
+        </div>
+    </section>
+
+        <!--propiedades venta-->
+        <section class="main">
+            <div class="df-main">
+                <div class="card-index">
+                    <div class="border-card">
+                        <h4>PTE. ROCA - 2080 (Rosario)</h4>
+                        <img class="w-img" src="../img/roca2.jpg" alt="roca2" height="260">
+                    </div>
+                    <div class="bg-card">
+                        <p>PH - Con Terraza Exclusiva</p>
+                        <p><i class="fa fa-object-group"></i> 220 m<sup>2</sup> <i class="fa fa-bed"></i> 4 <i
+                                class="fa fa-bath"></i> 2 </p>
+                        <p>Precio Venta: u$s 220.000</p>
+                        <button class="botonprop">
+                            <a class="botonprop" href="">VER MAS</a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="df-main">
+                <div class="card-index">
+                    <div class="border-card">
+                        <h4>COLODRERO 1600 - (Santa Fe)</h4>
+                        <img class="w-img" src="../img/WhatsApp Image 2021-03-15 at 10.30.08.jpeg" alt="sf" height="260">
+                    </div>
+                    <div class="bg-card">
+                        <p>Casa - Con Cochera - Apta Comercial</p>
+                        <p><i class="fa fa-object-group"></i> 208 m<sup>2</sup> <i class="fa fa-bed"></i> 4 <i
+                                class="fa fa-bath"></i> 1 </p>
+                        <p>Precio Venta: u$s 210.000</p>
+                        <button class="botonprop">
+                            <a class="botonprop" href="">VER MAS</a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="df-main">
+                <div class="card-index">
+                    <div class="border-card">
+                        <h4>MONTEVIDEO - 1300 (Rosario)</h4>
+                        <img class="w-img" src="../img/cocheramont.jpeg" alt="cocheramont" height="260">
+                    </div>
+                    <div class="bg-card">
+                        <p>Cochera - Opción Alquiler</p>
+                        <p><i class="fa fa-object-group"></i> 9 m<sup>2 </sup> 
+                        <p>Precio Venta: u$s 22.000</p>
+                        <button class="botonprop">
+                            <a class="botonprop" href="">VER MAS</a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+
+
+
+        <!--cartel de contacto-->
+        <section id="cartelcontacto">
+            <div class="carteldecontacto">
+                <li><i class="fa-sharp fa-solid fa-phone fa-2x"></i></li>
+                <li>
+                    <p>TELEFONO</p>
+                </li>
+                <li>(0341) 3132818</li>
+                <li><i class="fa-solid fa-envelope fa-2x"></i></li>
+                <li>
+                    <p>EMAIL</p>
+                </li>
+                <li><a class="cartel1"
+                        href="mailto:contacto@elevepropiedades.com.ar">contacto@elevepropiedades.com.ar</a></li>
+                <li><i class="fa-solid fa-location-dot fa-2x"></i></li>
+                <li>
+                    <p>OFICINA</p>
+                </li>
+                <li><a href="https://goo.gl/maps/s8B6XoEcNeYv6Ysq9" target="blank"> Pellegrini 1811 Of. 01 - Rosario
+                </li></a>
+            </div>
+        </section>
+        <!--FIN CARTEL DE CONTACTO-->
+
+        <!--PIE DE PAGINA-->
+        <section id="piedepagina">
+            <div class="piedepagina">
+                <div>
+                    <li class="logopie"><img width="210" src="../img/logo blanco.png" alt="logo_blanco"></li>
+                    <li class="textopie"><a href="https://goo.gl/maps/s8B6XoEcNeYv6Ysq9" target="blank">Av. Pellegrini
+                            1811 Of. 01</li></a>
+                    <li class="textopie">Teléfono: (0341) 3132818</li>
+                    <li><a class="textopie"
+                            href="mailto:contacto@elevepropiedades.com.ar">contacto@elevepropiedades.com.ar</a></li>
+                </div>
+                <div class="titulomenupie">
+                    <h4>SERVICIOS</h4>
+                    <li><a class="textomenupie" href="../pages/quienessomos.html">Quienes Somos</a></li>
+                    <li><a class="textomenupie" href="../pages/administracion.html">Administración</a></li>
+                    <li><a class="textomenupie" href="../pages/alquiler.html">Alquiler</a>
+                    <li><a class="textomenupie" href="../pages/venta.html">Venta</a>
+                    <li><a class="textomenupie" href="../pages/contacto.html">Contacto</a></li>
+                    <li><a class="textomenupie" href="../pages/termycond.html">Políticas de Privacidad</a></li>
+                    </p>
+                </div>
+                <div class="newsletter">
+                    <h4>NEWSLETTER</h4>
+                    <input type="text" placeholder="Ingresá tu Mail" name="mail" required>
+                    <input type="submit" value="Suscribirse"></p>
+                </div>
+                <div class="redespie">
+                    <h4>REDES</h4>
+                    <a href="https://www.facebook.com/" target="blank"><i class="fa-brands fa-facebook fa-2x"></i></a>
+                    <a href="https://www.instagram.com/" target="blank"><i class="fa-brands fa-instagram fa-2x"></i></a>
+                </div>
+            </div>
+        </section>
+        <!--FIN PIE DE PAGINA-->
+    </main>
+    <!--FIN DEL MAIN-->
+
+    <!--FOOTER-->
+    <footer class="footer">
+        <div>
+            <li>Copyright: 2022. Todos los derechos reservados®</li>
+            <li class="linkfooter"><a class="linkfooter" href="../index.html" class="linkfooter">Eleve Negocios
+                    Inmobiliarios.</a>
+            </li>
+        </div>
+    </footer>
+    <!-- FIN DEL FOOTER-->
+</body>
+
+</html>

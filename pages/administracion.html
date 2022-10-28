@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcout icon" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <title>Eleve Negocios Inmobiliarios</title>
+    <script src="https://kit.fontawesome.com/11d6824348.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!--INICIO DEL HEADER-->
+    <header>
+        <!--INICIO DEL MENU-->
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <a href="#" class="enlace">
+                <img src="../img/logo blanco.png" alt="" class="logo">
+            </a>
+            <ul>
+                <li><a class="active" href="../index.html">INICIO</a></li>
+                <li><a href="../pages/quienessomos.html">QUIENES SOMOS</a></li>
+                <li><a href="../pages/administracion.html">ADMINISTRACIÓN</a></li>
+                <li><a href="../pages/alquiler.html">ALQUILER</a>
+                    <ul class="hidden">
+                        <li><a href="../pages/alquiler.html">Un dormitorio</a></li>
+                        <li><a href="../pages/alquiler.html">Dos dormitorios</a></li>
+                        <li><a href="../pages/alquiler.html">Tres Dormitorios</a></li>
+                    </ul>
+                </li>
+                <li><a href="../pages/venta.html">VENTA</a>
+                    <ul class="hidden">
+                        <li><a href="../pages/venta.html">Un dormitorio</a></li>
+                        <li><a href="../pages/venta.html">Dos dormitorios</a></li>
+                        <li><a href="../pages/venta.html">Tres Dormitorios</a></li>
+                    </ul>
+                </li>
+                <li><a href="../pages/contacto.html">CONTACTO</a></li>
+            </ul>
+        </nav>
+        <!--FIN DEL MENU-->
+    </header>
+    <!--FIN DEL HEADER-->
+
+    <main>
+        <!--por que elegirnos?-->
+        <section class="fondoadm">
+            <div class="porqueadmin">
+                <h2 class="tituloadmin">¿POR QUE ELEGIRNOS?</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat vitae veritatis nostrum placeat, nam
+                    excepturi expedita sit. Sit laudantium doloremque, sequi odio aliquid quaerat itaque aut similique
+                    numquam totam expedita?</p>
+                <div class="columnadmin">
+                    <div class="subtituloadmin">
+                        <h3>Confianza</h3>
+                        <p>La satisfacción de nuestros clientes nos da como una empresa confiable y también dedicada</p>
+                    </div>
+                    <div class="subtituloadmin">
+                        <h3>Seguridad</h3>
+                        <p>Todas nuestras operaciones son exclusivamente realizadas por corredores matriculados</p>
+                    </div>
+                    <div class="subtituloadmin">
+                        <h3>Modernismo</h3>
+                        <p>Nos preocupamos por los desafíos en materia de mercado que implican una constante
+                            capacitación</p>
+                    </div>
+                    <div class="subtituloadmin">
+                        <h3>Compromiso</h3>
+                        <p>Estamos avocados a las exigencias particulares de cada cliente a fin de lograr el mejor
+                            negocio </p>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <!--formulario contacto-->
+        <section class="tituloformcontacto">
+            <h1>CONTACTANOS</h1>
+        </section>
+        <section>
+            <div class="grid-container">
+                <div class="formcontacto">
+                    <div class="tipoform">
+                    <form action="./formpage.html" method="get" enctype="application/x-www-form-urlencoded">
+                        <label for="Nombre" >Nombre: </label><input id="Nombre" type="text"
+                            name="nombre" placeholder="Ingresa tu Nombre">
+                        <label for="Apellido">Apellido: </label><input id="Apellido" type="text" name="apellido"
+                            placeholder="Ingresa tu Apellido">
+                        <label for="Email">Email: </label><input id="Email" type="text" name="email"
+                            placeholder="Ingresa tu Email">
+                        <label for="mensaje">Tu Mensaje: </label><textarea name="mensaje" id="mensaje"
+                            placeholder="Tu Mensaje"></textarea>
+                        <input type="submit" value="Enviar formulario" call="btn-enviar" />                    </form>
+                </div>
+            </div>
+                <div class="formmap"><iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3347.8246760778566!2d-60.65321898481346!3d-32.955637980918446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b7ab12ba391c31%3A0x7b1698044e00dcb7!2sAv.%20Pellegrini%201811%2C%20S2000BUF%20Rosario%2C%20Santa%20Fe!5e0!3m2!1ses!2sar!4v1666912227965!5m2!1ses!2sar"
+                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+            </div>
+        </section>
+
+
+
+
+        <!--cartel de contacto-->
+        <section id="cartelcontacto">
+            <div class="carteldecontacto">
+                <li><i class="fa-sharp fa-solid fa-phone fa-2x"></i></li>
+                <li>
+                    <p>TELEFONO</p>
+                </li>
+                <li>(0341) 3132818</li>
+                <li><i class="fa-solid fa-envelope fa-2x"></i></li>
+                <li>
+                    <p>EMAIL</p>
+                </li>
+                <li><a class="cartel1"
+                        href="mailto:contacto@elevepropiedades.com.ar">contacto@elevepropiedades.com.ar</a></li>
+                <li><i class="fa-solid fa-location-dot fa-2x"></i></li>
+                <li>
+                    <p>OFICINA</p>
+                </li>
+                <li><a href="https://goo.gl/maps/s8B6XoEcNeYv6Ysq9" target="blank"> Pellegrini 1811 Of. 01 - Rosario
+                </li></a>
+            </div>
+        </section>
+        <!--FIN CARTEL DE CONTACTO-->
+
+        <!--PIE DE PAGINA-->
+        <section id="piedepagina">
+            <div class="piedepagina">
+                <div>
+                    <li class="logopie"><img width="210" src="../img/logo blanco.png" alt="logo_blanco"></li>
+                    <li class="textopie"><a href="https://goo.gl/maps/s8B6XoEcNeYv6Ysq9" target="blank">Av. Pellegrini
+                            1811 Of. 01</li></a>
+                    <li class="textopie">Teléfono: (0341) 3132818</li>
+                    <li><a class="textopie"
+                            href="mailto:contacto@elevepropiedades.com.ar">contacto@elevepropiedades.com.ar</a></li>
+                </div>
+                <div class="titulomenupie">
+                    <h4>SERVICIOS</h4>
+                    <li><a class="textomenupie" href="../pages/quienessomos.html">Quienes Somos</a></li>
+                    <li><a class="textomenupie" href="../pages/administracion.html">Administración</a></li>
+                    <li><a class="textomenupie" href="../pages/alquiler.html">Alquiler</a>
+                    <li><a class="textomenupie" href="../pages/venta.html">Venta</a>
+                    <li><a class="textomenupie" href="../pages/contacto.html">Contacto</a></li>
+                    <li><a class="textomenupie" href="../pages/termycond.html">Políticas de Privacidad</a></li>
+                    </p>
+                </div>
+                <div class="newsletter">
+                    <h4>NEWSLETTER</h4>
+                    <input type="text" placeholder="Ingresá tu Mail" name="mail" required>
+                    <input type="submit" value="Suscribirse"></p>
+                </div>
+                <div class="redespie">
+                    <h4>REDES</h4>
+                    <a href="https://www.facebook.com/" target="blank"><i class="fa-brands fa-facebook fa-2x"></i></a>
+                    <a href="https://www.instagram.com/" target="blank"><i class="fa-brands fa-instagram fa-2x"></i></a>
+                </div>
+            </div>
+        </section>
+        <!--FIN PIE DE PAGINA-->
+    </main>
+    <!--FIN DEL MAIN-->
+
+    <!--FOOTER-->
+    <footer class="footer">
+        <div>
+            <li>Copyright: 2022. Todos los derechos reservados®</li>
+            <li class="linkfooter"><a class="linkfooter" href="../index.html" class="linkfooter">Eleve Negocios
+                    Inmobiliarios.</a>
+            </li>
+        </div>
+    </footer>
+    <!-- FIN DEL FOOTER-->
+</body>
+
+</html>

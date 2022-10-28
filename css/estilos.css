@@ -1,0 +1,1599 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*---- HEADER ----*/
+nav {
+    background: rgb(33, 33, 33);
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+}
+
+.enlace {
+    position: absolute;
+    padding: 20px 50px;
+}
+
+.logo {
+    height: 50px;
+}
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+
+}
+
+nav ul li a {
+    color: #fff;
+    font-size: 14px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+}
+
+li a.active,
+li a:hover {
+    background: orangered;
+    border-radius: 5px;
+    transition: all .5s ease;
+}
+
+/*---- SUBMENU ----*/
+ul ul {
+    display: none;
+    position: absolute;
+    background: rgb(33, 33, 33);
+    width: 160px;
+}
+
+ul ul li {
+    float: none;
+    font-size: 5px;
+}
+
+ul li:hover ul {
+    display: block;
+}
+
+ul li:hover ul a:hover {
+    background-color: orangered;
+    border-radius: 5px;
+    transition: all .5s ease;
+}
+
+
+/*---- HAMBURGUESA ----*/
+.checkbtn {
+    font-size: 30px;
+    color: #fff;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+/*---- FIN DEL HEADER ----*/
+
+
+/*---- INICIO DEL MAIN ----*/
+/*---- BUSCADOR ----*/
+.buscadorfondo {
+    padding: 20px;
+    font-style: italic;
+    background-color: rgb(255, 102, 0);
+    font-family: Verdana;
+    color: #f3f3f3;
+    height: 450px;
+}
+
+.buscadortitulo {
+    margin-top: 80px;
+    font-style: oblique;
+    font-size: 25px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #f3f3f3;
+}
+
+.wrapper {
+    padding: 40px 0px 40px 0px;
+}
+
+.wrapper h2 {
+    text-align: center;
+    color: white;
+    font-size: 60px;
+}
+
+.wrapper p {
+    text-align: center;
+    font-size: 30px;
+}
+
+span:before {
+    content: '';
+    animation: animate infinite 4s;
+    color: rgb(42, 146, 42);
+}
+
+@keyframes animate {
+    0% {
+        content: ' QUERES'
+    }
+
+    50% {
+        content: ' BUSCAS'
+    }
+
+    100% {
+        content: ' SOÑAS'
+    }
+
+}
+
+.fondopropiedades {
+    background-color: lightgray;
+    border-radius: 10px;
+    display: grid;
+    margin-top: auto;
+    grid-template-columns: auto auto auto auto;
+}
+
+
+input[type=text],
+select {
+    border-radius: 4px;
+}
+
+input[type=search],
+select {
+    border: solid lightgrey;
+    border-radius: 4px;
+    box-sizing: border-box;
+    width: 95%;
+    padding: 10px !important;
+    margin: 10px !important;
+    display: inline-block;
+
+}
+
+.button {
+    background-color: rgb(255, 84, 5);
+    color: white;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: 300;
+    width: 90% !important;
+    margin: 10px !important;
+}
+
+.button:hover {
+    background-color: rgb(182, 62, 7);
+    cursor: pointer;
+}
+
+/*---- FIN DEL BUSCADOR ----*/
+
+/*---- INICIO DESTACADAS -----*/
+.destacadas {
+    margin: 10px;
+    padding: 10px;
+    font-style: oblique;
+    font-size: 40px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+#slider {
+    font-family: sans-serif;
+    margin: auto;
+    max-width: 800px;
+    width: 100%;
+    padding: 30px;
+    box-sizing: border-box;
+
+}
+
+#slider>ul,
+li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+#slider>ul.slider {
+    position: relative;
+    max-width: 800px;
+    width: 100%;
+    height: 300px;
+    background: none;
+}
+
+#slider>ul.slider .tipoprop1 {
+    color: white;
+    position: absolute;
+    background-color: rgb(255, 84, 5);
+    padding: 10px;
+    top: 10%;
+    right: 10%;
+    border-style: solid;
+    opacity: 0.9;
+}
+
+#slider>ul.slider .textotipoprop1 {
+    margin: auto;
+    color: white;
+    position: absolute;
+    background-color: rgb(255, 84, 5);
+    padding: 10px;
+    top: 60%;
+    left: 5%;
+    opacity: 0.9;
+    border-style: solid;
+}
+
+
+#slider>ul.slider li {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    opacity: 0;
+    width: inherit;
+    height: inherit;
+    transition: opacity .5s;
+}
+
+#slider>ul.slider li img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+#slider>ul.slider li:first-child {
+    opacity: 1;
+}
+
+#slider>ul.slider li:target {
+    opacity: 1;
+}
+
+#slider>.menuslider {
+    text-align: center;
+    margin: 20px;
+}
+
+#slider>.menuslider li {
+    display: inline-block;
+    position: relative;
+    text-align: center;
+}
+
+#slider>.menuslider li a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    background-color: grey;
+    width: 30px;
+    height: 30px;
+    font-size: 25px;
+    border-radius: 100%;
+}
+
+/*---- FIN DESTACADAS -----*/
+
+/*---- POR QUE CONTACTARNOS ----*/
+.porquecontactarnos {
+    position: relative;
+    background-image: url(/img/Casa-nueva-casa-antigua.webp);
+    background-attachment: fixed;
+    background-size: cover;
+    height: 400px;
+}
+
+
+.porqueinfo {
+    height: 400px;
+    padding: 30px;
+    margin-left: 50%;
+    background-color: rgb(255, 84, 5);
+    opacity: 0.8;
+    color: white;
+    font-family: verdana;
+    text-align: center;
+}
+
+.porqueinfo p {
+    margin-top: 10px;
+}
+
+.porqueinfo i {
+    margin-top: 15px;
+}
+
+.porqueinfotexto {
+    font-family: Verdana;
+    text-decoration: underline;
+}
+
+/*---- FIN POR QUE CONTACTARNOS ----*/
+
+/*---- CARTEL DE CONTACTO ----*/
+#cartelcontacto {
+    padding: 60px;
+    font-style: italic;
+    text-align: center;
+    background-color: rgb(255, 102, 0);
+    column-count: 3;
+    column-rule: none;
+    list-style: none;
+    font-family: Verdana;
+    color: #f3f3f3;
+
+}
+
+.carteldecontacto li {
+    text-decoration: none;
+    color: white;
+}
+
+.cartel1 {
+    color: #f3f3f3;
+    text-decoration: none;
+}
+
+.carteldecontacto a {
+    color: #f3f3f3;
+    text-decoration: none;
+}
+
+/*---- FIN CARTEL DE CONTACTO ----*/
+
+/*---- PIE DE PAGINA ----*/
+#piedepagina {
+    padding: 80px;
+    background-color: rgb(33, 33, 33);
+    column-count: 4;
+    column-gap: 100px;
+    list-style: none;
+    font-family: Verdana;
+    color: white;
+}
+
+.textopie {
+    font-style: italic;
+    font-size: small;
+    color: white;
+    text-decoration: none;
+}
+
+.textopie a {
+    text-decoration: none;
+    color: white;
+}
+
+.menupie {
+    font-family: Verdana;
+}
+
+.titulomenupie {
+    font-style: italic;
+    text-align: center;
+}
+
+.textomenupie {
+    font-size: medium;
+    color: #f3f3f3;
+    text-decoration: none;
+    text-align: center;
+}
+
+.newsletter {
+    font-style: italic;
+    text-align: center;
+}
+
+input[type=text],
+input[type=submit] {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    background-color: rgb(255, 84, 5);
+    color: white;
+    border: none;
+}
+
+input[type=submit]:hover {
+    opacity: 0.8;
+}
+
+.redespie {
+    font-style: italic;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.redespie i {
+    margin-top: 20px;
+    margin: 20px 0;
+    cursor: pointer;
+    color: white;
+}
+
+
+
+/*---- FIN PIE DE PAGINA ----*/
+/*---- FIN DEL MAIN ----*/
+
+/*---- FOOTER ----*/
+.footer {
+    background-color: black;
+    padding: 30px;
+    font-family: Verdana;
+    font-style: italic;
+    color: rgb(255, 254, 254);
+    font-size: 12px;
+}
+
+.linkfooter {
+    text-decoration: none;
+    color: rgb(255, 254, 254);
+}
+
+/*---- FIN DE FOOTER ----*/
+
+/*----------RESPONSIVE MOBILE COMPLETO-----------*/
+
+@media screen and (max-width: 480px) {
+
+    /*----------responsive menu y hamburguesa-----------*/
+    .checkbtn {
+        display: block;
+    }
+
+    ul {
+        position: fixed;
+        width: 100%;
+        background: black;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .7s;
+        z-index: 1;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+
+    }
+
+    nav ul li a {
+        font-size: 20px;
+        text-decoration: none;
+    }
+
+    li a:hover,
+    li a.active {
+        background: orangered;
+        border-radius: 5px;
+        transition: .5s;
+    }
+
+    #check:checked~ul {
+        left: 0;
+    }
+
+    /*---- INICIO RESPONSIVE BUSCADOR----*/
+    .buscadorfondo {
+        padding: 20px;
+        font-style: italic;
+        background-color: rgb(255, 102, 0);
+        font-family: Verdana;
+        color: #f3f3f3;
+        height: 500px;
+    }
+
+    .buscadortitulo {
+        margin-top: 80px;
+        text-align: center;
+        font-style: oblique;
+        font-family: Verdana;
+        color: #f3f3f3;
+        font-size: 12px;
+    }
+
+    .wrapper {
+        padding: 40px 0px 30px 0px;
+    }
+
+    .wrapper h2 {
+        font-size: 25px;
+    }
+
+    .wrapper p {
+        font-size: 20px;
+    }
+
+    .fondopropiedades {
+        margin-top: auto;
+        background-color: lightgray;
+        border-radius: 10px;
+        display: block !important;
+    }
+
+    input[type=text],
+    select {
+        border-radius: 4px;
+    }
+
+    input[type=search],
+    select {
+        border: solid lightgray;
+        border-radius: 4px;
+        box-sizing: border-box;
+        width: 95%;
+        padding: 10px;
+        display: inline-block;
+    }
+
+    .button {
+        background-color: rgb(255, 84, 5);
+        color: white;
+        border-radius: 5px;
+        text-transform: uppercase;
+        font-weight: 300;
+        width: 95% !important;
+        margin: 10px !important;
+    }
+
+
+    .button:hover {
+        background-color: rgb(182, 62, 7);
+        cursor: pointer;
+    }
+
+    /*---- FIN DEL RESPONSIVE BUSCADOR ----*/
+
+    /*----INICIO PROPIEDADES DESTACADAS----*/
+    .destacadas {
+        padding: 30px;
+        text-align: center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 18px;
+
+    }
+
+    #slider {
+        height: 500px;
+    }
+
+
+    .slider {
+        border: 1px;
+        margin-top: -60% !important;
+        text-align: left;
+        margin-left: 100%;
+        z-index: 0;
+
+    }
+
+    #slide1 {
+        font-family: Verdana;
+        text-align: center;
+        color: #f3f3f3;
+        margin-left: 100%;
+        margin-top: 10%;
+    }
+
+    #slide2 {
+        font-family: Verdana;
+        text-align: center;
+        color: #f3f3f3;
+        margin-left: 100%;
+        margin-top: 10%;
+    }
+
+    #slide3 {
+        font-family: Verdana;
+        text-align: center;
+        color: #f3f3f3;
+        margin-left: 100%;
+        margin-top: 10%;
+    }
+
+    .tipoprop1 {
+        visibility: hidden;
+    }
+
+    #slider>ul.slider li {
+        opacity: 0;
+        transition: opacity .5s;
+    }
+
+    #slider>ul.slider .textotipoprop1 {
+        color: white;
+        position: relative;
+        background-color: rgb(255, 84, 5);
+        top: 127%;
+        width: 320px;
+        left: 0;
+        opacity: 0.9;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        border-style: none;
+    }
+
+    #slider>ul.slider .w-img {
+        width: 320px;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+    }
+
+    #slider>ul.slider li:first-child {
+        opacity: 1;
+    }
+
+    #slider>ul.slider li:target {
+        opacity: 1;
+    }
+
+    #slider>.menuslider {
+        position: relative;
+        color: #f3f3f3;
+        margin-left: 100%;
+        transition: all.7s;
+        cursor: pointer;
+        background: none;
+        margin-top: 70%;
+        z-index: 0;
+    }
+
+    #slider>.menuslider li {
+        display: inline-block;
+        position: relative;
+        text-align: center;
+    }
+
+    #slider>.menuslider li a {
+        display: inline-block;
+        color: white;
+        text-decoration: none;
+        background-color: grey;
+        width: 30px;
+        height: 30px;
+        font-size: 25px;
+        border-radius: 100%;
+    }
+
+
+    /*------- FIN DESTACADAS RESPONSIVE-----*/
+
+    /*---- POR QUE CONTACTARNOS RESPONSIVE ----*/
+    .porquecontactarnos {
+        background-attachment: local;
+        background-position-x: center;
+    }
+
+    .porqueinfo {
+        padding: 30px;
+        margin-left: 0;
+        background-color: rgb(255, 84, 5);
+        opacity: 0.8;
+        color: white;
+        font-family: verdana;
+    }
+
+    .porqueinfo p {
+        margin-top: 6px;
+    }
+
+    .porqueinfo i {
+        margin-top: 8px;
+    }
+
+    /*---- FIN POR QUE CONTACTARNOS RESPONSIVE----*/
+
+    /*---- CARTEL DE CONTACTO RESPONSIVE----*/
+    #cartelcontacto {
+        padding: 0;
+        position: relative;
+        display: inline;
+        color: white;
+    }
+
+    .carteldecontacto {
+        text-align: center;
+        text-decoration: none;
+        font-style: italic;
+        background-color: rgb(255, 84, 5);
+        padding: 30px;
+    }
+
+    #cartelcontacto li {
+        margin: 10px;
+    }
+
+    #cartelcontacto i {
+        margin-top: 10px;
+    }
+
+    .cartel1 {
+        color: white;
+        text-decoration: none;
+    }
+
+    /*---- FIN CARTEL DE CONTACTO RESPONSIVE----*/
+
+    /*---- PIE DE PAGINA RESPONSIVE----*/
+    #piedepagina {
+        padding: 0;
+        position: relative;
+        display: inline;
+    }
+
+    .piedepagina {
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        font-style: italic;
+        background-color: rgb(33, 33, 33);
+    }
+
+    .logopie {
+        padding: 40px 20px 10px 20px;
+    }
+
+    .textopie {
+        font-size: 12px;
+        color: white;
+        text-decoration: none;
+    }
+
+    .textopie a {
+        color: white;
+        text-decoration: none;
+    }
+
+    .titulomenupie {
+        margin-top: 40px;
+        font-size: 20px;
+    }
+
+    .textomenupie {
+        font-size: 12px;
+    }
+
+    .newsletter {
+        margin-top: 40px;
+        font-size: 20px;
+    }
+
+    .newsletter input[type=text],
+    input[type=submit] {
+        width: 70%;
+        padding: 12px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+    }
+
+    .newsletter input[type=submit] {
+        background-color: rgb(255, 84, 5);
+        color: white;
+        border: none;
+        text-transform: uppercase;
+        font-weight: 300;
+    }
+
+    .newsletter input[type=submit]:hover {
+        opacity: 0.8;
+    }
+
+    .redespie {
+        margin-top: 30px;
+        font-size: 20px;
+    }
+
+    .redespie i {
+        margin-top: 20px;
+        margin: 20px 0;
+    }
+
+    /*---- FIN PIE DE PAGINA RESPONSIVE----*/
+    /*---- FIN DEL MAIN RESPONSIVE----*/
+
+    /*---- FOOTER RESPONSIVE----*/
+    .footer {
+        background-color: black;
+        padding: 30px;
+        font-family: Verdana;
+        font-style: italic;
+        color: rgb(255, 254, 254);
+        font-size: 12px;
+    }
+
+    .linkfooter {
+        text-decoration: none;
+        color: rgb(255, 254, 254);
+    }
+
+    /*---- FIN DE FOOTER RESPONSIVE----*/
+    /*-----pagina contacto resposive----*/
+    .grid-container {
+        display: block !important;
+        grid-auto-flow: column;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
+        column-gap: 10px;
+        padding: 10px;
+    }
+
+    .fondoadm {
+
+        background-image: url(/img/admin.jpg);
+        background-attachment: local;
+        background-position-x: center;
+    }
+
+    .porqueadmin {
+        padding: 30px;
+        width: 100%;
+        background-color: rgb(255, 84, 5);
+        opacity: 0.8;
+        color: white;
+        font-family: verdana;
+    }
+
+    .tituloadmin {
+        margin-top: 20%;
+        margin-bottom: 10px;
+        text-align: center;
+        font-style: italic;
+    }
+
+    .subtituloadmin {
+        padding: 8%;
+        hyphens: auto;
+    }
+
+}
+
+
+/*----RESPONSIVE TABLET O IPAD----*/
+
+@media screen and (min-width: 481px) and (max-width: 980px) {
+
+    /*----------responsive menu y hamburguesa-----------*/
+    .checkbtn {
+        display: block;
+    }
+
+    ul {
+        position: fixed;
+        width: 100%;
+        background: black;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .7s;
+        z-index: 1;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+
+    }
+
+    nav ul li a {
+        font-size: 20px;
+        text-decoration: none;
+    }
+
+    li a:hover,
+    li a.active {
+        background: orangered;
+        border-radius: 5px;
+        transition: .5s;
+    }
+
+    #check:checked~ul {
+        left: 0;
+    }
+
+    /*---- INICIO RESPONSIVE BUSCADOR----*/
+    .buscadorfondo {
+        padding: 20px;
+        font-style: italic;
+        background-color: rgb(255, 102, 0);
+        font-family: Verdana;
+        color: #f3f3f3;
+        height: 550px;
+    }
+
+    .buscadortitulo {
+        margin-top: 80px;
+        font-style: oblique;
+        text-align: center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: #f3f3f3;
+        font-size: 17px;
+    }
+
+    .wrapper {
+        padding: 40px 0px 30px 0px;
+    }
+
+    .wrapper h2 {
+        font-size: 32px;
+    }
+
+    .wrapper p {
+        font-size: 25px;
+    }
+
+    .fondopropiedades {
+        margin-top: auto;
+        background-color: lightgray;
+        border-radius: 10px;
+        display: block !important;
+    }
+
+    input[type=text],
+    select {
+        border-radius: 4px;
+    }
+
+    input[type=search],
+    select {
+        border: solid lightgray;
+        border-radius: 4px;
+        box-sizing: border-box;
+        width: 95%;
+        padding: 10px;
+        display: inline-block;
+    }
+
+    .button {
+        background-color: rgb(255, 84, 5);
+        color: white;
+        border-radius: 5px;
+        text-transform: uppercase;
+        font-weight: 300;
+        width: 95% !important;
+        margin: 10px !important;
+    }
+
+
+    .button:hover {
+        background-color: rgb(182, 62, 7);
+        cursor: pointer;
+    }
+
+    /*---- FIN DEL RESPONSIVE BUSCADOR ----*/
+
+    /*----INICIO PROPIEDADES DESTACADAS----*/
+    .destacadas {
+        text-align: center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 25px;
+
+    }
+
+    #slider {
+        width: 100%;
+        padding: 10px 30px 20px 30px;
+        margin-top: -10%;
+        height: 500px;
+    }
+
+    .slider {
+        background-color: lightgray;
+        border-radius: 10px;
+        z-index: 0;
+    }
+
+    #slider>ul,
+    li {
+        list-style: none;
+    }
+
+    #slider>ul.slider {
+        position: relative;
+        width: 100%;
+        background: none;
+        margin-left: 100%;
+    }
+
+    #slider>ul.slider .tipoprop1 {
+        color: white;
+        position: absolute;
+        background-color: rgb(255, 84, 5);
+        padding: 10px;
+        top: 10%;
+        right: 10%;
+        border-style: solid;
+        opacity: 0.9;
+    }
+
+    #slider>ul.slider .textotipoprop1 {
+        margin: auto;
+        color: white;
+        position: absolute;
+        background-color: rgb(255, 84, 5);
+        padding: 10px;
+        top: 60%;
+        left: 5%;
+        opacity: 0.9;
+        border-style: solid;
+    }
+
+
+    #slider>ul.slider li {
+        position: absolute;
+        opacity: 0;
+        width: inherit;
+        height: inherit;
+        transition: opacity .5s;
+    }
+
+    #slider>ul.slider li .w-img {
+        width: 100%;
+        border-radius: 15px;
+    }
+
+    #slider>ul.slider li:first-child {
+        opacity: 1;
+    }
+
+    #slider>ul.slider li:target {
+        opacity: 1;
+    }
+
+    #slider>.menuslider {
+        position: relative;
+        color: aqua;
+        transition: all.7s;
+        cursor: pointer;
+        background: none;
+        margin-left: 100%;
+        z-index: 0;
+    }
+
+    #slider>.menuslider li {
+        display: inline-block;
+        position: relative;
+        text-align: center;
+    }
+
+    #slider>.menuslider li a {
+        display: inline-block;
+        color: white;
+        text-decoration: none;
+        background-color: grey;
+        width: 30px;
+        height: 30px;
+        font-size: 25px;
+        border-radius: 100%;
+    }
+
+
+    /*------- FIN DESTACADAS RESPONSIVE-----*/
+
+    /*---- POR QUE CONTACTARNOS RESPONSIVE ----*/
+    .porquecontactarnos {
+        background-attachment: local;
+        background-position-x: center;
+    }
+
+    .porqueinfo {
+        padding: 30px;
+        margin-left: 50%;
+        background-color: rgb(255, 84, 5);
+        opacity: 0.8;
+        color: white;
+        font-family: verdana;
+    }
+
+    .porqueinfo p {
+        margin-top: 6px;
+    }
+
+    .porqueinfo i {
+        margin-top: 8px;
+    }
+
+    /*---- FIN POR QUE CONTACTARNOS RESPONSIVE----*/
+
+    /*---- CARTEL DE CONTACTO RESPONSIVE----*/
+    #cartelcontacto {
+        padding: 0;
+        position: relative;
+        display: inline;
+        color: white;
+        column-count: 3;
+        column-rule: none;
+    }
+
+    .carteldecontacto {
+        text-align: center;
+        text-decoration: none;
+        font-style: italic;
+        background-color: rgb(255, 84, 5);
+        padding: 30px;
+    }
+
+    #cartelcontacto li {
+        margin: 10px;
+    }
+
+    #cartelcontacto i {
+        margin-top: 10px;
+    }
+
+    .cartel1 {
+        color: white;
+        text-decoration: none;
+    }
+
+    /*---- FIN CARTEL DE CONTACTO RESPONSIVE----*/
+
+    /*---- PIE DE PAGINA RESPONSIVE----*/
+    #piedepagina {
+        padding: 0;
+        position: relative;
+        display: inline;
+    }
+
+    .piedepagina {
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        font-style: italic;
+        background-color: rgb(33, 33, 33);
+    }
+
+    .logopie {
+        padding: 40px 20px 10px 20px;
+    }
+
+    .textopie {
+        font-size: 12px;
+        color: white;
+        text-decoration: none;
+    }
+
+    .textopie a {
+        color: white;
+        text-decoration: none;
+    }
+
+    .titulomenupie {
+        margin-top: 40px;
+        font-size: 20px;
+    }
+
+    .textomenupie {
+        font-size: 12px;
+    }
+
+    .newsletter {
+        margin-top: 40px;
+        font-size: 20px;
+    }
+
+    .newsletter input[type=text],
+    input[type=submit] {
+        width: 70%;
+        padding: 12px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+    }
+
+    .newsletter input[type=submit] {
+        background-color: rgb(255, 84, 5);
+        color: white;
+        border: none;
+        text-transform: uppercase;
+        font-weight: 300;
+    }
+
+    .newsletter input[type=submit]:hover {
+        opacity: 0.8;
+    }
+
+    .redespie {
+        margin-top: 30px;
+        font-size: 20px;
+    }
+
+    .redespie i {
+        margin-top: 20px;
+        margin: 20px 0;
+    }
+
+    /*-----pagina contacto ipad resposive----*/
+    .grid-container {
+        display: block !important;
+        grid-auto-flow: column;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
+        column-gap: 10px;
+        padding: 10px;
+    }
+
+}
+
+
+
+
+
+/*----PAGINA QUIENES SOMOS -----*/
+.quienessomosfondo {
+    padding: 20px;
+    font-style: italic;
+    background-color: rgb(255, 102, 0);
+    font-family: Verdana;
+    color: #f3f3f3;
+    height: 180px;
+}
+
+.quienessomos {
+    margin-top: 80px;
+    font-style: oblique;
+    font-size: 25px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #f3f3f3;
+}
+
+.textosomos {
+    padding: 30px;
+    font-family: Verdana;
+    color: black;
+    text-align: justify;
+}
+
+/*----FIN PAGINA QUIENES SOMOS -----*/
+/*----PAGINA QUIENES SOMOS RESPOSIVE MOBILE -----*/
+
+@media screen and (max-width: 480px) {
+    .quienessomosfondo {
+        padding: 20px;
+        font-style: italic;
+        background-color: rgb(255, 102, 0);
+        font-family: Verdana;
+        color: #f3f3f3;
+        height: 210px;
+    }
+}
+
+/*---- FIN PAGINA QUIENES SOMOS RESPOSIVE MOBILE -----*/
+
+/*----PAGINA ADMINISTRACION -----*/
+.fondoadm {
+    position: relative;
+    background-image: url(/img/admin.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
+}
+
+.porqueadmin {
+    padding: 30px;
+    margin-right: 50%;
+    background-color: rgb(255, 84, 5);
+    opacity: 0.8;
+    color: white;
+    font-family: verdana;
+    text-align: justify;
+}
+
+.tituloadmin {
+    margin-top: 15%;
+    margin-bottom: 10px;
+    text-align: center;
+    font-style: italic;
+}
+
+.columnadmin {
+    column-count: 2;
+}
+
+.subtituloadmin {
+    padding: 10%;
+    hyphens: auto;
+}
+
+.subtituloadmin p {
+    font-size: small;
+}
+
+.tituloformcontacto {
+    padding: 20px;
+    font-style: oblique;
+    font-family: Verdana;
+    font-style: italic;
+    text-align: center;
+    background-color: rgb(255, 102, 0);
+    color: #f3f3f3;
+}
+
+
+/*----FIN PAGINA ADMINISTRACION -----*/
+
+/*----PAGINA ALQUILER Y VENTA -----*/
+.propiedadesfondo {
+    padding: 20px;
+    font-style: italic;
+    background-color: rgb(255, 102, 0);
+    font-family: Verdana;
+    color: #f3f3f3;
+    height: 180px;
+}
+
+.titulopropiedades {
+    margin-top: 80px;
+    font-style: oblique;
+    font-size: 25px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #f3f3f3;
+}
+
+.buscadorfondoprop {
+    padding: 20px;
+    font-style: italic;
+    background-color: rgb(255, 102, 0);
+    font-family: Verdana;
+    color: #f3f3f3;
+    height: 230px;
+    border: double black;
+}
+
+.buscadortituloprop {
+    font-style: oblique;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #f3f3f3;
+}
+
+.wrapper-prop {
+    padding: 20px 0px 20px 0px;
+}
+
+.wrapper-prop h2 {
+    text-align: center;
+    color: white;
+    font-size: 30px;
+}
+
+.wrapper-prop p {
+    text-align: center;
+    font-size: 15px;
+}
+
+span:before {
+    content: '';
+    animation: animate infinite 4s;
+    color: rgb(42, 146, 42);
+}
+
+@keyframes animate {
+    0% {
+        content: ' QUERES'
+    }
+
+    50% {
+        content: ' BUSCAS'
+    }
+
+    100% {
+        content: ' SOÑAS'
+    }
+
+}
+
+.fondopropiedadesalqventa {
+    background-color: lightgray;
+    border-radius: 10px;
+    display: grid;
+    margin-top: auto;
+    grid-template-columns: auto auto auto auto;
+}
+
+
+input[type=text],
+select {
+    border-radius: 4px;
+}
+
+input[type=search],
+select {
+    border: solid lightgrey;
+    border-radius: 4px;
+    box-sizing: border-box;
+    width: 95%;
+    padding: 10px !important;
+    margin: 10px !important;
+    display: inline-block;
+
+}
+
+.button {
+    background-color: rgb(255, 84, 5);
+    color: white;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: 300;
+    width: 90% !important;
+    margin: 10px !important;
+}
+
+.button:hover {
+    background-color: rgb(182, 62, 7);
+    cursor: pointer;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.df-main {
+    border: 1px;
+    grid-template-columns: 1fr 1fr;
+    width: auto;
+    margin: auto;
+    text-align: left;
+}
+
+.card-index {
+    margin: 20px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.border-card {
+    background-color: lightgrey;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    font-family: Verdana;
+    text-align: center;
+    color: black;
+
+}
+
+.border-card h4 {
+    margin-top: 5%;
+    height: 40px;
+}
+
+
+.bg-card {
+    background-color: lightgrey;
+    color: black;
+    font-family: Verdana;
+    border-left: 1px solid lightgrey;
+    border-right: 1px solid lightgrey;
+    border-top: 1px solid lightgrey;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-bottom: 1px solid lightgrey;
+    width: 320px;
+}
+
+.w-img {
+    width: 320px;
+}
+
+
+.botonprop {
+    background-color: rgb(255, 84, 5);
+    font-family: Verdana;
+    color: #f3f3f3;
+    padding: 10px 15px;
+    margin: 10px;
+    border-color: transparent;
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 15px;
+    font-style: normal;
+    text-decoration: none;
+}
+
+.botonprop:hover {
+    opacity: 0.7;
+}
+
+/*----FIN PAGINA ALQUILER Y VENTA -----*/
+
+/*----PAGINA CONTACTO -----*/
+.grid-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    column-gap: 10px;
+    padding: 10px;
+}
+
+.grid-container>div {
+    padding: 20px;
+}
+
+.tipoform {
+    font-size: 20px;
+    text-align: left;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.formcontacto {
+    width: 100%;
+    margin: auto;
+    font-style: verdana;
+}
+
+.formcontacto textarea {
+    width: 100%;
+    padding: 15px 10px;
+    font-size: 15px;
+    border-color: lightgray;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    resize: none;
+}
+
+/*----FIN PAGINA CONTACTO -----*/
+
+/*---- PAGINA POLITICAS -----*/
+
+.politicas {
+    padding: 5%;
+    font-family: Verdana;
+    color: black;
+    text-align: justify;
+}
+
+/*----FIN PAGINA POLITICAS -----*/
+
+
+
+
+
+
+/*----PAGINA ADMINISTRACION -----*/
