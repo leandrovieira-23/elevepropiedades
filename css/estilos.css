@@ -1339,6 +1339,7 @@ input[type=submit]:hover {
 }
 
 .tituloformcontacto {
+    font-size: large;
     padding: 20px;
     font-style: oblique;
     font-family: Verdana;
@@ -1391,7 +1392,7 @@ input[type=submit]:hover {
     padding: 20px 0px 20px 0px;
 }
 
-.wrapper-prop h2 {
+.wrapper-prop h3 {
     text-align: center;
     color: white;
     font-size: 30px;
