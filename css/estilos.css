@@ -165,7 +165,6 @@ span:before {
     background-color: lightgray;
 }
 
-
 input[type=text],
 select {
     border-radius: 4px;
@@ -197,14 +196,18 @@ select {
 /*---- FIN DEL BUSCADOR ----*/
 
 /*---- INICIO DESTACADAS -----*/
+.propdestacadas {
+    display: flex;
+    flex-direction: column;
+}
+
 .destacadas {
     margin: 10px;
     padding: 10px;
-    font-style: oblique;
+    font-style: italic;
     font-size: 40px;
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-
 }
 
 #slider {
@@ -214,7 +217,6 @@ select {
     width: 100%;
     padding: 30px;
     box-sizing: border-box;
-
 }
 
 #slider>ul,
@@ -306,18 +308,16 @@ li {
 
 /*---- POR QUE CONTACTARNOS ----*/
 .porquecontactarnos {
-    position: relative;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 50% 50%;
     background-image: url(/img/Casa-nueva-casa-antigua.webp);
-    background-attachment: fixed;
     background-size: cover;
     height: 400px;
 }
 
-
 .porqueinfo {
-    height: 400px;
     padding: 30px;
-    margin-left: 50%;
     background-color: rgb(255, 84, 5);
     opacity: 0.8;
     color: white;
@@ -342,21 +342,31 @@ li {
 
 /*---- CARTEL DE CONTACTO ----*/
 #cartelcontacto {
-    padding: 60px;
-    font-style: italic;
-    text-align: center;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-rows: 1fr;
+    grid-template-columns: 100%;
+    gap: 0px 12px;
     background-color: rgb(255, 102, 0);
-    column-count: 3;
-    column-rule: none;
-    list-style: none;
-    font-family: Verdana;
-    color: #f3f3f3;
-
+    padding: 30px;
 }
+
+.carteldecontacto {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 10px 0px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+}
+
 
 .carteldecontacto li {
     text-decoration: none;
     color: white;
+    font-size: 15px;
+    margin: 3px;
 }
 
 .cartel1 {
@@ -373,20 +383,25 @@ li {
 
 /*---- PIE DE PAGINA ----*/
 #piedepagina {
-    padding: 80px;
     background-color: rgb(33, 33, 33);
-    column-count: 4;
-    column-gap: 100px;
-    list-style: none;
-    font-family: Verdana;
+    display: grid;
+    grid-auto-flow: column;
+    padding: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
     color: white;
+    gap: 0px 20px;
+}
+
+.piecolum1 {
+    padding: 20px;
+    text-align: center;
 }
 
 .textopie {
-    font-style: italic;
-    font-size: small;
-    color: white;
+    font-size: 12px;
     text-decoration: none;
+    color: white;
 }
 
 .textopie a {
@@ -394,30 +409,33 @@ li {
     color: white;
 }
 
-.menupie {
-    font-family: Verdana;
+.titulomenupie {
+    padding: 20px;
+    text-align: center;
 }
 
-.titulomenupie {
-    font-style: italic;
-    text-align: center;
+.titulomenupie h4 {
+    font-size: 20px;
 }
 
 .textomenupie {
-    font-size: medium;
-    color: #f3f3f3;
     text-decoration: none;
-    text-align: center;
+    color: white;
+    font-size: 12px;
 }
 
 .newsletter {
-    font-style: italic;
+    padding: 20px;
     text-align: center;
+}
+
+.newsletter h4 {
+    font-size: 20px;
 }
 
 input[type=text],
 input[type=submit] {
-    width: 100%;
+    width: 80%;
     padding: 12px;
     margin: 8px 0;
     display: inline-block;
@@ -436,13 +454,15 @@ input[type=submit]:hover {
 }
 
 .redespie {
-    font-style: italic;
+    padding: 20px;
     text-align: center;
-    margin-top: 30px;
+}
+
+.redespie h4 {
+    font-size: 20px;
 }
 
 .redespie i {
-    margin-top: 20px;
     margin: 20px 0;
     cursor: pointer;
     color: white;
