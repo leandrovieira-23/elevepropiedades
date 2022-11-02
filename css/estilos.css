@@ -151,14 +151,18 @@ span:before {
     grid-template-columns: auto auto auto auto;
     grid-template-rows: 55%;
     align-content: center;
+    padding: 0px 20px 0px 20px;
 }
 
 .formulario {
-    background-color: lightgray;
+    height: 60px;
+    padding: 10px;
 }
 
 .fondopropiedades form {
     background-color: lightgray;
+    height: 60px;
+    padding: 10px;
 }
 
 .fondopropiedades div {
@@ -167,7 +171,12 @@ span:before {
 
 input[type=text],
 select {
+    border: solid lightgrey;
     border-radius: 4px;
+    box-sizing: border-box;
+    width: 100%;
+    height: 40px;
+    display: inline-block;
 
 }
 
@@ -176,7 +185,8 @@ select {
     border: solid lightgrey;
     border-radius: 4px;
     box-sizing: border-box;
-    width: 95%;
+    width: 100%;
+    height: 40px;
     display: inline-block;
 }
 
@@ -191,6 +201,11 @@ select {
 .button:hover {
     background-color: rgb(182, 62, 7);
     cursor: pointer;
+}
+
+.buttonindex {
+    background-color: lightgrey;
+    height: 60px;
 }
 
 /*---- FIN DEL BUSCADOR ----*/
@@ -1359,7 +1374,7 @@ input[type=submit]:hover {
 
 .tituloadmin {
     grid-area: tituloadmin;
-    margin-top: 10%;
+    margin-top: 15%;
     text-align: center;
     font-style: italic;
 }
@@ -1522,7 +1537,7 @@ select {
     cursor: pointer;
 }
 
-.buttonalq{
+.buttonalq {
     background-color: lightgrey;
     height: 60px;
 }
@@ -1613,7 +1628,7 @@ select {
 
 /*----PAGINA CONTACTO -----*/
 .grid-container {
-    padding: 30px;
+    padding: 40px;
     display: grid;
     grid-auto-flow: column;
     grid-template-columns: 50% 50%;
