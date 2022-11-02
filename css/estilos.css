@@ -896,50 +896,28 @@ select {
 }
 
 /*----FIN PAGINA POLITICAS -----*/
+/*---MENU RETORNO---*/
+.index {
+    grid-area: index;
+    text-align: right;
+}
+.index a{
+    text-decoration: none;
+    color: black;
+}
+
+.page {
+    grid-area: page;
+    color:gray;
+}
+
+.index:hover a{
+    border-radius: 5px;
+    color: rgb(255, 102, 0);
+    transition: all 0.5s ease;
+}
+/*---FIN MENU RETORNO---*/
 /*----FIN DISEÑOS DESKTOP -----*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -1784,3 +1762,28 @@ select {
     }
 
 }
+
+
+
+
+.menuretorno {
+    padding: 15px 0 0 0;
+    display: grid;
+    grid-auto-flow: column; 
+    grid-template-columns: 5% 15%;
+    grid-template-rows: 1fr; 
+    gap: 0px 10px;
+    grid-template-areas:
+        "index page";
+    font-family: sans-serif;
+    font-weight: 400;
+    color: red;
+    justify-content: right;
+    font-size: 15px;
+}
+
+
+
+
+
+
