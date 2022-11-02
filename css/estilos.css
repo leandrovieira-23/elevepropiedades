@@ -414,7 +414,7 @@ li {
 }
 
 .textopie {
-    font-size: 12px;
+    font-size: 15px;
     text-decoration: none;
     color: white;
 }
@@ -436,7 +436,7 @@ li {
 .textomenupie {
     text-decoration: none;
     color: white;
-    font-size: 12px;
+    font-size: 16px;
 }
 
 .newsletter {
@@ -505,11 +505,450 @@ input[type=submit]:hover {
 
 /*---- FIN DE FOOTER ----*/
 
-/*----------RESPONSIVE MOBILE COMPLETO-----------*/
+/*----PAGINA QUIENES SOMOS -----*/
+.quienessomosfondo {
+    padding: 20px;
+    font-style: italic;
+    background-color: rgb(255, 102, 0);
+    font-family: Verdana;
+    color: #f3f3f3;
+    height: 180px;
+}
+
+.quienessomos {
+    margin-top: 80px;
+    font-style: oblique;
+    font-size: 25px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #f3f3f3;
+}
+
+.textosomos {
+    padding: 30px;
+    font-family: Verdana;
+    color: black;
+    text-align: justify;
+}
+
+.textosomos h2 {
+    margin-top: 15px;
+}
+
+.textosomos li {
+    list-style: square;
+}
+
+/*----FIN PAGINA QUIENES SOMOS -----*/
+
+/*----PAGINA ADMINISTRACION -----*/
+
+.fondoadm {
+    background-image: url(../img/admin.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    display: grid;
+    grid-auto-flow: column dense;
+    grid-auto-rows: 1fr;
+    grid-template-columns: 100%;
+    gap: 20px 20px;
+}
+
+.porqueadmin {
+    padding: 30px;
+    margin-right: 50%;
+    background-color: rgb(255, 84, 5);
+    opacity: 0.8;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.5fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+        "tituloadmin tituloadmin"
+        "tituloadmin tituloadmin"
+        "cuadro1 cuadro2"
+        "cuadro3 cuadro4";
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.tituloadmin {
+    grid-area: tituloadmin;
+    margin-top: 15%;
+    text-align: center;
+    font-style: italic;
+}
+
+.tituloadmin p {
+    font-size: medium;
+    text-align: justify;
+    margin-top: 15px;
+}
+
+
+.cuadro1 {
+    grid-area: cuadro1;
+    padding: 20px;
+    hyphens: auto;
+    font-size: medium;
+}
+
+.cuadro2 {
+    grid-area: cuadro2;
+    padding: 20px;
+    hyphens: auto;
+    font-size: medium;
+}
+
+.cuadro3 {
+    grid-area: cuadro3;
+    padding: 20px;
+    hyphens: auto;
+    font-size: medium;
+}
+
+.cuadro4 {
+    grid-area: cuadro4;
+    padding: 20px;
+    hyphens: auto;
+    font-size: medium;
+}
+
+.tituloformcontacto {
+    padding: 20px;
+    font-family: Verdana;
+    font-style: italic;
+    font-size: 20px;
+    text-align: center;
+    background-color: rgb(255, 102, 0);
+    color: #f3f3f3;
+}
+
+/*----FIN PAGINA ADMINISTRACION -----*/
+
+/*----PAGINA ALQUILER Y VENTA -----*/
+.mainalquiler {
+    display: grid;
+    background-color: rgb(255, 102, 0);
+    grid-auto-flow: column;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    height: 430px;
+    grid-template-areas:
+        "titulo"
+        "seccion-buscador"
+        "seccion-buscador";
+}
+
+.titulo {
+    padding: 20px;
+    margin-top: 90px;
+    color: white;
+    text-align: center;
+    grid-area: titulo;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+}
+
+.seccion-buscador {
+    background-color: rgb(255, 102, 0);
+    border: 5px solid black;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px 0px;
+    grid-template-areas:
+        "subtitle subtitle subtitle"
+        "wrapper-propiedades wrapper-propiedades wrapper-propiedades"
+        "buscador buscador buscador";
+}
+
+.subtitle {
+    grid-area: subtitle;
+    padding: 10px;
+    font-style: oblique;
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #f3f3f3;
+}
+
+.wrapper-propiedades {
+    grid-area: wrapper-propiedades;
+    color: white;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    font-size: 25px;
+}
+
+.buscador {
+    padding: 20px;
+    grid-area: buscador;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    align-items: center;
+}
+
+.buscador form {
+    background-color: lightgrey;
+    height: 60px;
+    padding: 10px;
+}
+
+.buscador .formularioalquiler {
+    background-color: lightgrey;
+    height: 60px;
+    padding: 10px;
+
+}
+
+.buscador input[type=text],
+select {
+    border: solid lightgrey;
+    border-radius: 4px;
+    box-sizing: border-box;
+    width: 100%;
+    height: 40px;
+    display: inline-block;
+
+}
+
+.buscador input[type=search],
+select {
+    border: solid lightgrey;
+    border-radius: 4px;
+    box-sizing: border-box;
+    width: 100%;
+    height: 40px;
+    display: inline-block;
+}
+
+
+.buscador .buttonalquiler {
+    background-color: rgb(255, 84, 5);
+    color: white;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+.buscador .buttonalquiler:hover {
+    background-color: rgb(182, 62, 7);
+    cursor: pointer;
+}
+
+.buttonalq {
+    background-color: lightgrey;
+    height: 60px;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.df-main {
+    border: 1px;
+    grid-template-columns: 1fr 1fr;
+    width: auto;
+    margin: auto;
+    text-align: left;
+}
+
+.card-index {
+    margin: 20px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.border-card {
+    background-color: lightgrey;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    font-family: Verdana;
+    text-align: center;
+    color: black;
+
+}
+
+.border-card h4 {
+    margin-top: 5%;
+    height: 40px;
+}
+
+
+.bg-card {
+    background-color: lightgrey;
+    color: black;
+    font-family: Verdana;
+    border-left: 1px solid lightgrey;
+    border-right: 1px solid lightgrey;
+    border-top: 1px solid lightgrey;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-bottom: 1px solid lightgrey;
+    width: 320px;
+}
+
+.w-img {
+    width: 320px;
+}
+
+
+.botonprop {
+    background-color: rgb(255, 84, 5);
+    font-family: Verdana;
+    color: #f3f3f3;
+    padding: 10px 15px;
+    margin: 10px;
+    border-color: transparent;
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 15px;
+    font-style: normal;
+    text-decoration: none;
+}
+
+.botonprop:hover {
+    opacity: 0.7;
+}
+
+/*----FIN PAGINA ALQUILER Y VENTA -----*/
+
+/*----PAGINA CONTACTO -----*/
+.grid-container {
+    padding: 40px;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 50% 50%;
+    gap: 0px 20px;
+}
+
+.grid-container>div {
+    padding: 20px;
+}
+
+.tipoform {
+    font-size: 20px;
+    text-align: left;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.tipoform input {
+    width: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+.formcontacto textarea {
+    width: 100%;
+    padding: 15px 10px;
+    font-size: 15px;
+    border-color: lightgray;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    resize: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+/*----FIN PAGINA CONTACTO -----*/
+
+/*---- PAGINA POLITICAS -----*/
+.polprivacidad {
+    padding: 20px;
+    font-style: italic;
+    background-color: rgb(255, 102, 0);
+    font-family: Verdana;
+    color: #f3f3f3;
+    height: 180px;
+}
+
+.polprivacidad h1 {
+    margin-top: 90px;
+    font-style: oblique;
+    font-size: 25px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #f3f3f3;
+}
+
+.politicas {
+    padding: 5%;
+    font-family: Verdana;
+    color: black;
+    text-align: justify;
+}
+
+.politicas h2 {
+    margin-top: 10px;
+    color: black;
+    text-align: left;
+    font-size: 15px;
+}
+
+/*----FIN PAGINA POLITICAS -----*/
+/*----FIN DISEÑOS DESKTOP -----*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*----------INICIO RESPONSIVE MOBILE HASTA 480PX-----------*/
 
 @media screen and (max-width: 480px) {
 
-    /*----------responsive menu y hamburguesa-----------*/
+    /*----------responsive menu y hamburguesa MOBILE-----------*/
     .checkbtn {
         display: block;
     }
@@ -548,42 +987,51 @@ input[type=submit]:hover {
         left: 0;
     }
 
-    /*---- INICIO RESPONSIVE BUSCADOR----*/
+    /*---- PAGINA INDEX RESPONSIVE MOBILE----*/
+    /*---- INICIO RESPONSIVE MOBILE BUSCADOR----*/
     .buscadorfondo {
         padding: 20px;
         font-style: italic;
         background-color: rgb(255, 102, 0);
+        grid-template-rows: 100px 80px 250px;
+        gap: 5px 0px;
         font-family: Verdana;
         color: #f3f3f3;
         height: 500px;
+        width: 100%;
     }
 
     .buscadortitulo {
-        margin-top: 80px;
+        margin-top: 70px;
+    }
+
+    .buscadortitulo h1 {
         text-align: center;
         font-style: oblique;
         font-family: Verdana;
         color: #f3f3f3;
-        font-size: 12px;
+        font-size: 18px;
     }
 
     .wrapper {
-        padding: 40px 0px 30px 0px;
+        margin: auto;
+        align-items: center;
+        padding: 0px;
     }
 
     .wrapper h2 {
-        font-size: 25px;
+        font-size: 22px;
     }
 
     .wrapper p {
-        font-size: 20px;
+        font-size: 18px;
     }
 
     .fondopropiedades {
         margin-top: auto;
         background-color: lightgray;
         border-radius: 10px;
-        display: block !important;
+        display: block;
     }
 
     input[type=text],
@@ -596,42 +1044,39 @@ input[type=submit]:hover {
         border: solid lightgray;
         border-radius: 4px;
         box-sizing: border-box;
-        width: 95%;
+        width: 100%;
         padding: 10px;
         display: inline-block;
     }
 
-    .button {
+    .buttonindex {
         background-color: rgb(255, 84, 5);
         color: white;
         border-radius: 5px;
         text-transform: uppercase;
         font-weight: 300;
-        width: 95% !important;
-        margin: 10px !important;
+        width: 100%;
+        text-align: center;
     }
-
 
     .button:hover {
         background-color: rgb(182, 62, 7);
         cursor: pointer;
     }
 
-    /*---- FIN DEL RESPONSIVE BUSCADOR ----*/
+    /*---- FIN DEL RESPONSIVE MOBILE BUSCADOR ----*/
 
-    /*----INICIO PROPIEDADES DESTACADAS----*/
+    /*----INICIO PROPIEDADES DESTACADAS RESPONSIVE MOBILE ----*/
     .destacadas {
         padding: 30px;
         text-align: center;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         font-size: 18px;
-
     }
 
     #slider {
         height: 500px;
     }
-
 
     .slider {
         border: 1px;
@@ -639,7 +1084,6 @@ input[type=submit]:hover {
         text-align: left;
         margin-left: 100%;
         z-index: 0;
-
     }
 
     #slide1 {
@@ -731,12 +1175,13 @@ input[type=submit]:hover {
     }
 
 
-    /*------- FIN DESTACADAS RESPONSIVE-----*/
+    /*------- FIN DESTACADAS  RESPONSIVE MOBILE -----*/
 
-    /*---- POR QUE CONTACTARNOS RESPONSIVE ----*/
+    /*---- POR QUE CONTACTARNOS RESPONSIVE MOBILE  ----*/
     .porquecontactarnos {
         background-attachment: local;
         background-position-x: center;
+        grid-template-columns: 0% 100%;
     }
 
     .porqueinfo {
@@ -756,22 +1201,25 @@ input[type=submit]:hover {
         margin-top: 8px;
     }
 
-    /*---- FIN POR QUE CONTACTARNOS RESPONSIVE----*/
+    /*---- FIN POR QUE CONTACTARNOS RESPONSIVE MOBILE ----*/
 
-    /*---- CARTEL DE CONTACTO RESPONSIVE----*/
+    /*---- CARTEL DE CONTACTO RESPONSIVE MOBILE ----*/
     #cartelcontacto {
         padding: 0;
         position: relative;
-        display: inline;
-        color: white;
+        display: grid;
+        grid-auto-flow: row;
+        grid-template-rows: 100px 100px 100px;
+        background-color: rgb(255, 102, 0);
+        height: 450px;
     }
 
     .carteldecontacto {
         text-align: center;
         text-decoration: none;
         font-style: italic;
-        background-color: rgb(255, 84, 5);
         padding: 30px;
+        grid-template-columns: none;
     }
 
     #cartelcontacto li {
@@ -787,13 +1235,17 @@ input[type=submit]:hover {
         text-decoration: none;
     }
 
-    /*---- FIN CARTEL DE CONTACTO RESPONSIVE----*/
+    /*---- FIN CARTEL DE CONTACTO RESPONSIVE MOBILE ----*/
 
-    /*---- PIE DE PAGINA RESPONSIVE----*/
+    /*---- PIE DE PAGINA RESPONSIVE MOBILE ----*/
     #piedepagina {
         padding: 0;
         position: relative;
         display: inline;
+        display: grid;
+        grid-auto-flow: row;
+        background-color: rgb(33, 33, 33);
+
     }
 
     .piedepagina {
@@ -801,11 +1253,10 @@ input[type=submit]:hover {
         text-align: center;
         text-decoration: none;
         font-style: italic;
-        background-color: rgb(33, 33, 33);
     }
 
     .logopie {
-        padding: 40px 20px 10px 20px;
+        padding: 20px 20px 10px 20px;
     }
 
     .textopie {
@@ -820,16 +1271,14 @@ input[type=submit]:hover {
     }
 
     .titulomenupie {
-        margin-top: 40px;
         font-size: 20px;
     }
 
     .textomenupie {
-        font-size: 12px;
+        font-size: 15px;
     }
 
     .newsletter {
-        margin-top: 40px;
         font-size: 20px;
     }
 
@@ -856,7 +1305,6 @@ input[type=submit]:hover {
     }
 
     .redespie {
-        margin-top: 30px;
         font-size: 20px;
     }
 
@@ -865,10 +1313,10 @@ input[type=submit]:hover {
         margin: 20px 0;
     }
 
-    /*---- FIN PIE DE PAGINA RESPONSIVE----*/
-    /*---- FIN DEL MAIN RESPONSIVE----*/
+    /*---- FIN PIE DE PAGINA RESPONSIVE MOBILE ----*/
+    /*---- FIN DEL MAIN RESPONSIVE MOBILE ----*/
 
-    /*---- FOOTER RESPONSIVE----*/
+    /*---- FOOTER RESPONSIVE MOBILE ----*/
     .footer {
         background-color: black;
         padding: 30px;
@@ -883,7 +1331,7 @@ input[type=submit]:hover {
         color: rgb(255, 254, 254);
     }
 
-    /*---- FIN DE FOOTER RESPONSIVE----*/
+    /*---- FIN DE FOOTER RESPONSIVE MOBILE ----*/
 
     /*----PAGINA QUIENES SOMOS RESPOSIVE MOBILE -----*/
 
@@ -893,14 +1341,109 @@ input[type=submit]:hover {
         background-color: rgb(255, 102, 0);
         font-family: Verdana;
         color: #f3f3f3;
-        height: 210px;
+        height: 200px;
     }
 
     /*---- FIN PAGINA QUIENES SOMOS RESPOSIVE MOBILE -----*/
 
-    /*-----pagina contacto resposive mobile----*/
+    /*----PAGINA ADMINISTRACION RESPONSIVE MOBILE -----*/
+    .fondoadm {
+        background-image: url(/img/admin.jpg);
+        background-attachment: local;
+        background-position-x: center;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr;
+        grid-auto-rows: 1fr;
+        gap: 9px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "porqueadmin";
+        width: 100%;
+    }
+
+    .porqueadmin {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 2fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "tituloadmin"
+            "cuadro1"
+            "cuadro2"
+            "cuadro3"
+            "cuadro4";
+        grid-area: porqueadmin;
+    }
+
+    .tituloadmin {
+        grid-area: tituloadmin;
+        margin-top: 60px;
+        text-align: center;
+    }
+
+    .cuadro1 {
+        grid-area: cuadro1;
+        padding: 0;
+        margin-top: 20px;
+        text-align: justify;
+    }
+
+    .cuadro2 {
+        grid-area: cuadro2;
+        padding: 0;
+        margin-top: 20px;
+        text-align: justify;
+    }
+
+    .cuadro3 {
+        grid-area: cuadro3;
+        padding: 0;
+        margin-top: 20px;
+        text-align: justify;
+    }
+
+    .cuadro4 {
+        grid-area: cuadro4;
+        padding: 0;
+        margin-top: 20px;
+        text-align: justify;
+    }
+
+    /*----FIN PAGINA ADMINISTRACION RESPONSIVE MOBILE -----*/
+
+    /*----PAGINA ALQUILER Y VENTA RESPONSIVE MOBILE -----*/
+    .mainalquiler {
+        height: 600px;
+    }
+
+    .titulo {
+        margin-top: 80px;
+        font-size: 12px;
+    }
+
+    .subtitle {
+        font-size: 12px;
+    }
+
+    .wrapper-propiedades {
+        font-size: 15px;
+    }
+
+    .buscador {
+        display: block;
+    }
+
+    .buscador .buttonalq {
+        text-align: center;
+    }
+
+    /*----FIN PAGINA ALQUILER Y VENTA RESPONSIVE MOBILE -----*/
+
+    /*----PAGINA CONTACTO RESPONSIVE MOBILE -----*/
     .grid-container {
-        display: block !important;
         grid-auto-flow: column;
         grid-template-columns: auto;
         grid-template-rows: auto auto;
@@ -908,38 +1451,13 @@ input[type=submit]:hover {
         padding: 10px;
     }
 
-    .fondoadm {
-
-        background-image: url(/img/admin.jpg);
-        background-attachment: local;
-        background-position-x: center;
-    }
-
-    .porqueadmin {
-        padding: 30px;
-        width: 100%;
-        background-color: rgb(255, 84, 5);
-        opacity: 0.8;
-        color: white;
-        font-family: verdana;
-    }
-
-    .tituloadmin {
-        margin-top: 20%;
-        margin-bottom: 10px;
-        text-align: center;
-        font-style: italic;
-    }
-
-    .subtituloadmin {
-        padding: 8%;
-        hyphens: auto;
-    }
+    /*----FIN PAGINA CONTACTO RESPONSIVE MOBILE -----*/
 
 }
 
+/*----------FIN RESPONSIVE MOBILE HASTA 480PX-----------*/
 
-/*----RESPONSIVE TABLET O IPAD----*/
+/*----INICIO RESPONSIVE TABLET O IPAD 481 A 980----*/
 
 @media screen and (min-width: 481px) and (max-width: 980px) {
 
@@ -987,19 +1505,20 @@ input[type=submit]:hover {
         padding: 20px;
         font-style: italic;
         background-color: rgb(255, 102, 0);
+        grid-template-rows: 100px 120px 250px;
+        gap: 5px 0px;
         font-family: Verdana;
         color: #f3f3f3;
-        height: 550px;
+        height: 520px;
+        width: 100%;
     }
 
     .buscadortitulo {
-        margin-top: 80px;
-        font-style: oblique;
+        margin-top: 70px;
         text-align: center;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        color: #f3f3f3;
-        font-size: 17px;
+        font-size: 18px;
     }
+
 
     .wrapper {
         padding: 40px 0px 30px 0px;
@@ -1169,7 +1688,7 @@ input[type=submit]:hover {
 
     .porqueinfo {
         padding: 30px;
-        margin-left: 50%;
+        margin-left: 0%;
         background-color: rgb(255, 84, 5);
         opacity: 0.8;
         color: white;
@@ -1221,480 +1740,45 @@ input[type=submit]:hover {
 
     /*---- PIE DE PAGINA RESPONSIVE----*/
     #piedepagina {
-        padding: 0;
-        position: relative;
-        display: inline;
-    }
-
-    .piedepagina {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 15px 0px;
+        grid-template-areas:
+            "piecolum1 titulomenupie"
+            "newsletter redespie";
+        background-color: rgb(33, 33, 33);
         color: white;
         text-align: center;
         text-decoration: none;
         font-style: italic;
-        background-color: rgb(33, 33, 33);
+
     }
 
-    .logopie {
-        padding: 40px 20px 10px 20px;
+    .piecolum1 {
+        grid-area: piecolum1;
     }
 
-    .textopie {
-        font-size: 12px;
-        color: white;
-        text-decoration: none;
-    }
-
-    .textopie a {
-        color: white;
-        text-decoration: none;
+    .piecolum1 .textopie {
+        font-size: 15px;
     }
 
     .titulomenupie {
-        margin-top: 40px;
-        font-size: 20px;
-    }
-
-    .textomenupie {
-        font-size: 12px;
+        grid-area: titulomenupie;
     }
 
     .newsletter {
-        margin-top: 40px;
-        font-size: 20px;
-    }
-
-    .newsletter input[type=text],
-    input[type=submit] {
-        width: 70%;
-        padding: 12px;
-        margin: 8px 0;
-        display: inline-block;
-        border: 1px solid #ccc;
-        box-sizing: border-box;
-    }
-
-    .newsletter input[type=submit] {
-        background-color: rgb(255, 84, 5);
-        color: white;
-        border: none;
-        text-transform: uppercase;
-        font-weight: 300;
-    }
-
-    .newsletter input[type=submit]:hover {
-        opacity: 0.8;
+        grid-area: newsletter;
     }
 
     .redespie {
-        margin-top: 30px;
-        font-size: 20px;
+        grid-area: redespie;
     }
 
-    .redespie i {
-        margin-top: 20px;
-        margin: 20px 0;
-    }
 
-    /*-----pagina contacto ipad resposive----*/
-    .grid-container {
-        display: block !important;
-        grid-auto-flow: column;
-        grid-template-columns: auto;
-        grid-template-rows: auto auto;
-        column-gap: 10px;
-        padding: 10px;
-    }
-
+/*-----pagina administracion ipad resposive----*/
+.porqueadmin{
+    margin-right: 0;
 }
 
-
-
-
-
-/*----PAGINA QUIENES SOMOS -----*/
-.quienessomosfondo {
-    padding: 20px;
-    font-style: italic;
-    background-color: rgb(255, 102, 0);
-    font-family: Verdana;
-    color: #f3f3f3;
-    height: 180px;
 }
-
-.quienessomos {
-    margin-top: 80px;
-    font-style: oblique;
-    font-size: 25px;
-    text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: #f3f3f3;
-}
-
-.textosomos {
-    padding: 30px;
-    font-family: Verdana;
-    color: black;
-    text-align: justify;
-}
-
-/*----FIN PAGINA QUIENES SOMOS -----*/
-
-
-/*----PAGINA ADMINISTRACION -----*/
-
-.fondoadm {
-    background-image: url(../img/admin.jpg);
-    background-attachment: fixed;
-    background-size: cover;
-    display: grid;
-    grid-auto-flow: column dense;
-    grid-auto-rows: 1fr;
-    grid-template-columns: 100%;
-    gap: 20px 20px;
-}
-
-.porqueadmin {
-    padding: 30px;
-    margin-right: 50%;
-    background-color: rgb(255, 84, 5);
-    opacity: 0.8;
-    color: white;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0.5fr 1fr 1fr 1fr;
-    gap: 0px 0px;
-    grid-template-areas:
-        "tituloadmin tituloadmin"
-        "tituloadmin tituloadmin"
-        "cuadro1 cuadro2"
-        "cuadro3 cuadro4";
-    grid-area: 1 / 1 / 2 / 2;
-}
-
-.tituloadmin {
-    grid-area: tituloadmin;
-    margin-top: 15%;
-    text-align: center;
-    font-style: italic;
-}
-
-.tituloadmin p {
-    font-size: medium;
-    text-align: justify;
-    margin-top: 15px;
-}
-
-
-.cuadro1 {
-    grid-area: cuadro1;
-    padding: 20px;
-    hyphens: auto;
-    font-size: medium;
-}
-
-.cuadro2 {
-    grid-area: cuadro2;
-    padding: 20px;
-    hyphens: auto;
-    font-size: medium;
-}
-
-.cuadro3 {
-    grid-area: cuadro3;
-    padding: 20px;
-    hyphens: auto;
-    font-size: medium;
-}
-
-.cuadro4 {
-    grid-area: cuadro4;
-    padding: 20px;
-    hyphens: auto;
-    font-size: medium;
-}
-
-.tituloformcontacto {
-    padding: 20px;
-    font-family: Verdana;
-    font-style: italic;
-    font-size: 20px;
-    text-align: center;
-    background-color: rgb(255, 102, 0);
-    color: #f3f3f3;
-}
-
-/*----FIN PAGINA ADMINISTRACION -----*/
-
-/*----PAGINA ALQUILER Y VENTA -----*/
-.mainalquiler {
-    display: grid;
-    background-color: rgb(255, 102, 0);
-    grid-auto-flow: column dense;
-    grid-template-columns: 100%;
-    grid-template-rows: 1fr 1fr 1fr;
-    gap: 0px 0px;
-    height: 430px;
-    grid-template-areas:
-        "titulo"
-        "seccion-buscador"
-        "seccion-buscador";
-}
-
-.titulo {
-    padding: 20px;
-    margin-top: 90px;
-    color: white;
-    text-align: center;
-    grid-area: titulo;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-style: italic;
-}
-
-.seccion-buscador {
-    background-color: rgb(255, 102, 0);
-    border: 5px solid black;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 10px 0px;
-    grid-template-areas:
-        "subtitle subtitle subtitle"
-        "wrapper-propiedades wrapper-propiedades wrapper-propiedades"
-        "buscador buscador buscador";
-}
-
-.subtitle {
-    grid-area: subtitle;
-    padding: 10px;
-    font-style: oblique;
-    font-size: 15px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: #f3f3f3;
-}
-
-.wrapper-propiedades {
-    grid-area: wrapper-propiedades;
-    color: white;
-    text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-style: italic;
-    font-size: 25px;
-}
-
-.buscador {
-    padding: 20px;
-    grid-area: buscador;
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    align-items: center;
-}
-
-.buscador form {
-    background-color: lightgrey;
-    height: 60px;
-    padding: 10px;
-}
-
-.buscador .formularioalquiler {
-    background-color: lightgrey;
-    height: 60px;
-    padding: 10px;
-
-}
-
-.buscador input[type=text],
-select {
-    border: solid lightgrey;
-    border-radius: 4px;
-    box-sizing: border-box;
-    width: 100%;
-    height: 40px;
-    display: inline-block;
-
-}
-
-.buscador input[type=search],
-select {
-    border: solid lightgrey;
-    border-radius: 4px;
-    box-sizing: border-box;
-    width: 100%;
-    height: 40px;
-    display: inline-block;
-}
-
-
-.buscador .buttonalquiler {
-    background-color: rgb(255, 84, 5);
-    color: white;
-    border-radius: 5px;
-    text-transform: uppercase;
-    font-weight: 300;
-}
-
-.buscador .buttonalquiler:hover {
-    background-color: rgb(182, 62, 7);
-    cursor: pointer;
-}
-
-.buttonalq {
-    background-color: lightgrey;
-    height: 60px;
-}
-
-
-
-
-
-.main {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.df-main {
-    border: 1px;
-    grid-template-columns: 1fr 1fr;
-    width: auto;
-    margin: auto;
-    text-align: left;
-}
-
-.card-index {
-    margin: 20px;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-}
-
-.border-card {
-    background-color: lightgrey;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-    font-family: Verdana;
-    text-align: center;
-    color: black;
-
-}
-
-.border-card h4 {
-    margin-top: 5%;
-    height: 40px;
-}
-
-
-.bg-card {
-    background-color: lightgrey;
-    color: black;
-    font-family: Verdana;
-    border-left: 1px solid lightgrey;
-    border-right: 1px solid lightgrey;
-    border-top: 1px solid lightgrey;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
-    border-bottom: 1px solid lightgrey;
-    width: 320px;
-}
-
-.w-img {
-    width: 320px;
-}
-
-
-.botonprop {
-    background-color: rgb(255, 84, 5);
-    font-family: Verdana;
-    color: #f3f3f3;
-    padding: 10px 15px;
-    margin: 10px;
-    border-color: transparent;
-    border-radius: 10px;
-    font-weight: 500;
-    font-size: 15px;
-    font-style: normal;
-    text-decoration: none;
-}
-
-.botonprop:hover {
-    opacity: 0.7;
-}
-
-/*----FIN PAGINA ALQUILER Y VENTA -----*/
-
-/*----PAGINA CONTACTO -----*/
-.grid-container {
-    padding: 40px;
-    display: grid;
-    grid-auto-flow: column;
-    grid-template-columns: 50% 50%;
-    gap: 0px 20px;
-}
-
-.grid-container>div {
-    padding: 20px;
-}
-
-.tipoform {
-    font-size: 20px;
-    text-align: left;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-.tipoform input {
-    width: 100%;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-
-.formcontacto textarea {
-    width: 100%;
-    padding: 15px 10px;
-    font-size: 15px;
-    border-color: lightgray;
-    margin-bottom: 20px;
-    border-radius: 3px;
-    resize: none;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-
-}
-
-/*----FIN PAGINA CONTACTO -----*/
-
-/*---- PAGINA POLITICAS -----*/
-.polprivacidad{
-    padding: 20px;
-    font-style: italic;
-    background-color: rgb(255, 102, 0);
-    font-family: Verdana;
-    color: #f3f3f3;
-    height: 180px;
-}
-
-.polprivacidad h1 {
-    margin-top: 90px;
-    font-style: oblique;
-    font-size: 25px;
-    text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: #f3f3f3;
-}
-
-.politicas {
-    padding: 5%;
-    font-family: Verdana;
-    color: black;
-    text-align: justify;
-}
-.politicas h2 {
-    margin-top: 10px;
-    color: black;
-    text-align: left;
-    font-size: 15px;
-}
-
-/*----FIN PAGINA POLITICAS -----*/
