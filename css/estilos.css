@@ -326,7 +326,7 @@ li {
     display: grid;
     grid-auto-flow: column;
     grid-template-columns: 50% 50%;
-    background-image: url(../img/Casa-nueva-casa-antigua.webp);
+    background-image: url(../img/Casa-nueva-casa-antigua.jpg);
     background-size: cover;
     height: 400px;
 }
@@ -1348,7 +1348,7 @@ select {
 
     /*----PAGINA ADMINISTRACION RESPONSIVE MOBILE -----*/
     .fondoadm {
-        background-image: url(/img/admin.jpg);
+        background-image: url(../img/admin.jpg);
         background-attachment: local;
         background-position-x: center;
         display: grid;
