@@ -1452,7 +1452,9 @@ select {
     }
 
     /*----FIN PAGINA CONTACTO RESPONSIVE MOBILE -----*/
-
+    .polprivacidad h1 {
+        font-size: 20px;
+    }
 }
 
 /*----------FIN RESPONSIVE MOBILE HASTA 480PX-----------*/
@@ -1776,9 +1778,9 @@ select {
     }
 
 
-/*-----pagina administracion ipad resposive----*/
-.porqueadmin{
-    margin-right: 0;
-}
+    /*-----pagina administracion ipad resposive----*/
+    .porqueadmin {
+        margin-right: 0;
+    }
 
 }
