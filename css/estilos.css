@@ -869,7 +869,21 @@ input[type=submit]:hover {
     }
 
     /*---- FIN DE FOOTER RESPONSIVE----*/
-    /*-----pagina contacto resposive----*/
+
+    /*----PAGINA QUIENES SOMOS RESPOSIVE MOBILE -----*/
+
+    .quienessomosfondo {
+        padding: 20px;
+        font-style: italic;
+        background-color: rgb(255, 102, 0);
+        font-family: Verdana;
+        color: #f3f3f3;
+        height: 210px;
+    }
+
+    /*---- FIN PAGINA QUIENES SOMOS RESPOSIVE MOBILE -----*/
+
+    /*-----pagina contacto resposive mobile----*/
     .grid-container {
         display: block !important;
         grid-auto-flow: column;
@@ -1309,28 +1323,19 @@ input[type=submit]:hover {
 }
 
 /*----FIN PAGINA QUIENES SOMOS -----*/
-/*----PAGINA QUIENES SOMOS RESPOSIVE MOBILE -----*/
 
-@media screen and (max-width: 480px) {
-    .quienessomosfondo {
-        padding: 20px;
-        font-style: italic;
-        background-color: rgb(255, 102, 0);
-        font-family: Verdana;
-        color: #f3f3f3;
-        height: 210px;
-    }
-}
-
-/*---- FIN PAGINA QUIENES SOMOS RESPOSIVE MOBILE -----*/
 
 /*----PAGINA ADMINISTRACION -----*/
+
 .fondoadm {
-    position: relative;
-    background-image: url(/img/admin.jpg);
+    background-image: url(../img/admin.jpg);
     background-attachment: fixed;
     background-size: cover;
-    text-align: center;
+    display: grid;
+    grid-auto-flow: column dense;
+    grid-auto-rows: 1fr;
+    grid-template-columns: 100%;
+    gap: 20px 20px;
 }
 
 .porqueadmin {
@@ -1339,45 +1344,75 @@ input[type=submit]:hover {
     background-color: rgb(255, 84, 5);
     opacity: 0.8;
     color: white;
-    font-family: verdana;
-    text-align: justify;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.5fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+        "tituloadmin tituloadmin"
+        "tituloadmin tituloadmin"
+        "cuadro1 cuadro2"
+        "cuadro3 cuadro4";
+    grid-area: 1 / 1 / 2 / 2;
 }
 
 .tituloadmin {
-    margin-top: 15%;
-    margin-bottom: 10px;
+    grid-area: tituloadmin;
+    margin-top: 10%;
     text-align: center;
     font-style: italic;
 }
 
-.columnadmin {
-    column-count: 2;
+.tituloadmin p {
+    font-size: medium;
+    text-align: justify;
+    margin-top: 15px;
 }
 
-.subtituloadmin {
-    padding: 10%;
+
+.cuadro1 {
+    grid-area: cuadro1;
+    padding: 20px;
     hyphens: auto;
+    font-size: medium;
 }
 
-.subtituloadmin p {
-    font-size: small;
+.cuadro2 {
+    grid-area: cuadro2;
+    padding: 20px;
+    hyphens: auto;
+    font-size: medium;
+}
+
+.cuadro3 {
+    grid-area: cuadro3;
+    padding: 20px;
+    hyphens: auto;
+    font-size: medium;
+}
+
+.cuadro4 {
+    grid-area: cuadro4;
+    padding: 20px;
+    hyphens: auto;
+    font-size: medium;
 }
 
 .tituloformcontacto {
-    font-size: large;
     padding: 20px;
-    font-style: oblique;
     font-family: Verdana;
     font-style: italic;
+    font-size: 20px;
     text-align: center;
     background-color: rgb(255, 102, 0);
     color: #f3f3f3;
 }
 
-
 /*----FIN PAGINA ADMINISTRACION -----*/
 
 /*----PAGINA ALQUILER Y VENTA -----*/
+
 .propiedadesfondo {
     padding: 20px;
     font-style: italic;
@@ -1572,10 +1607,11 @@ select {
 
 /*----PAGINA CONTACTO -----*/
 .grid-container {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    column-gap: 10px;
-    padding: 10px;
+    padding: 30px;
+    display: grid; 
+    grid-auto-flow: column; 
+    grid-template-columns: 50% 50%; 
+    gap: 0px 20px; 
 }
 
 .grid-container>div {
@@ -1588,11 +1624,11 @@ select {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.formcontacto {
+.tipoform input{
     width: 100%;
-    margin: auto;
-    font-style: verdana;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
 
 .formcontacto textarea {
     width: 100%;
@@ -1602,6 +1638,8 @@ select {
     margin-bottom: 20px;
     border-radius: 3px;
     resize: none;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+
 }
 
 /*----FIN PAGINA CONTACTO -----*/
@@ -1616,10 +1654,3 @@ select {
 }
 
 /*----FIN PAGINA POLITICAS -----*/
-
-
-
-
-
-
-/*----PAGINA ADMINISTRACION -----*/
