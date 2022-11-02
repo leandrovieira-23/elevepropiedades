@@ -1412,118 +1412,124 @@ input[type=submit]:hover {
 /*----FIN PAGINA ADMINISTRACION -----*/
 
 /*----PAGINA ALQUILER Y VENTA -----*/
-
-.propiedadesfondo {
-    padding: 20px;
-    font-style: italic;
-    background-color: rgb(255, 102, 0);
-    font-family: Verdana;
-    color: #f3f3f3;
-    height: 180px;
-}
-
-.titulopropiedades {
-    margin-top: 80px;
-    font-style: oblique;
-    font-size: 25px;
-    text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: #f3f3f3;
-}
-
-.buscadorfondoprop {
-    padding: 20px;
-    font-style: italic;
-    background-color: rgb(255, 102, 0);
-    font-family: Verdana;
-    color: #f3f3f3;
-    height: 230px;
-    border: double black;
-}
-
-.buscadortituloprop {
-    font-style: oblique;
-    font-size: 20px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: #f3f3f3;
-}
-
-.wrapper-prop {
-    padding: 20px 0px 20px 0px;
-}
-
-.wrapper-prop h3 {
-    text-align: center;
-    color: white;
-    font-size: 30px;
-}
-
-.wrapper-prop p {
-    text-align: center;
-    font-size: 15px;
-}
-
-span:before {
-    content: '';
-    animation: animate infinite 4s;
-    color: rgb(42, 146, 42);
-}
-
-@keyframes animate {
-    0% {
-        content: ' QUERES'
-    }
-
-    50% {
-        content: ' BUSCAS'
-    }
-
-    100% {
-        content: ' SOÑAS'
-    }
-
-}
-
-.fondopropiedadesalqventa {
-    background-color: lightgray;
-    border-radius: 10px;
+.mainalquiler {
     display: grid;
-    margin-top: auto;
+    background-color: rgb(255, 102, 0);
+    grid-auto-flow: column dense;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    height: 430px;
+    grid-template-areas:
+        "titulo"
+        "seccion-buscador"
+        "seccion-buscador";
+}
+
+.titulo {
+    padding: 20px;
+    margin-top: 90px;
+    color: white;
+    text-align: center;
+    grid-area: titulo;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+}
+
+.seccion-buscador {
+    background-color: rgb(255, 102, 0);
+    border: 5px solid black;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px 0px;
+    grid-template-areas:
+        "subtitle subtitle subtitle"
+        "wrapper-propiedades wrapper-propiedades wrapper-propiedades"
+        "buscador buscador buscador";
+}
+
+.subtitle {
+    grid-area: subtitle;
+    padding: 10px;
+    font-style: oblique;
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #f3f3f3;
+}
+
+.wrapper-propiedades {
+    grid-area: wrapper-propiedades;
+    color: white;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    font-size: 25px;
+}
+
+.buscador {
+    padding: 20px;
+    grid-area: buscador;
+    display: grid;
     grid-template-columns: auto auto auto auto;
+    align-items: center;
 }
 
-
-input[type=text],
-select {
-    border-radius: 4px;
+.buscador form {
+    background-color: lightgrey;
+    height: 60px;
+    padding: 10px;
 }
 
-input[type=search],
+.buscador .formularioalquiler {
+    background-color: lightgrey;
+    height: 60px;
+    padding: 10px;
+
+}
+
+.buscador input[type=text],
 select {
     border: solid lightgrey;
     border-radius: 4px;
     box-sizing: border-box;
-    width: 95%;
-    padding: 10px !important;
-    margin: 10px !important;
+    width: 100%;
+    height: 40px;
     display: inline-block;
 
 }
 
-.button {
+.buscador input[type=search],
+select {
+    border: solid lightgrey;
+    border-radius: 4px;
+    box-sizing: border-box;
+    width: 100%;
+    height: 40px;
+    display: inline-block;
+}
+
+
+.buscador .buttonalquiler {
     background-color: rgb(255, 84, 5);
     color: white;
     border-radius: 5px;
     text-transform: uppercase;
     font-weight: 300;
-    width: 90% !important;
-    margin: 10px !important;
 }
 
-.button:hover {
+.buscador .buttonalquiler:hover {
     background-color: rgb(182, 62, 7);
     cursor: pointer;
 }
+
+.buttonalq{
+    background-color: lightgrey;
+    height: 60px;
+}
+
+
+
+
 
 .main {
     display: flex;
@@ -1608,10 +1614,10 @@ select {
 /*----PAGINA CONTACTO -----*/
 .grid-container {
     padding: 30px;
-    display: grid; 
-    grid-auto-flow: column; 
-    grid-template-columns: 50% 50%; 
-    gap: 0px 20px; 
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 50% 50%;
+    gap: 0px 20px;
 }
 
 .grid-container>div {
@@ -1624,7 +1630,7 @@ select {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.tipoform input{
+.tipoform input {
     width: 100%;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -1638,7 +1644,7 @@ select {
     margin-bottom: 20px;
     border-radius: 3px;
     resize: none;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 
 }
 

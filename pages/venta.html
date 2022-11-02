@@ -50,58 +50,58 @@
 
     <!--INICIO DEL MAIN-->
     <main>
-        <!--propiedades alquiler-->
-        <section class="propiedadesfondo">
-            <div class="titulopropiedades">
-                <h1>PROPIEDADES EN ALQUILER</h1>
-            </div>
-        </section>
-
+        <!--propiedades venta-->
         <!--BUSCADOR DE PROPIEDADES-->
-        <section class="buscadorfondoprop">
-            <div class="buscadortituloprop">
-                <h2>BUSCADOR DE PROPIEDADES</h2>
+        <div class="mainalquiler">
+            <div class="titulo">
+                <h1>PROPIEDADES EN VENTA</h1>
             </div>
-            <div class="wrapper-prop">
-                <h3>EL LUGAR QUE<span></span></h3>
-                <p>ENCONTRALO ACA:</p>
-            </div>
-            <div class="fondopropiedadesalqventa">
-                <div class="formulario">
-                <label for="operacion"></label>
-                <select name="operacion" id="operacion">
-                    <option hidden selected>Operación</option>
-                    <option value="Venta">Venta</option>
-                    <option value="Alquiler">Alquiler</option>
-                    <option value="Alquiler Temporario">Alquiler Temporario</option>
-                </select>
-            </div>
-            <div>
-                <label for="tipopropiedad"></label>
-                <select name="tipopropiedad" id="tipopropiedad">
-                    <option hidden selected>Tipo de Propiedad</option>
-                    <option value="casa">Casa</option>
-                    <option value="cochera">Cochera</option>
-                    <option value="departamento">Departamento</option>
-                    <option value="deposito">Deposito</option>
-                    <option value="galpón">Galpón</option>
-                    <option value="localcomercial">Local Comercial</option>
-                    <option value="oficinas">Oficina</option>
-                    <option value="PH">PH</option>
-                    <option value="terrenolote">Terreno o Lote</option>
-                </select>
-            </div>
-            <form class="formulario" call="button" action="../../form-result.php" method="get" target="_blank">
-                <div class="col">
-                    <input type="search" name="busqueda" placeholder="Ubicación o palabra clave">
+            <div class="seccion-buscador">
+                <div class="subtitle">
+                    <h2>BUSCADOR DE PROPIEDADES</h2>
                 </div>
-            </form>
-            <div class="col">
-                <input type="submit" value="Buscar" class="button">
+                <div class="wrapper-propiedades">
+                    <h2>EL LUGAR QUE<span></span></h2>
+                    <p>ENCONTRALO ACA:</p>
+                </div>
+                <div class="buscador">
+                    <div class="formularioalquiler">
+                        <label for="operacion"></label>
+                        <select name="operacion" id="operacion">
+                            <option hidden selected>Operación</option>
+                            <option value="Venta">Venta</option>
+                            <option value="Alquiler">Alquiler</option>
+                            <option value="Alquiler Temporario">Alquiler Temporario</option>
+                        </select>
+                    </div>
+                    <div class="formularioalquiler">
+                        <label for="tipopropiedad"></label>
+                        <select name="tipopropiedad" id="tipopropiedad">
+                            <option hidden selected>Tipo de Propiedad</option>
+                            <option value="casa">Casa</option>
+                            <option value="cochera">Cochera</option>
+                            <option value="departamento">Departamento</option>
+                            <option value="deposito">Deposito</option>
+                            <option value="galpón">Galpón</option>
+                            <option value="localcomercial">Local Comercial</option>
+                            <option value="oficinas">Oficina</option>
+                            <option value="PH">PH</option>
+                            <option value="terrenolote">Terreno o Lote</option>
+                        </select>
+                    </div>
+                    <form call="button" action="../../form-result.php" method="get" target="_blank">
+                        <div class="buscaralquiler">
+                            <input type="search" name="busqueda" placeholder="Ubicación o palabra clave">
+                        </div>
+                    </form>
+                    <div class="buttonalq">
+                        <input type="submit" value="Buscar" class="buttonalquiler">
+                    </div>
+                </div>
             </div>
         </div>
-        </div>
-    </section>
+
+        <!--FIN BUSCADOR DE PROPIEDADES-->
 
         <!--propiedades venta-->
         <section class="main">
