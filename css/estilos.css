@@ -897,25 +897,43 @@ select {
 
 /*----FIN PAGINA POLITICAS -----*/
 /*---MENU RETORNO---*/
+.menuretorno {
+    padding: 15px 0 0 0;
+    display: grid;
+    grid-auto-flow: column; 
+    grid-template-columns: 5% 15%;
+    grid-template-rows: 1fr; 
+    gap: 0px 10px;
+    grid-template-areas:
+        "index page";
+    font-family: sans-serif;
+    font-weight: 400;
+    color: red;
+    justify-content: right;
+    font-size: 15px;
+}
+
 .index {
     grid-area: index;
     text-align: right;
 }
-.index a{
+
+.index a {
     text-decoration: none;
     color: black;
 }
 
 .page {
     grid-area: page;
-    color:gray;
+    color: gray;
 }
 
-.index:hover a{
+.index:hover a {
     border-radius: 5px;
     color: rgb(255, 102, 0);
     transition: all 0.5s ease;
 }
+
 /*---FIN MENU RETORNO---*/
 /*----FIN DISEÑOS DESKTOP -----*/
 
@@ -1766,24 +1784,51 @@ select {
 
 
 
-.menuretorno {
-    padding: 15px 0 0 0;
-    display: grid;
-    grid-auto-flow: column; 
-    grid-template-columns: 5% 15%;
-    grid-template-rows: 1fr; 
-    gap: 0px 10px;
-    grid-template-areas:
-        "index page";
-    font-family: sans-serif;
-    font-weight: 400;
-    color: red;
-    justify-content: right;
-    font-size: 15px;
+
+
+
+
+
+
+.whatsapp {
+    position:fixed;
+    width:50px;
+    height:50px;
+    bottom:5px;
+    right:18px;
+    background-color:#25d366;
+    color:#FFF;
+    border-radius:50px;
+    text-align:center;
+    font-size:30px;
+    z-index:100;
+  }
+  
+  .whatsapp-icon {
+    margin-top:10px;
+  }
+
+
+
+/* IR AL TOP */
+
+.back-to-top {
+    position: fixed;
+    display: none;
+    background: rgb(255, 102, 0);
+    border: 2px solid white;
+    color: #fff;
+    width: 44px;
+    height: 44px;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 50%;
+    right: 20px;
+    bottom: 60px;
+    transition: all 0.5s;
 }
 
-
-
-
-
-
+.back-to-top i {
+    padding-top: 12px;
+    color: #fff;
+}
