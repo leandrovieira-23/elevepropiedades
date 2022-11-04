@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcout icon" href="./images/favicon-32x32.png">
+    <link rel="shortcout icon" href="../images/favicon-32x32.png">
     <link rel="stylesheet" href="../css/estilos.css">
     <title>Eleve Negocios Inmobiliarios</title>
     <script src="https://kit.fontawesome.com/11d6824348.js" crossorigin="anonymous"></script>
@@ -57,89 +57,74 @@
     <!--FIN DEL HEADER-->
 
 
-
-    <!--por que elegirnos?-->
+    <!--INICIO DEL MAIN-->
     <main>
-        <section class="fondoadm">
-            <div class="porqueadmin">
-                <div class="tituloadmin">
-                    <h1>¿POR QUE ELEGIRNOS?</h1>
-                    <p> Somos una empresa con basta experiencia en el mercado. Nos enfocamos en aprender y evolucionar
-                        constantemente adaptándonos, incluso, a las nuevas normativas. Garantizamos absoluta confiabilidad y profesionalismo. Contamos con un equipo de profesionales dedicados a brindar soluciones posibles a cada caso concreto.
-                    </p>
+        <!--propiedades alquiler-->
+        <!--BUSCADOR DE PROPIEDADES-->
+        <div class="mainalquiler">
+            <div class="titulo">
+                <h1>PROPIEDADES EN ALQUILER</h1>
+            </div>
+            <div class="seccion-buscador">
+                <div class="subtitle">
+                    <h2>BUSCADOR DE PROPIEDADES</h2>
                 </div>
-                <div class="cuadro1">
-                    <h2>Confianza</h2>
-                    <p>La satisfacción de nuestros clientes nos da como una empresa confiable y también dedicada</p>
+                <div class="wrapper-propiedades">
+                    <h2>EL LUGAR QUE<span></span></h2>
+                    <p>ENCONTRALO ACA:</p>
                 </div>
-                <div class="cuadro2">
-                    <h2>Seguridad</h2>
-                    <p>Todas nuestras operaciones son exclusivamente realizadas por corredores matriculados</p>
-                </div>
-                <div class="cuadro3">
-                    <h2>Modernismo</h2>
-                    <p>Nos preocupamos por los desafíos en materia de mercado que implican una constante
-                        capacitación</p>
-                </div>
-                <div class="cuadro4">
-                    <h2>Compromiso</h2>
-                    <p>Estamos avocados a las exigencias particulares de cada cliente a fin de lograr el mejor
-                        negocio </p>
+                <div class="buscador">
+                    <div class="formularioalquiler">
+                        <label for="operacion"></label>
+                        <select name="operacion" id="operacion">
+                            <option hidden selected>Operación</option>
+                            <option value="Venta">Venta</option>
+                            <option value="Alquiler">Alquiler</option>
+                            <option value="Alquiler Temporario">Alquiler Temporario</option>
+                        </select>
+                    </div>
+                    <div class="formularioalquiler">
+                        <label for="tipopropiedad"></label>
+                        <select name="tipopropiedad" id="tipopropiedad">
+                            <option hidden selected>Tipo de Propiedad</option>
+                            <option value="casa">Casa</option>
+                            <option value="cochera">Cochera</option>
+                            <option value="departamento">Departamento</option>
+                            <option value="deposito">Deposito</option>
+                            <option value="galpón">Galpón</option>
+                            <option value="localcomercial">Local Comercial</option>
+                            <option value="oficinas">Oficina</option>
+                            <option value="PH">PH</option>
+                            <option value="terrenolote">Terreno o Lote</option>
+                        </select>
+                    </div>
+                    <form call="button" action="../../form-result.php" method="get" target="_blank">
+                        <div class="buscaralquiler">
+                            <input type="search" name="busqueda" placeholder="Ubicación o palabra clave">
+                        </div>
+                    </form>
+                    <div class="buttonalq">
+                        <input type="submit" value="Buscar" class="buttonalquiler">
+                    </div>
                 </div>
             </div>
-        </section>
+        </div>
 
-        <!--formulario contacto-->
-        <section class="tituloformcontacto">
-            <h3>CONTACTANOS</h3>
-        </section>
+        <!--FIN BUSCADOR DE PROPIEDADES-->
         <section>
             <div class="menuretorno">
                 <div class="index"><a href="../index.html"> INICIO</a></div>
-                <div class="page">/ ADMINISTRACIÓN</div>
-            </div>
-        </section>
-        <section>
-            <div class="grid-container">
-                <div class="formcontacto">
-                    <div class="tipoform">
-                        <form action="./formpage.html" method="get" enctype="application/x-www-form-urlencoded">
-                            <label for="Nombre"></label><input id="Nombre" type="text" name="nombre"
-                                placeholder="Ingresa tu Nombre">
-                                <label for="telefono"> </label><input id="telefono" type="text" name="telefono"
-                                placeholder="Ingresa tu Teléfono">
-                            <label for="Email"> </label><input id="Email" type="text" name="email"
-                                placeholder="Ingresa tu Email">
-                            <label for="mensaje"></label><textarea name="mensaje" id="mensaje"
-                                placeholder="Tu Mensaje"></textarea>
-                            <input type="submit" value="Enviar formulario" call="btn-enviar" />
-                        </form>
-                    </div>
-                </div>
-                <div class="formmap"><iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3347.8246760778566!2d-60.65321898481346!3d-32.955637980918446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b7ab12ba391c31%3A0x7b1698044e00dcb7!2sAv.%20Pellegrini%201811%2C%20S2000BUF%20Rosario%2C%20Santa%20Fe!5e0!3m2!1ses!2sar!4v1666912227965!5m2!1ses!2sar"
-                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+                <div class="index2"><a href="alq-1-ficha-todas.html"> / ALQUILER</a></div>
+                <div class="index3"><a href="alq-2-casa.html"> / CASA</a></div>
+                <div class="page">/ 1 DORMITORIOS</div>
             </div>
         </section>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        <!--propiedades alquiler-->
+        <section class="cartel-noprop">
+            <h1>LO SENTIMOS , POR EL MOMENTO NO SE ENCUENTRAN PROPIEDADES CONFORME DE SU BUSQUEDA</h1>
+            <p>Vuelva a intentar en otro momento</p>
+        </section>
 
         <!--cartel de contacto-->
         <section id="cartelcontacto">
@@ -187,7 +172,8 @@
                 <li><a class="textomenupie" href="administracion.html">Administración</a></li>
                 <li><a class="textomenupie" href="alq-1-ficha-todas.html">Alquiler</a>
                     <li><a class="textomenupie" href="venta-1-ficha-todas.html">Venta</a>
-                    <li><a class="textomenupie" href="contacto.html">Contacto</a></li>
+    
+                <li><a class="textomenupie" href="contacto.html">Contacto</a></li>
                 <li><a class="textomenupie" href="termycond.html">Políticas de Privacidad</a></li>
                 </p>
             </div>

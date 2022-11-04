@@ -900,11 +900,11 @@ select {
 .menuretorno {
     padding: 15px 0 0 0;
     display: grid;
-    grid-auto-flow: row; 
-    grid-template-rows: 1fr; 
+    grid-auto-flow: column;
+    grid-template-rows: 1fr;
     gap: 0px 10px;
     grid-template-areas:
-        "index page";
+        "index index2 index3 index4 page";
     font-family: sans-serif;
     font-weight: 400;
     justify-content: right;
@@ -917,7 +917,10 @@ select {
     text-align: right;
 }
 
-.index a {
+.index a,
+.index2 a,
+.index3 a,
+.index4 a {
     text-decoration: none;
     color: black;
 }
@@ -933,25 +936,31 @@ select {
     transition: all 0.5s ease;
 }
 
+#retorno{
+}
+
+
+
 /*---FIN MENU RETORNO---*/
 /*---BOTON WHATSAPP---*/
 .whatsapp {
-    position:fixed;
-    width:50px;
-    height:50px;
-    bottom:5px;
-    right:18px;
-    background-color:#25d366;
-    color:#FFF;
-    border-radius:50px;
-    text-align:center;
-    font-size:30px;
-    z-index:100;
-  }
-  
-  .whatsapp-icon {
-    margin-top:10px;
-  }
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    bottom: 5px;
+    right: 18px;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    z-index: 100;
+}
+
+.whatsapp-icon {
+    margin-top: 10px;
+}
+
 /*---FIN BOTON WHATSAPP---*/
 
 
@@ -977,6 +986,7 @@ select {
     padding-top: 12px;
     color: #fff;
 }
+
 /*---FIN BOTON IR AL TOP---*/
 
 /*----FIN DISEÑOS DESKTOP -----*/
@@ -987,6 +997,7 @@ select {
 /*----------INICIO RESPONSIVE MOBILE HASTA 480PX-----------*/
 
 @media screen and (max-width: 480px) {
+
     /*----------responsive menu y hamburguesa MOBILE-----------*/
     .checkbtn {
         display: block;
@@ -1494,7 +1505,8 @@ select {
     .polprivacidad h1 {
         font-size: 20px;
     }
-    .politicas{
+
+    .politicas {
         hyphens: auto;
     }
 }
@@ -1834,4 +1846,273 @@ select {
 
 
 
+.tarjetapropiedad {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-template-rows: 1fr;
+    gap: 0px 10px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "columna1prop contactprop";
+    width: 100%;
+    height: 100%;
+}
 
+.columna1prop {
+    padding: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 13%;
+    border: 2px solid lightgray;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "titulocasa titulocasa titulocasa"
+        "fotos fotos fotos"
+        "fotos fotos fotos"
+        "caractgrales caractgrales caractgrales"
+        "descripcion descripcion descripcion"
+        "ambientes ambientes ambientes"
+        "comodidades comodidades comodidades"
+        "servicios servicios servicios"
+    ;
+    grid-area: columna1prop;
+}
+
+.titulocasa {
+    padding: 20px;
+    grid-area: titulocasa;
+    border-bottom: 2px solid rgb(224, 224, 224);
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.titulocasa1 {
+    text-align: left;
+}
+
+.titulocasa1 p {
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.titulocasa2 {
+    align-self: center;
+    text-align: right;
+}
+
+
+.fotos {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.2fr 1fr 1fr 1fr 0.2fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "selector selector selector selector"
+        "fotosmain fotosmain fotosmain fotosmain"
+        "fotosmain fotosmain fotosmain fotosmain"
+        "fotosmain fotosmain fotosmain fotosmain"
+        "redes redes redes redes"
+        "resumen1 resumen1 resumen2 resumen2"
+        "resumen1 resumen1 resumen2 resumen2";
+    grid-area: fotos;
+}
+
+.selector {
+    grid-area: selector;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.selector li {
+    align-self: center;
+    border: 2px solid rgb(255, 84, 5);
+}
+
+.selector li:hover {
+    align-self: center;
+    background-color: rgb(255, 84, 5);
+    color: white;
+    cursor: pointer;
+}
+
+
+.fotosmain {
+    grid-area: fotosmain;
+    text-align: center;
+}
+
+.fotosmain img {
+    width: 800px;
+    height: 500px;
+}
+
+.redes {
+    grid-area: redes;
+    text-align: center;
+    display: grid;
+    grid-template-rows: 0.3fr 1fr;
+    grid-template-columns: 1fr;
+    padding: 20px;
+}
+
+.redes i {
+    color: black;
+    font-size: 40px;
+}
+
+.resumen1 {
+    padding: 20px;
+    grid-area: resumen1;
+    border-bottom: 2px solid rgb(224, 224, 224);
+    border: 2px solid lightgray;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+.resumen2 {
+    padding: 20px;
+    grid-area: resumen2;
+    border-bottom: 2px solid rgb(224, 224, 224);
+    border: 2px solid lightgray;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+.resumen1 h4,
+.resumen2 h4 {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    color: rgb(255, 84, 5);
+    font-weight: 600;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+.resumen1 p,
+.resumen2 p {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: rgb(255, 84, 5);
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.caractgrales {
+    display: grid;
+    grid-template-rows: 0.4fr 1fr 1fr;
+    grid-area: caractgrales;
+    padding: 20px;
+    border-bottom: 2px solid lightgray;
+}
+
+.caractgrales p {
+    color: rgb(255, 102, 0);
+    text-align: left;
+}
+
+.caractgrales1 li,
+.caractgrales2 li {
+    display: grid;
+    grid-template-columns: 7% 40% 40%;
+
+}
+
+
+.descripcion {
+    grid-area: descripcion;
+    border-bottom: 2px solid rgb(224, 224, 224);
+    padding: 20px;
+}
+
+.descripcion p {
+    margin-top: 10px;
+    text-align: justify;
+}
+
+.servicios {
+    grid-area: servicios;
+    padding: 20px;
+    border-bottom: 2px solid rgb(224, 224, 224);
+}
+
+.ambientes {
+    grid-area: ambientes;
+    padding: 20px;
+    border-bottom: 2px solid rgb(224, 224, 224);
+}
+
+.comodidades {
+    grid-area: comodidades;
+    padding: 20px;
+    border-bottom: 2px solid rgb(224, 224, 224);
+}
+
+.columna1prop ul {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.columna1prop li i {
+    color: rgb(255, 102, 0);
+    border-radius: 100px;
+}
+
+
+
+
+
+.contactprop {
+    grid-area: contactprop;
+    margin-top: 30%;
+    border: 2px solid lightgray;
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-rows: 0.4fr;
+    height: 30%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.contactoproptitulo {
+    background-color: rgb(255, 102, 0);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-style: italic;
+}
+
+.contactoproptitulo h3 {
+    margin-top: 20px;
+}
+
+.contactoproptitulo i {
+    color: white;
+    font-size: 40px;
+}
+
+.form-pagina {
+    padding: 20px;
+}
+
+.form-pagina h3 {
+    padding: 20px;
+    text-align: center;
+    font-style: italic;
+}
+
+.cartel-noprop {
+    padding: 40px;
+    font-size: 25px;
+    text-align: center;
+    font-style: italic;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
