@@ -1,92 +1,103 @@
-* {
-    padding: 0;
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
     margin: 0;
+    padding: 0;
+}
+
+
+header {
+    background: black;
+    position: sticky;
     box-sizing: border-box;
-}
-
-/*---- HEADER ----*/
-nav {
-    background: rgb(33, 33, 33);
     height: 80px;
-    width: 100%;
-    position: fixed;
-    z-index: 1;
-}
-
-.enlace {
-    position: absolute;
-    padding: 20px 50px;
-}
-
-.logo {
-    height: 50px;
-}
-
-nav ul {
-    float: right;
-    margin-right: 20px;
-}
-
-nav ul li {
-    display: inline-block;
-    line-height: 80px;
-    margin: 0 5px;
-
-}
-
-nav ul li a {
-    color: #fff;
-    font-size: 14px;
-    padding: 7px 13px;
-    border-radius: 3px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-decoration: none;
 }
 
-li a.active,
-li a:hover {
-    background: orangered;
-    border-radius: 5px;
-    transition: all .5s ease;
+.branding-logo .logo {
+    height: 60px;
+    margin-left: 40px;
 }
 
-/*---- SUBMENU ----*/
-ul ul {
-    display: none;
-    position: absolute;
-    background: rgb(33, 33, 33);
-    width: 160px;
+.navbar {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-ul ul li {
-    float: none;
-    font-size: 5px;
+.menu {
+    display: flex;
+    flex-direction: row;
 }
 
-ul li:hover ul {
+.menu li {
+    list-style: none;
+}
+
+.menu li a {
     display: block;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    font-size: 1rem;
 }
 
-ul li:hover ul a:hover {
+.has-dropdown {
+    position: relative;
+}
+
+.submenu {
+    position: absolute;
+    left: 0;
+    background-color: rgba(33, 33, 33, 1);
+    white-space: nowrap;
+
+    opacity: 0;
+    transform: scaleY(0);
+    transform-origin: top center;
+}
+
+.submenu>li>a {
+    padding: 0.8em 1.5em;
+}
+
+.submenu .submenu {
+    left: 100%;
+    top: 0;
+}
+
+.menu>li:hover>a,
+.submenu>li:hover>a {
     background-color: orangered;
-    border-radius: 5px;
-    transition: all .5s ease;
+    color: white;
+}
+
+.menu>li:hover>a {
+    background-color: orangered;
 }
 
 
-/*---- HAMBURGUESA ----*/
-.checkbtn {
-    font-size: 30px;
-    color: #fff;
-    float: right;
-    line-height: 80px;
-    margin-right: 40px;
-    cursor: pointer;
-    display: none;
+.arrow {
+    width: 0.5em;
+    height: 0.5em;
+    display: inline-block;
+    vertical-align: middle;
+    border-left: 0.15em solid currentColor;
+    border-bottom: 0.15em solid currentColor;
+    transform: rotate(-45deg);
+    margin-top: -0.25em;
 }
 
-#check {
-    display: none;
+.submenu .arrow {
+    transform: rotate(-135deg);
+}
+
+.menu>li:hover>a+.submenu,
+.submenu>li:hover>a+.submenu {
+    opacity: 1;
+    transform: scaleY(1);
 }
 
 /*---- FIN DEL HEADER ----*/
@@ -125,7 +136,7 @@ ul li:hover ul a:hover {
     font-size: 30px;
 }
 
-span:before {
+.movement:before {
     content: '';
     animation: animate infinite 4s;
     color: rgb(42, 146, 42);
@@ -211,6 +222,94 @@ select {
 /*---- FIN DEL BUSCADOR ----*/
 
 /*---- INICIO DESTACADAS -----*/
+.carousel {
+    margin: 0 auto;
+    overflow: hidden;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.slides {
+    width: 100%;
+    display: flex;
+    overflow-x: scroll;
+    scrollbar-width: none;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+}
+
+.slides::-webkit-scrollbar {
+    display: none;
+}
+
+.slides img {
+    width: 640px;
+    height: 320px;
+}
+
+.slides-item {
+    align-items: center;
+    display: flex;
+    flex-shrink: 0;
+    font-size: 100px;
+    justify-content: center;
+    margin: 0 1rem;
+    position: relative;
+    scroll-snap-align: start;
+    transform: scale(1);
+    transform-origin: center center;
+    transition: transform .5s;
+    width: 100%;
+}
+
+.carousel__nav {
+    padding: 1.25rem .5rem;
+}
+
+.slider-nav {
+    align-items: center;
+    background-color: lightgrey;
+    border-radius: 50%;
+    color: #000;
+    display: inline-flex;
+    height: 1.5rem;
+    justify-content: center;
+    padding: .5rem;
+    position: relative;
+    text-decoration: none;
+    width: 1.5rem;
+}
+
+.slider-nav:hover,
+.slider-nav:active {
+    background-color: #000;
+    color: #fff;
+}
+
+
+.carousel__skip-link {
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    top: auto;
+    width: 1px;
+}
+
+.carousel__skip-link:focus {
+    align-items: center;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    font-size: 30px;
+    height: 680px;
+    justify-content: center;
+    opacity: .8;
+    text-decoration: none;
+    width: 100%;
+    z-index: 1;
+}
+
+
 .propdestacadas {
     display: flex;
     flex-direction: column;
@@ -234,90 +333,79 @@ select {
     box-sizing: border-box;
 }
 
-#slider>ul,
-li {
-    padding: 0;
-    margin: 0;
-    list-style: none;
+
+.flip-card {
+    background-color: transparent;
+    width: 640px;
+    height: 320px;
+    perspective: 1000px;
 }
 
-#slider>ul.slider {
+.flip-card-inner {
     position: relative;
-    max-width: 800px;
     width: 100%;
-    height: 300px;
-    background: none;
+    height: 100%;
+    text-align: center;
+    transition: transform 1s;
+    transform-style: preserve-3d;
 }
 
-#slider>ul.slider .tipoprop1 {
-    color: white;
+.titulosdest {
     position: absolute;
-    background-color: rgb(255, 84, 5);
+    margin-left: 60%;
+    margin-top: 10px;
     padding: 10px;
-    top: 10%;
-    right: 10%;
-    border-style: solid;
-    opacity: 0.9;
-}
-
-#slider>ul.slider .textotipoprop1 {
-    margin: auto;
-    color: white;
-    position: absolute;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: 2px solid white;
     background-color: rgb(255, 84, 5);
-    padding: 10px;
-    top: 60%;
-    left: 5%;
+    color: white;
     opacity: 0.9;
-    border-style: solid;
+    font-size: 15px;
 }
 
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
 
-#slider>ul.slider li {
+.flip-card-front,
+.flip-card-back {
     position: absolute;
-    left: 0px;
-    top: 0px;
-    opacity: 0;
-    width: inherit;
-    height: inherit;
-    transition: opacity .5s;
-}
-
-#slider>ul.slider li img {
     width: 100%;
-    height: 300px;
-    object-fit: cover;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+
 }
 
-#slider>ul.slider li:first-child {
-    opacity: 1;
+.flip-card-front img {
+    width: 640px;
+    height: 320px;
 }
 
-#slider>ul.slider li:target {
-    opacity: 1;
+.flip-card-back {
+    padding: 40px;
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: lightgrey;
+    color: black;
+    transform: rotateY(180deg);
 }
 
-#slider>.menuslider {
-    text-align: center;
-    margin: 20px;
-}
-
-#slider>.menuslider li {
-    display: inline-block;
-    position: relative;
-    text-align: center;
-}
-
-#slider>.menuslider li a {
-    display: inline-block;
-    color: white;
+.botondest {
+    margin-top: 40px;
+    background-color: rgb(255, 84, 5);
+    border: rgb(255, 84, 5);
+    color: #f3f3f3;
+    padding: 10px;
+    border-color: none;
+    border-radius: 10px;
+    font-size: 20px;
     text-decoration: none;
-    background-color: grey;
-    width: 30px;
-    height: 30px;
-    font-size: 25px;
-    border-radius: 100%;
 }
+
+.botondest:hover {
+    opacity: 0.7;
+}
+
 
 /*---- FIN DESTACADAS -----*/
 
@@ -936,8 +1024,7 @@ select {
     transition: all 0.5s ease;
 }
 
-#retorno{
-}
+#retorno {}
 
 
 
@@ -999,43 +1086,97 @@ select {
 @media screen and (max-width: 480px) {
 
     /*----------responsive menu y hamburguesa MOBILE-----------*/
-    .checkbtn {
-        display: block;
-    }
-
-    ul {
-        position: fixed;
-        width: 100%;
+    .menu {
+        flex-flow: column;
+        position: absolute;
         background: black;
-        top: 80px;
-        left: -100%;
-        text-align: center;
-        transition: all .7s;
-        z-index: 1;
-    }
-
-    nav ul li {
-        display: block;
-        margin: 50px 0;
-        line-height: 30px;
-
-    }
-
-    nav ul li a {
-        font-size: 20px;
-        text-decoration: none;
-    }
-
-    li a:hover,
-    li a.active {
-        background: orangered;
-        border-radius: 5px;
-        transition: .5s;
-    }
-
-    #check:checked~ul {
+        top: 4.55em;
         left: 0;
+        right: 0;
+        height: auto;
+        opacity: 0;
+        transform: scaleY(0);
+        transform-origin: top center;
+        transition: 0.5s transform ease-in-out;
+        overflow-y: hidden;
+        z-index: 9999;
+
     }
+
+    .menu>li>a {
+        padding: 20px;
+        font-size: 1rem;
+        color: white;
+    }
+
+    .submenu>li>a {
+        font-size: 1rem;
+    }
+
+    .submenu {
+        left: 15%;
+        width: 75%;
+        top: 0;
+        background-color: rgba(33, 33, 33, 1);
+        transition: 0.3s transform ease-in-out;
+
+    }
+
+    .submenu .submenu {
+        left: 15%;
+        top: 0;
+        width: 75%;
+        background-color: grey;
+    }
+
+
+    .menu>li:hover>a+.submenu,
+    .submenu>li:hover>a+.submenu {
+        position: relative;
+    }
+
+    .submenu .arrow {
+        transform: rotate(-45deg);
+    }
+
+
+    .hamburger {
+        width: 2em;
+        height: 0.25em;
+        display: block;
+        background: white;
+        margin-bottom: 10px;
+        margin-right: 20px;
+        position: relative;
+        cursor: pointer;
+        transition: 0.2s transform ease-in-out;
+    }
+
+    .hamburger::after,
+    .hamburger::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        background: inherit;
+        width: inherit;
+        height: inherit;
+        transition: 0.2s transform ease-in-out;
+    }
+
+    .hamburger::after {
+        top: 0.50em;
+    }
+
+    .hamburger::before {
+        bottom: 0.50em;
+    }
+
+    input[type="checkbox"]:checked+.menu {
+        position: absolute;
+        opacity: 1;
+        transform: scaleY(1);
+    }
+
 
     /*---- PAGINA INDEX RESPONSIVE MOBILE----*/
     /*---- INICIO RESPONSIVE MOBILE BUSCADOR----*/
@@ -1518,43 +1659,97 @@ select {
 @media screen and (min-width: 481px) and (max-width: 980px) {
 
     /*----------responsive menu y hamburguesa-----------*/
-    .checkbtn {
-        display: block;
-    }
-
-    ul {
-        position: fixed;
-        width: 100%;
+    .menu {
+        flex-flow: column;
+        position: absolute;
         background: black;
-        top: 80px;
-        left: -100%;
-        text-align: center;
-        transition: all .7s;
-        z-index: 1;
-    }
-
-    nav ul li {
-        display: block;
-        margin: 50px 0;
-        line-height: 30px;
-
-    }
-
-    nav ul li a {
-        font-size: 20px;
-        text-decoration: none;
-    }
-
-    li a:hover,
-    li a.active {
-        background: orangered;
-        border-radius: 5px;
-        transition: .5s;
-    }
-
-    #check:checked~ul {
+        top: 4.55em;
         left: 0;
+        right: 0;
+        height: auto;
+        opacity: 0;
+        transform: scaleY(0);
+        transform-origin: top center;
+        transition: 0.5s transform ease-in-out;
+        overflow-y: hidden;
+        z-index: 9999;
+
     }
+
+    .menu>li>a {
+        padding: 20px;
+        font-size: 1rem;
+        color: white;
+    }
+
+    .submenu>li>a {
+        font-size: 1rem;
+    }
+
+    .submenu {
+        left: 15%;
+        width: 75%;
+        top: 0;
+        background-color: rgba(33, 33, 33, 1);
+        transition: 0.3s transform ease-in-out;
+
+    }
+
+    .submenu .submenu {
+        left: 15%;
+        top: 0;
+        width: 75%;
+        background-color: grey;
+    }
+
+
+    .menu>li:hover>a+.submenu,
+    .submenu>li:hover>a+.submenu {
+        position: relative;
+    }
+
+    .submenu .arrow {
+        transform: rotate(-45deg);
+    }
+
+
+    .hamburger {
+        width: 2em;
+        height: 0.25em;
+        display: block;
+        background: white;
+        margin-bottom: 10px;
+        margin-right: 20px;
+        position: relative;
+        cursor: pointer;
+        transition: 0.2s transform ease-in-out;
+    }
+
+    .hamburger::after,
+    .hamburger::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        background: inherit;
+        width: inherit;
+        height: inherit;
+        transition: 0.2s transform ease-in-out;
+    }
+
+    .hamburger::after {
+        top: 0.50em;
+    }
+
+    .hamburger::before {
+        bottom: 0.50em;
+    }
+
+    input[type="checkbox"]:checked+.menu {
+        position: absolute;
+        opacity: 1;
+        transform: scaleY(1);
+    }
+
 
     /*---- INICIO RESPONSIVE BUSCADOR----*/
     .buscadorfondo {
@@ -1777,6 +1972,7 @@ select {
         font-style: italic;
         background-color: rgb(255, 84, 5);
         padding: 30px;
+
     }
 
     #cartelcontacto li {
@@ -2078,7 +2274,7 @@ select {
     display: grid;
     grid-auto-flow: row;
     grid-template-rows: 0.4fr;
-    height: 30%;
+    height: 32%;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -2115,4 +2311,74 @@ select {
     text-align: center;
     font-style: italic;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.menupadre {
+    display: block;
+    position: relative;
+    float: left;
+    line-height: 30px;
+}
+
+.menupadre a {
+    margin: 10px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.menupadre:hover>ul {
+    display: block;
+    position: absolute;
+}
+
+.menuhijo {
+    display: none;
+}
+
+.menuhijo li {
+    background-color: lightgray;
+    line-height: 30px;
+    border-bottom: #CCC 1px solid;
+    border-right: #CCC 1px solid;
+    width: 100%;
+}
+
+.menuhijo li a {
+    color: black;
+}
+
+.menupadre ul {
+    list-style: none;
+    margin: 0;
+    padding: 0px;
+    min-width: 10em;
+}
+
+ul ul ul {
+    left: 100%;
+    top: 0;
+    margin-left: 1px;
+}
+
+
+
+.menupadre li:hover {}
+
+.expand {
+    font-size: 12px;
+    float: right;
+    margin-right: 5px;
 }

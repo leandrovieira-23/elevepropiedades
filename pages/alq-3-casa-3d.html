@@ -12,49 +12,94 @@
 </head>
 
 <body>
-    <!--INICIO DEL HEADER-->
-    <header>
-        <!--INICIO DEL MENU-->
-        <nav>
-            <input type="checkbox" id="check">
-            <label for="check" class="checkbtn">
-                <i class="fas fa-bars"></i>
-            </label>
-            <a href="../index.html" class="enlace">
-                <img src="../img/logo blanco.png" alt="" class="logo">
+<!--INICIO DEL HEADER-->
+<header>
+    <nav class="navbar">
+        <div class="branding">
+            <a href="#" class="branding-logo"> <img src="../img/logo blanco.png" alt="" class="logo">
             </a>
-            <ul>
-                <li><a href="../index.html">INICIO</a></li>
-                <li><a href="quienessomos.html">QUIENES SOMOS</a></li>
-                <li><a href="administracion.html">ADMINISTRACIÓN</a></li>
-                <li><a href="alq-1-ficha-todas.html">ALQUILER</a>
-                    <ul class="hidden">
-                        <li><a href="alq-2-dpto.html">Departamento</a></li>
-                        <li><a href="alq-2-casa.html">Casa</a></li>
-                        <li><a href="alq-2-cochera.html">Cochera</a></li>
-                        <li><a href="alq-2-galpon.html">Galpon</a></li>
-                        <li><a href="alq-2-oficina.html">Oficina/Local</a></li>
+        </div>
+        <label for="input-hamburger" class="hamburger"></label>
+        <input type="checkbox" id="input-hamburger" hidden>
+        <ul class="menu">
+            <li><a href="../index.html" class="menu-link">INICIO</a></li>
+            <li><a href="administracion.html" class="menu-link">ADMINISTRACION</a></li>
+            <li class="has-dropdown">
+                <a href="#" class="menu-link">ALQUILERES
+                    <span class="arrow"></span>
+                </a>
+                <ul class="submenu">
+                    <li><a href="alq-1-ficha-todas.html" class="menu-link">Ver Todos</a></li>
+                    <li class="has-dropdown">
+                        <a href="#" class="menu-link">Departamentos
+                            <span class="arrow"></span>
+                        </a>
+                        <ul class="submenu">
+                            <li><a href="alq-2-dpto.html" class="menu-link">> Ver Todos</a></li>
+                            <li><a href="alq-3-dpto-mono.html" class="menu-link">> Monoambiente</a></li>
+                            <li><a href="alq-3-dpto-2d.html" class="menu-link">> 1 Dormitorio</a></li>
+                            <li><a href="alq-3-dpto-2d.html" class="menu-link">> 2 Dormitorios</a></li>
+                            <li><a href="alq-3-dpto-3d.html" class="menu-link">> 3 Dormitorios</a></li>
+                            <li><a href="alq-3-dpto-4d.html" class="menu-link">> 4+ Dormitorios</a></li>
+                        </ul>
+                    <li class="has-dropdown">
+                        <a href="#" class="menu-link">Casas
+                            <span class="arrow"></span>
+                        </a>
+                        <ul class="submenu">
+                            <li><a href="alq-2-casa.html" class="menu-link">> Ver Todos</a></li>
+                            <li><a href="alq-3-casa-1d.html" class="menu-link">> 1 Dormitorio</a></li>
+                            <li><a href="alq-3-casa-2d.html" class="menu-link">> 2 Dormitorios</a></li>
+                            <li><a href="alq-3-casa-3d.html" class="menu-link">> 3 Dormitorios</a></li>
+                            <li><a href="alq-3-casa-4d.html" class="menu-link">> 4+ Dormitorios</a></li>
+                        </ul>
+                    <li><a href="alq-2-cochera.html" class="menu-link">Cochera</a></li>
+                    <li><a href="alq-2-galpon.html" class="menu-link">Galpon</a></li>
+                    <li><a href="alq-2-oficina.html" class="menu-link">Oficina/Local</a></li>
+            </li>
+        </ul>
+        <li class="has-dropdown">
+            <a href="#" class="menu-link">VENTAS
+                <span class="arrow"></span>
+            </a>
+            <ul class="submenu">
+                <li><a href="venta-1-ficha-todas.html" class="menu-link">Ver Todos</a></li>
+                <li class="has-dropdown">
 
+                    <a href="#" class="menu-link">Departamentos
+                        <span class="arrow"></span>
+                    </a>
+                    <ul class="submenu">
+                        <li><a href="venta-2-depto.html" class="menu-link">> Ver Todos</a></li>
+                        <li><a href="venta-3-dpto-mono.html" class="menu-link">> Monoambiente</a></li>
+                        <li><a href="venta-3-dpto-1d.html" class="menu-link">> 1 Dormitorio</a></li>
+                        <li><a href="venta-3-dpto-2d.html" class="menu-link">> 2 Dormitorios</a></li>
+                        <li><a href="venta-3-dpto-3d.html" class="menu-link">> 3 Dormitorios</a></li>
+                        <li><a href="venta-3-dpto-4d.html" class="menu-link">> 4+ Dormitorios</a></li>
                     </ul>
-                </li>
-                <li><a href="venta-1-ficha-todas.html">VENTA</a>
-                    <ul class="hidden">
-                        <li><a href="venta-2-depto.html">Departamento</a></li>
-                        <li><a href="venta-2-casa.html">Casa</a></li>
-                        <li><a href="venta-2-cochera.html">Cochera</a></li>
-                        <li><a href="venta-2-galpon.html">Galpon</a></li>
-                        <li><a href="venta-2-oficina.html">Oficina/Local</a></li>
-                        <li><a href="venta-2-terreno.html">Terreno</a></li>
-
+                <li class="has-dropdown">
+                    <a href="./" class="menu-link">Casas
+                        <span class="arrow"></span>
+                    </a>
+                    <ul class="submenu">
+                        <li><a href="venta-2-casa.html" class="menu-link">> Ver Todos</a></li>
+                        <li><a href="venta-3-casa-1d.html" class="menu-link">> 1 Dormitorio</a></li>
+                        <li><a href="venta-3-casa-2d.html" class="menu-link">> 2 Dormitorios</a></li>
+                        <li><a href="venta-3-casa-3d.html" class="menu-link">> 3 Dormitorios</a></li>
+                        <li><a href="venta-3-casa-4d.html" class="menu-link">> 4+ Dormitorios</a></li>
                     </ul>
-
-                </li>
-                <li><a href="contacto.html">CONTACTO</a></li>
-            </ul>
-        </nav>
-        <!--FIN DEL MENU-->
-    </header>
-    <!--FIN DEL HEADER-->
+                <li><a href="venta-2-cochera.html" class="menu-link">Cochera</a></li>
+                <li><a href="venta-2-galpon.html" class="menu-link">Galpon</a></li>
+                <li><a href="venta-2-oficina.html" class="menu-link">Oficina/Local</a></li>
+                <li><a href="venta-2-terreno.html" class="menu-link">Terrenos</a></li>
+        </li>
+        </ul>
+        <li><a href="quienessomos.html" class="menu-link">QUIENES SOMOS</a></li>
+        <li><a href="contacto.html" class="menu-link">CONTACTO</a></li>
+        </ul>
+    </nav>
+</header>
+<!--FIN DEL HEADER-->
 
 
     <!--INICIO DEL MAIN-->
