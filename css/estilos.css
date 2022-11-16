@@ -6,13 +6,23 @@
     padding: 0;
 }
 
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
 
+
+/*---- INICIO HEADER MENU----*/
 header {
     background: black;
-    position: sticky;
     box-sizing: border-box;
     height: 80px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
 }
 
 .branding-logo .logo {
@@ -78,7 +88,6 @@ header {
     background-color: orangered;
 }
 
-
 .arrow {
     width: 0.5em;
     height: 0.5em;
@@ -100,7 +109,7 @@ header {
     transform: scaleY(1);
 }
 
-/*---- FIN DEL HEADER ----*/
+/*---- FIN DEL HEADER MENU----*/
 
 
 /*---- INICIO DEL MAIN ----*/
@@ -116,14 +125,14 @@ header {
 }
 
 .buscadortitulo {
-    margin-top: 100px;
+    margin-top: 6rem;
     font-size: 25px;
     text-align: center;
     color: #f3f3f3;
 }
 
 .wrapper {
-    padding: 30px 0px 0px 0px;
+    margin-top: 1rem;
     color: white;
     text-align: center;
 }
@@ -138,7 +147,7 @@ header {
 
 .movement:before {
     content: '';
-    animation: animate infinite 4s;
+    animation: animate infinite 6s;
     color: rgb(42, 146, 42);
 }
 
@@ -406,7 +415,6 @@ select {
     opacity: 0.7;
 }
 
-
 /*---- FIN DESTACADAS -----*/
 
 /*---- POR QUE CONTACTARNOS ----*/
@@ -452,6 +460,7 @@ select {
     gap: 0px 12px;
     background-color: rgb(255, 102, 0);
     padding: 30px;
+    list-style-type: none;
 }
 
 .carteldecontacto {
@@ -464,7 +473,6 @@ select {
     font-style: italic;
 }
 
-
 .carteldecontacto li {
     text-decoration: none;
     color: white;
@@ -472,15 +480,12 @@ select {
     margin: 3px;
 }
 
-.cartel1 {
-    color: #f3f3f3;
-    text-decoration: none;
-}
-
+.cartel1,
 .carteldecontacto a {
     color: #f3f3f3;
     text-decoration: none;
 }
+
 
 /*---- FIN CARTEL DE CONTACTO ----*/
 
@@ -494,6 +499,7 @@ select {
     font-style: italic;
     color: white;
     gap: 0px 20px;
+    list-style-type: none;
 }
 
 .piecolum1 {
@@ -527,12 +533,14 @@ select {
     font-size: 16px;
 }
 
-.newsletter {
+.newsletter,
+.redespie {
     padding: 20px;
     text-align: center;
 }
 
-.newsletter h4 {
+.newsletter h4,
+.redespie h4 {
     font-size: 20px;
 }
 
@@ -556,22 +564,11 @@ input[type=submit]:hover {
     opacity: 0.8;
 }
 
-.redespie {
-    padding: 20px;
-    text-align: center;
-}
-
-.redespie h4 {
-    font-size: 20px;
-}
-
 .redespie i {
     margin: 20px 0;
     cursor: pointer;
     color: white;
 }
-
-
 
 /*---- FIN PIE DE PAGINA ----*/
 /*---- FIN DEL MAIN ----*/
@@ -584,6 +581,7 @@ input[type=submit]:hover {
     font-style: italic;
     color: rgb(255, 254, 254);
     font-size: 12px;
+    list-style-type: none;
 }
 
 .linkfooter {
@@ -593,44 +591,7 @@ input[type=submit]:hover {
 
 /*---- FIN DE FOOTER ----*/
 
-/*----PAGINA QUIENES SOMOS -----*/
-.quienessomosfondo {
-    padding: 20px;
-    font-style: italic;
-    background-color: rgb(255, 102, 0);
-    font-family: Verdana;
-    color: #f3f3f3;
-    height: 180px;
-}
-
-.quienessomos {
-    margin-top: 80px;
-    font-style: oblique;
-    font-size: 25px;
-    text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: #f3f3f3;
-}
-
-.textosomos {
-    padding: 30px;
-    font-family: Verdana;
-    color: black;
-    text-align: justify;
-}
-
-.textosomos h2 {
-    margin-top: 15px;
-}
-
-.textosomos li {
-    list-style: square;
-}
-
-/*----FIN PAGINA QUIENES SOMOS -----*/
-
 /*----PAGINA ADMINISTRACION -----*/
-
 .fondoadm {
     background-image: url(../img/admin.jpg);
     background-attachment: fixed;
@@ -645,13 +606,14 @@ input[type=submit]:hover {
 .porqueadmin {
     padding: 30px;
     margin-right: 50%;
+    margin-top: 5rem;
     background-color: rgb(255, 84, 5);
     opacity: 0.8;
     color: white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0.5fr 1fr 1fr 1fr;
+    grid-template-rows: 0.2fr 1fr 1fr 1fr;
     gap: 0px 0px;
     grid-template-areas:
         "tituloadmin tituloadmin"
@@ -663,7 +625,6 @@ input[type=submit]:hover {
 
 .tituloadmin {
     grid-area: tituloadmin;
-    margin-top: 15%;
     text-align: center;
     font-style: italic;
 }
@@ -673,7 +634,6 @@ input[type=submit]:hover {
     text-align: justify;
     margin-top: 15px;
 }
-
 
 .cuadro1 {
     grid-area: cuadro1;
@@ -715,13 +675,15 @@ input[type=submit]:hover {
 
 /*----FIN PAGINA ADMINISTRACION -----*/
 
+
+
+
 /*----PAGINA ALQUILER Y VENTA -----*/
 .mainalquiler {
     display: grid;
     background-color: rgb(255, 102, 0);
     grid-auto-flow: column;
     grid-template-columns: 100%;
-    grid-template-rows: 1fr 1fr 1fr;
     gap: 0px 0px;
     height: 430px;
     grid-template-areas:
@@ -731,8 +693,8 @@ input[type=submit]:hover {
 }
 
 .titulo {
+    margin-top: 5rem;
     padding: 20px;
-    margin-top: 90px;
     color: white;
     text-align: center;
     grid-area: titulo;
@@ -788,7 +750,6 @@ input[type=submit]:hover {
     background-color: lightgrey;
     height: 60px;
     padding: 10px;
-
 }
 
 .buscador input[type=text],
@@ -799,7 +760,6 @@ select {
     width: 100%;
     height: 40px;
     display: inline-block;
-
 }
 
 .buscador input[type=search],
@@ -860,14 +820,12 @@ select {
     font-family: Verdana;
     text-align: center;
     color: black;
-
 }
 
 .border-card h4 {
     margin-top: 5%;
     height: 40px;
 }
-
 
 .bg-card {
     background-color: lightgrey;
@@ -910,10 +868,45 @@ select {
 }
 
 /*----FIN PAGINA ALQUILER Y VENTA -----*/
+/*----PAGINA QUIENES SOMOS -----*/
+.quienessomosfondo {
+    padding: 20px;
+    font-style: italic;
+    background-color: rgb(255, 102, 0);
+    font-family: Verdana;
+    color: #f3f3f3;
+    height: 10rem;
+}
+
+.quienessomos {
+    margin-top: 5rem;
+    font-style: oblique;
+    font-size: 25px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #f3f3f3;
+}
+
+.textosomos {
+    padding: 30px;
+    font-family: Verdana;
+    color: black;
+    text-align: justify;
+}
+
+.textosomos h2 {
+    margin-top: 15px;
+}
+
+.textosomos li {
+    list-style: square;
+}
+
+/*----FIN PAGINA QUIENES SOMOS -----*/
 
 /*----PAGINA CONTACTO -----*/
 .grid-container {
-    padding: 40px;
+    padding: 20px;
     display: grid;
     grid-auto-flow: column;
     grid-template-columns: 50% 50%;
@@ -945,7 +938,6 @@ select {
     border-radius: 3px;
     resize: none;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-
 }
 
 /*----FIN PAGINA CONTACTO -----*/
@@ -970,7 +962,7 @@ select {
 }
 
 .politicas {
-    padding: 5%;
+    padding: 1rem;
     font-family: Verdana;
     color: black;
     text-align: justify;
@@ -986,11 +978,9 @@ select {
 /*----FIN PAGINA POLITICAS -----*/
 /*---MENU RETORNO---*/
 .menuretorno {
-    padding: 15px 0 0 0;
+    padding: 0.7rem;
     display: grid;
     grid-auto-flow: column;
-    grid-template-rows: 1fr;
-    gap: 0px 10px;
     grid-template-areas:
         "index index2 index3 index4 page";
     font-family: sans-serif;
@@ -1018,39 +1008,16 @@ select {
     color: gray;
 }
 
-.index:hover a {
+.index:hover a,
+.index2:hover a,
+.index3:hover a,
+.index4:hover a {
     border-radius: 5px;
-    color: rgb(255, 102, 0);
+    color: orangered;
     transition: all 0.5s ease;
 }
 
-#retorno {}
-
-
-
 /*---FIN MENU RETORNO---*/
-/*---BOTON WHATSAPP---*/
-.whatsapp {
-    position: fixed;
-    width: 50px;
-    height: 50px;
-    bottom: 5px;
-    right: 18px;
-    background-color: #25d366;
-    color: #FFF;
-    border-radius: 50px;
-    text-align: center;
-    font-size: 30px;
-    z-index: 100;
-}
-
-.whatsapp-icon {
-    margin-top: 10px;
-}
-
-/*---FIN BOTON WHATSAPP---*/
-
-
 /*---BOTON IR AL TOP---*/
 
 .back-to-top {
@@ -1075,7 +1042,311 @@ select {
 }
 
 /*---FIN BOTON IR AL TOP---*/
+/*---BOTON WHATSAPP---*/
+.whatsapp {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    bottom: 5px;
+    right: 18px;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    z-index: 100;
+}
 
+.whatsapp-icon {
+    margin-top: 10px;
+}
+
+/*---FIN BOTON WHATSAPP---*/
+/*---- INICIO PAGINA FICHAS----*/
+.tarjetapropiedad {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-template-rows: 1fr;
+    gap: 0px 10px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "columna1prop contactprop";
+    width: 100%;
+    height: 100%;
+}
+
+.margenbien {
+    padding-top: 5rem;
+}
+
+.columna1prop {
+    padding: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: 2px solid lightgray;
+    grid-template-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "titulocasa titulocasa titulocasa"
+        "fyselect fyselect fyselect"
+        "fotos fotos fotos"
+        "caractgrales caractgrales caractgrales"
+        "descripcion descripcion descripcion"
+        "ambientes ambientes ambientes"
+        "comodidades comodidades comodidades"
+        "resumeningreso resumeningreso resumeningreso"
+        "servicios servicios servicios"
+    ;
+    grid-area: columna1prop;
+}
+
+.titulocasa {
+    padding: 20px;
+    grid-area: titulocasa;
+    border-bottom: 2px solid rgb(224, 224, 224);
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.titulocasa1 {
+    text-align: left;
+}
+
+.titulocasa1 p {
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.titulocasa2 {
+    align-self: center;
+    text-align: right;
+}
+
+
+.carouselficha {
+    overflow: hidden;
+}
+
+.slidesficha {
+    width: auto;
+    display: flex;
+    overflow-x: scroll;
+    scrollbar-width: none;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+}
+
+.slidesficha::-webkit-scrollbar {
+    display: none;
+}
+
+.slidesficha img {
+    width: 640px;
+    height: 520px;
+}
+
+.slides-item-ficha {
+    margin-top: 20px;
+    display: flex;
+    flex-shrink: 0;
+    font-size: 100px;
+    position: relative;
+    scroll-snap-align: start;
+    transform: scale(1);
+    transform-origin: center center;
+    transition: transform .5s;
+    width: 100%;
+    justify-content: center;
+    border-bottom: 2px solid lightgray;
+}
+
+.carousel__nav-ficha {
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.slider-nav-ficha {
+    padding: 0.5rem;
+    color: black;
+    position: relative;
+    text-decoration: none;
+    border: 2px solid orangered;
+    width: 7rem;
+}
+
+.slider-nav-ficha:focus {
+    background-color: orangered;
+    color: white;
+}
+
+
+.flip-card-front-ficha img {
+    width: 640px;
+    height: 320px;
+}
+
+.fotos {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "resumen1 resumen1 resumen2 resumen2"
+        "resumen1 resumen1 resumen2 resumen2";
+    grid-area: fotos;
+}
+
+.resumen1 {
+    padding: 20px;
+    grid-area: resumen1;
+    border-bottom: 2px solid rgb(224, 224, 224);
+    border: 2px solid lightgray;
+
+}
+
+.resumen2 {
+    padding: 20px;
+    grid-area: resumen2;
+    border-bottom: 2px solid rgb(224, 224, 224);
+    border: 2px solid lightgray;
+
+}
+
+.resumen1 h4,
+.resumen2 h4 {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    color: rgb(255, 84, 5);
+    font-weight: 600;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+.resumen1 p,
+.resumen2 p {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: rgb(255, 84, 5);
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.caractgrales {
+    display: grid;
+    padding: 20px;
+    border-bottom: 2px solid lightgray;
+}
+
+.caractgrales h3 {
+    width: 100%;
+}
+
+.caractgrales p {
+    color: rgb(255, 102, 0);
+    text-align: left;
+}
+
+
+.caractgrales1 li {
+    display: grid;
+    grid-template-columns: 6% 30% 40%;
+}
+
+.caractgrales2 li {
+    display: grid;
+    grid-template-columns: 6% 50% 40%;
+}
+
+.caractgrales3 li {
+    display: grid;
+    grid-template-columns: 6% 50%;
+}
+
+.descripcion {
+    grid-area: descripcion;
+    border-bottom: 2px solid rgb(224, 224, 224);
+    padding: 20px;
+}
+
+.descripcion p {
+    margin-top: 10px;
+    text-align: justify;
+}
+
+.columna1prop ul {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.columna1prop li i {
+    color: rgb(255, 102, 0);
+    border-radius: 100px;
+}
+
+.contactprop {
+    grid-area: contactprop;
+    border: 2px solid lightgray;
+    grid-auto-flow: row;
+    grid-template-rows: 0.4fr;
+    height: 40rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.contactoproptitulo {
+    background-color: rgb(255, 102, 0);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-style: italic;
+}
+
+.contactoproptitulo h3 {
+    margin-top: 20px;
+}
+
+.contactoproptitulo i {
+    color: white;
+    font-size: 40px;
+}
+
+.form-pagina {
+    padding: 20px;
+}
+
+.form-pagina h3 {
+    padding: 20px;
+    text-align: center;
+    font-style: italic;
+}
+
+.cartel-noprop {
+    padding: 40px;
+    font-size: 25px;
+    text-align: center;
+    font-style: italic;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.redes {
+    grid-area: redes;
+    text-align: center;
+    display: grid;
+    grid-template-rows: 0.3fr 1fr;
+    grid-template-columns: 1fr;
+    padding: 20px;
+    margin-top: 2rem;
+}
+
+.redes i {
+    color: black;
+    font-size: 40px;
+}
+
+/*---- FIN PAGINA FICHAS----*/
 /*----FIN DISEÑOS DESKTOP -----*/
 
 
@@ -2033,352 +2304,4 @@ select {
         margin-right: 0;
     }
 
-}
-
-
-
-
-
-
-
-
-.tarjetapropiedad {
-    padding: 20px;
-    display: grid;
-    grid-template-columns: 70% 30%;
-    grid-template-rows: 1fr;
-    gap: 0px 10px;
-    grid-auto-flow: row;
-    grid-template-areas:
-        "columna1prop contactprop";
-    width: 100%;
-    height: 100%;
-}
-
-.columna1prop {
-    padding: 20px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin-top: 13%;
-    border: 2px solid lightgray;
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-        "titulocasa titulocasa titulocasa"
-        "fotos fotos fotos"
-        "fotos fotos fotos"
-        "caractgrales caractgrales caractgrales"
-        "descripcion descripcion descripcion"
-        "ambientes ambientes ambientes"
-        "comodidades comodidades comodidades"
-        "servicios servicios servicios"
-    ;
-    grid-area: columna1prop;
-}
-
-.titulocasa {
-    padding: 20px;
-    grid-area: titulocasa;
-    border-bottom: 2px solid rgb(224, 224, 224);
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-}
-
-.titulocasa1 {
-    text-align: left;
-}
-
-.titulocasa1 p {
-    font-size: 12px;
-    margin-top: 5px;
-}
-
-.titulocasa2 {
-    align-self: center;
-    text-align: right;
-}
-
-
-.fotos {
-    padding: 20px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 0.2fr 1fr 1fr 1fr 0.2fr 1fr 1fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-        "selector selector selector selector"
-        "fotosmain fotosmain fotosmain fotosmain"
-        "fotosmain fotosmain fotosmain fotosmain"
-        "fotosmain fotosmain fotosmain fotosmain"
-        "redes redes redes redes"
-        "resumen1 resumen1 resumen2 resumen2"
-        "resumen1 resumen1 resumen2 resumen2";
-    grid-area: fotos;
-}
-
-.selector {
-    grid-area: selector;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-    text-align: center;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
-.selector li {
-    align-self: center;
-    border: 2px solid rgb(255, 84, 5);
-}
-
-.selector li:hover {
-    align-self: center;
-    background-color: rgb(255, 84, 5);
-    color: white;
-    cursor: pointer;
-}
-
-
-.fotosmain {
-    grid-area: fotosmain;
-    text-align: center;
-}
-
-.fotosmain img {
-    width: 800px;
-    height: 500px;
-}
-
-.redes {
-    grid-area: redes;
-    text-align: center;
-    display: grid;
-    grid-template-rows: 0.3fr 1fr;
-    grid-template-columns: 1fr;
-    padding: 20px;
-}
-
-.redes i {
-    color: black;
-    font-size: 40px;
-}
-
-.resumen1 {
-    padding: 20px;
-    grid-area: resumen1;
-    border-bottom: 2px solid rgb(224, 224, 224);
-    border: 2px solid lightgray;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-
-}
-
-.resumen2 {
-    padding: 20px;
-    grid-area: resumen2;
-    border-bottom: 2px solid rgb(224, 224, 224);
-    border: 2px solid lightgray;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-
-}
-
-.resumen1 h4,
-.resumen2 h4 {
-    margin-top: 5px;
-    margin-bottom: 10px;
-    color: rgb(255, 84, 5);
-    font-weight: 600;
-    font-size: 30px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-
-}
-
-.resumen1 p,
-.resumen2 p {
-    margin-top: 5px;
-    margin-bottom: 5px;
-    color: rgb(255, 84, 5);
-    font-size: 20px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-.caractgrales {
-    display: grid;
-    grid-template-rows: 0.4fr 1fr 1fr;
-    grid-area: caractgrales;
-    padding: 20px;
-    border-bottom: 2px solid lightgray;
-}
-
-.caractgrales p {
-    color: rgb(255, 102, 0);
-    text-align: left;
-}
-
-.caractgrales1 li,
-.caractgrales2 li {
-    display: grid;
-    grid-template-columns: 7% 40% 40%;
-
-}
-
-
-.descripcion {
-    grid-area: descripcion;
-    border-bottom: 2px solid rgb(224, 224, 224);
-    padding: 20px;
-}
-
-.descripcion p {
-    margin-top: 10px;
-    text-align: justify;
-}
-
-.servicios {
-    grid-area: servicios;
-    padding: 20px;
-    border-bottom: 2px solid rgb(224, 224, 224);
-}
-
-.ambientes {
-    grid-area: ambientes;
-    padding: 20px;
-    border-bottom: 2px solid rgb(224, 224, 224);
-}
-
-.comodidades {
-    grid-area: comodidades;
-    padding: 20px;
-    border-bottom: 2px solid rgb(224, 224, 224);
-}
-
-.columna1prop ul {
-    margin-top: 10px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-}
-
-.columna1prop li i {
-    color: rgb(255, 102, 0);
-    border-radius: 100px;
-}
-
-
-
-
-
-.contactprop {
-    grid-area: contactprop;
-    margin-top: 30%;
-    border: 2px solid lightgray;
-    display: grid;
-    grid-auto-flow: row;
-    grid-template-rows: 0.4fr;
-    height: 32%;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-.contactoproptitulo {
-    background-color: rgb(255, 102, 0);
-    color: white;
-    padding: 20px;
-    text-align: center;
-    font-style: italic;
-}
-
-.contactoproptitulo h3 {
-    margin-top: 20px;
-}
-
-.contactoproptitulo i {
-    color: white;
-    font-size: 40px;
-}
-
-.form-pagina {
-    padding: 20px;
-}
-
-.form-pagina h3 {
-    padding: 20px;
-    text-align: center;
-    font-style: italic;
-}
-
-.cartel-noprop {
-    padding: 40px;
-    font-size: 25px;
-    text-align: center;
-    font-style: italic;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.menupadre {
-    display: block;
-    position: relative;
-    float: left;
-    line-height: 30px;
-}
-
-.menupadre a {
-    margin: 10px;
-    color: #FFFFFF;
-    text-decoration: none;
-}
-
-.menupadre:hover>ul {
-    display: block;
-    position: absolute;
-}
-
-.menuhijo {
-    display: none;
-}
-
-.menuhijo li {
-    background-color: lightgray;
-    line-height: 30px;
-    border-bottom: #CCC 1px solid;
-    border-right: #CCC 1px solid;
-    width: 100%;
-}
-
-.menuhijo li a {
-    color: black;
-}
-
-.menupadre ul {
-    list-style: none;
-    margin: 0;
-    padding: 0px;
-    min-width: 10em;
-}
-
-ul ul ul {
-    left: 100%;
-    top: 0;
-    margin-left: 1px;
-}
-
-
-
-.menupadre li:hover {}
-
-.expand {
-    font-size: 12px;
-    float: right;
-    margin-right: 5px;
 }
