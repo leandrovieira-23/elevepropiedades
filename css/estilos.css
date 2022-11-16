@@ -18,7 +18,7 @@
 header {
     background: black;
     box-sizing: border-box;
-    height: 80px;
+    height: 5rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     position: fixed;
     z-index: 999;
@@ -26,12 +26,12 @@ header {
 }
 
 .branding-logo .logo {
-    height: 60px;
-    margin-left: 40px;
+    height: 3.75rem;
+    margin-left: 2.5rem;
 }
 
 .navbar {
-    padding: 10px;
+    padding: 0.625rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -175,14 +175,14 @@ header {
 }
 
 .formulario {
-    height: 60px;
-    padding: 10px;
+    height: 3.75rem;
+    padding: 0.625rem;
 }
 
 .fondopropiedades form {
     background-color: lightgray;
-    height: 60px;
-    padding: 10px;
+    height: 3.75rem;
+    padding: 0.625rem;
 }
 
 .fondopropiedades div {
@@ -195,7 +195,7 @@ select {
     border-radius: 4px;
     box-sizing: border-box;
     width: 100%;
-    height: 40px;
+    height: 2.5rem;
     display: inline-block;
 
 }
@@ -206,7 +206,7 @@ select {
     border-radius: 4px;
     box-sizing: border-box;
     width: 100%;
-    height: 40px;
+    height: 2.5rem;
     display: inline-block;
 }
 
@@ -225,7 +225,7 @@ select {
 
 .buttonindex {
     background-color: lightgrey;
-    height: 60px;
+    height: 3.75rem;
 }
 
 /*---- FIN DEL BUSCADOR ----*/
@@ -252,8 +252,8 @@ select {
 }
 
 .slides img {
-    width: 640px;
-    height: 320px;
+    width: 40rem;
+    height: 20rem;
 }
 
 .slides-item {
@@ -295,38 +295,14 @@ select {
     color: #fff;
 }
 
-
-.carousel__skip-link {
-    height: 1px;
-    overflow: hidden;
-    position: absolute;
-    top: auto;
-    width: 1px;
-}
-
-.carousel__skip-link:focus {
-    align-items: center;
-    background-color: #000;
-    color: #fff;
-    display: flex;
-    font-size: 30px;
-    height: 680px;
-    justify-content: center;
-    opacity: .8;
-    text-decoration: none;
-    width: 100%;
-    z-index: 1;
-}
-
-
 .propdestacadas {
     display: flex;
     flex-direction: column;
 }
 
 .destacadas {
-    margin: 10px;
-    padding: 10px;
+    margin: 0.625rem;
+    padding: 0.625rem;
     font-style: italic;
     font-size: 40px;
     text-align: center;
@@ -336,18 +312,18 @@ select {
 #slider {
     font-family: sans-serif;
     margin: auto;
-    max-width: 800px;
+    max-width: 50rem;
     width: 100%;
-    padding: 30px;
+    padding: 1.875rem;
     box-sizing: border-box;
 }
 
 
 .flip-card {
     background-color: transparent;
-    width: 640px;
-    height: 320px;
-    perspective: 1000px;
+    width: 40rem;
+    height: 20rem;
+    perspective: 62.5rem;
 }
 
 .flip-card-inner {
@@ -362,8 +338,8 @@ select {
 .titulosdest {
     position: absolute;
     margin-left: 60%;
-    margin-top: 10px;
-    padding: 10px;
+    margin-top: 0.625rem;
+    padding: 0.625rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     border: 2px solid white;
     background-color: rgb(255, 84, 5);
@@ -386,13 +362,13 @@ select {
 }
 
 .flip-card-front img {
-    width: 640px;
-    height: 320px;
+    width: 40rem;
+    height: 20rem;
 }
 
 .flip-card-back {
-    padding: 40px;
-    font-size: 30px;
+    padding: 2.5rem;
+    font-size: 1.875rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: lightgrey;
     color: black;
@@ -400,11 +376,11 @@ select {
 }
 
 .botondest {
-    margin-top: 40px;
+    margin-top: 2.5rem;
     background-color: rgb(255, 84, 5);
     border: rgb(255, 84, 5);
     color: #f3f3f3;
-    padding: 10px;
+    padding: 0.625rem;
     border-color: none;
     border-radius: 10px;
     font-size: 20px;
@@ -424,11 +400,11 @@ select {
     grid-template-columns: 50% 50%;
     background-image: url(../img/Casa-nueva-casa-antigua.jpg);
     background-size: cover;
-    height: 400px;
+    height: 25rem;
 }
 
 .porqueinfo {
-    padding: 30px;
+    padding: 1.875rem;
     background-color: rgb(255, 84, 5);
     opacity: 0.8;
     color: white;
@@ -437,11 +413,11 @@ select {
 }
 
 .porqueinfo p {
-    margin-top: 10px;
+    margin-top: 0.625rem;
 }
 
 .porqueinfo i {
-    margin-top: 15px;
+    margin-top: 0.938rem;
 }
 
 .porqueinfotexto {
@@ -459,7 +435,7 @@ select {
     grid-template-columns: 100%;
     gap: 0px 12px;
     background-color: rgb(255, 102, 0);
-    padding: 30px;
+    padding: 1.875rem;
     list-style-type: none;
 }
 
@@ -494,7 +470,7 @@ select {
     background-color: rgb(33, 33, 33);
     display: grid;
     grid-auto-flow: column;
-    padding: 40px;
+    padding: 2.5rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-style: italic;
     color: white;
@@ -503,7 +479,7 @@ select {
 }
 
 .piecolum1 {
-    padding: 20px;
+    padding: 1.25rem;
     text-align: center;
 }
 
@@ -519,7 +495,7 @@ select {
 }
 
 .titulomenupie {
-    padding: 20px;
+    padding: 1.25rem;
     text-align: center;
 }
 
@@ -535,7 +511,7 @@ select {
 
 .newsletter,
 .redespie {
-    padding: 20px;
+    padding: 1.25rem;
     text-align: center;
 }
 
@@ -547,8 +523,8 @@ select {
 input[type=text],
 input[type=submit] {
     width: 80%;
-    padding: 12px;
-    margin: 8px 0;
+    padding: 0.75rem;
+    margin: 0.5rem 0;
     display: inline-block;
     border: 1px solid #ccc;
     box-sizing: border-box;
@@ -565,7 +541,7 @@ input[type=submit]:hover {
 }
 
 .redespie i {
-    margin: 20px 0;
+    margin: 1.25rem 0;
     cursor: pointer;
     color: white;
 }
@@ -576,7 +552,7 @@ input[type=submit]:hover {
 /*---- FOOTER ----*/
 .footer {
     background-color: black;
-    padding: 30px;
+    padding: 1.875rem;
     font-family: Verdana;
     font-style: italic;
     color: rgb(255, 254, 254);
@@ -604,7 +580,7 @@ input[type=submit]:hover {
 }
 
 .porqueadmin {
-    padding: 30px;
+    padding: 1.875;
     margin-right: 50%;
     margin-top: 5rem;
     background-color: rgb(255, 84, 5);
@@ -632,39 +608,40 @@ input[type=submit]:hover {
 .tituloadmin p {
     font-size: medium;
     text-align: justify;
-    margin-top: 15px;
+    margin-top: 0.938rem;
+    padding: 1rem;
 }
 
 .cuadro1 {
     grid-area: cuadro1;
-    padding: 20px;
+    padding: 1.25rem;
     hyphens: auto;
     font-size: medium;
 }
 
 .cuadro2 {
     grid-area: cuadro2;
-    padding: 20px;
+    padding: 1.25rem;
     hyphens: auto;
     font-size: medium;
 }
 
 .cuadro3 {
     grid-area: cuadro3;
-    padding: 20px;
+    padding: 1.25rem;
     hyphens: auto;
     font-size: medium;
 }
 
 .cuadro4 {
     grid-area: cuadro4;
-    padding: 20px;
+    padding: 1.25rem;
     hyphens: auto;
     font-size: medium;
 }
 
 .tituloformcontacto {
-    padding: 20px;
+    padding: 1.25rem;
     font-family: Verdana;
     font-style: italic;
     font-size: 20px;
@@ -685,7 +662,7 @@ input[type=submit]:hover {
     grid-auto-flow: column;
     grid-template-columns: 100%;
     gap: 0px 0px;
-    height: 430px;
+    height: 26.875rem;
     grid-template-areas:
         "titulo"
         "seccion-buscador"
@@ -694,7 +671,7 @@ input[type=submit]:hover {
 
 .titulo {
     margin-top: 5rem;
-    padding: 20px;
+    padding: 1.25rem;
     color: white;
     text-align: center;
     grid-area: titulo;
@@ -716,7 +693,7 @@ input[type=submit]:hover {
 
 .subtitle {
     grid-area: subtitle;
-    padding: 10px;
+    padding: 0.625rem;
     font-style: oblique;
     font-size: 15px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -733,7 +710,7 @@ input[type=submit]:hover {
 }
 
 .buscador {
-    padding: 20px;
+    padding: 1.25rem;
     grid-area: buscador;
     display: grid;
     grid-template-columns: auto auto auto auto;
@@ -748,8 +725,8 @@ input[type=submit]:hover {
 
 .buscador .formularioalquiler {
     background-color: lightgrey;
-    height: 60px;
-    padding: 10px;
+    height: 3.75rem;
+    padding: 0.625rem;
 }
 
 .buscador input[type=text],
@@ -758,7 +735,7 @@ select {
     border-radius: 4px;
     box-sizing: border-box;
     width: 100%;
-    height: 40px;
+    height: 2.5rem;
     display: inline-block;
 }
 
@@ -768,7 +745,7 @@ select {
     border-radius: 4px;
     box-sizing: border-box;
     width: 100%;
-    height: 40px;
+    height: 2.5;
     display: inline-block;
 }
 
@@ -788,7 +765,7 @@ select {
 
 .buttonalq {
     background-color: lightgrey;
-    height: 60px;
+    height: 3.75rem;
 }
 
 .main {
@@ -806,7 +783,7 @@ select {
 }
 
 .card-index {
-    margin: 20px;
+    margin: 1.25rem;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -824,7 +801,7 @@ select {
 
 .border-card h4 {
     margin-top: 5%;
-    height: 40px;
+    height: 2.5rem;
 }
 
 .bg-card {
@@ -841,11 +818,11 @@ select {
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
     border-bottom: 1px solid lightgrey;
-    width: 320px;
+    width: 20rem;
 }
 
 .w-img {
-    width: 320px;
+    width: 20rem;
 }
 
 
@@ -853,8 +830,8 @@ select {
     background-color: rgb(255, 84, 5);
     font-family: Verdana;
     color: #f3f3f3;
-    padding: 10px 15px;
-    margin: 10px;
+    padding: 0.625rem 0.938rem;
+    margin: 0.625rem;
     border-color: transparent;
     border-radius: 10px;
     font-weight: 500;
@@ -870,7 +847,7 @@ select {
 /*----FIN PAGINA ALQUILER Y VENTA -----*/
 /*----PAGINA QUIENES SOMOS -----*/
 .quienessomosfondo {
-    padding: 20px;
+    padding: 1.25rem;
     font-style: italic;
     background-color: rgb(255, 102, 0);
     font-family: Verdana;
@@ -888,14 +865,14 @@ select {
 }
 
 .textosomos {
-    padding: 30px;
+    padding: 1.875rem;
     font-family: Verdana;
     color: black;
     text-align: justify;
 }
 
 .textosomos h2 {
-    margin-top: 15px;
+    margin-top: 0.938rem;
 }
 
 .textosomos li {
@@ -906,7 +883,7 @@ select {
 
 /*----PAGINA CONTACTO -----*/
 .grid-container {
-    padding: 20px;
+    padding: 1.25rem;
     display: grid;
     grid-auto-flow: column;
     grid-template-columns: 50% 50%;
@@ -931,10 +908,10 @@ select {
 
 .formcontacto textarea {
     width: 100%;
-    padding: 15px 10px;
+    padding: 0.938rem 0.625rem;
     font-size: 15px;
     border-color: lightgray;
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
     border-radius: 3px;
     resize: none;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -944,16 +921,16 @@ select {
 
 /*---- PAGINA POLITICAS -----*/
 .polprivacidad {
-    padding: 20px;
+    padding: 1.25rem;
     font-style: italic;
     background-color: rgb(255, 102, 0);
     font-family: Verdana;
     color: #f3f3f3;
-    height: 180px;
+    height: 11.25rem;
 }
 
 .polprivacidad h1 {
-    margin-top: 90px;
+    margin-top: 5.625rem;
     font-style: oblique;
     font-size: 25px;
     text-align: center;
@@ -969,7 +946,7 @@ select {
 }
 
 .politicas h2 {
-    margin-top: 10px;
+    margin-top: 0.625rem;
     color: black;
     text-align: left;
     font-size: 15px;
@@ -987,7 +964,7 @@ select {
     font-weight: 400;
     justify-content: right;
     font-size: 15px;
-    margin-right: 20px;
+    margin-right: 1.25rem;
 }
 
 .index {
@@ -1026,18 +1003,18 @@ select {
     background: rgb(255, 102, 0);
     border: 2px solid white;
     color: #fff;
-    width: 44px;
-    height: 44px;
+    width: 2.75rem;
+    height: 2.75rem;
     text-align: center;
     font-size: 18px;
     border-radius: 50%;
-    right: 20px;
-    bottom: 60px;
+    right: 1.25rem;
+    bottom: 3.75rem;
     transition: all 0.5s;
 }
 
 .back-to-top i {
-    padding-top: 12px;
+    padding-top: 0.75rem;
     color: #fff;
 }
 
@@ -1045,10 +1022,10 @@ select {
 /*---BOTON WHATSAPP---*/
 .whatsapp {
     position: fixed;
-    width: 50px;
-    height: 50px;
+    width: 3.125rem;
+    height: 3.125rem;
     bottom: 5px;
-    right: 18px;
+    right: 1.125rem;
     background-color: #25d366;
     color: #FFF;
     border-radius: 50px;
@@ -1058,13 +1035,13 @@ select {
 }
 
 .whatsapp-icon {
-    margin-top: 10px;
+    margin-top: 0.625rem;
 }
 
 /*---FIN BOTON WHATSAPP---*/
 /*---- INICIO PAGINA FICHAS----*/
 .tarjetapropiedad {
-    padding: 20px;
+    padding: 1.25rem;
     display: grid;
     grid-template-columns: 70% 30%;
     grid-template-rows: 1fr;
@@ -1081,7 +1058,7 @@ select {
 }
 
 .columna1prop {
-    padding: 20px;
+    padding: 1.25rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     border: 2px solid lightgray;
     grid-template-columns: 1fr;
@@ -1102,7 +1079,7 @@ select {
 }
 
 .titulocasa {
-    padding: 20px;
+    padding: 1.25rem;
     grid-area: titulocasa;
     border-bottom: 2px solid rgb(224, 224, 224);
     display: grid;
@@ -1115,14 +1092,13 @@ select {
 
 .titulocasa1 p {
     font-size: 12px;
-    margin-top: 5px;
+    margin-top: 0.313rem;
 }
 
 .titulocasa2 {
     align-self: center;
     text-align: right;
 }
-
 
 .carouselficha {
     overflow: hidden;
@@ -1142,12 +1118,12 @@ select {
 }
 
 .slidesficha img {
-    width: 640px;
-    height: 520px;
+    width: 40rem;
+    height: 32.5rem;
 }
 
 .slides-item-ficha {
-    margin-top: 20px;
+    margin-top: 1.25rem;
     display: flex;
     flex-shrink: 0;
     font-size: 100px;
@@ -1182,12 +1158,12 @@ select {
 
 
 .flip-card-front-ficha img {
-    width: 640px;
-    height: 320px;
+    width: 40rem;
+    height: 20rem;
 }
 
 .fotos {
-    padding: 20px;
+    padding: 1.25rem;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 0px 0px;
@@ -1199,7 +1175,7 @@ select {
 }
 
 .resumen1 {
-    padding: 20px;
+    padding: 1.25rem;
     grid-area: resumen1;
     border-bottom: 2px solid rgb(224, 224, 224);
     border: 2px solid lightgray;
@@ -1207,7 +1183,7 @@ select {
 }
 
 .resumen2 {
-    padding: 20px;
+    padding: 1.25rem;
     grid-area: resumen2;
     border-bottom: 2px solid rgb(224, 224, 224);
     border: 2px solid lightgray;
@@ -1216,8 +1192,8 @@ select {
 
 .resumen1 h4,
 .resumen2 h4 {
-    margin-top: 5px;
-    margin-bottom: 10px;
+    margin-top: 0.313rem;
+    margin-bottom: 0.625rem;
     color: rgb(255, 84, 5);
     font-weight: 600;
     font-size: 30px;
@@ -1227,8 +1203,8 @@ select {
 
 .resumen1 p,
 .resumen2 p {
-    margin-top: 5px;
-    margin-bottom: 5px;
+    margin-top: 0.313rem;
+    margin-bottom: 0.313rem;
     color: rgb(255, 84, 5);
     font-size: 20px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -1236,7 +1212,7 @@ select {
 
 .caractgrales {
     display: grid;
-    padding: 20px;
+    padding: 1.25rem;
     border-bottom: 2px solid lightgray;
 }
 
@@ -1268,16 +1244,16 @@ select {
 .descripcion {
     grid-area: descripcion;
     border-bottom: 2px solid rgb(224, 224, 224);
-    padding: 20px;
+    padding: 1.25rem;
 }
 
 .descripcion p {
-    margin-top: 10px;
+    margin-top: 0.625rem;
     text-align: justify;
 }
 
 .columna1prop ul {
-    margin-top: 10px;
+    margin-top: 0.625rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
@@ -1299,13 +1275,13 @@ select {
 .contactoproptitulo {
     background-color: rgb(255, 102, 0);
     color: white;
-    padding: 20px;
+    padding: 1.25rem;
     text-align: center;
     font-style: italic;
 }
 
 .contactoproptitulo h3 {
-    margin-top: 20px;
+    margin-top: 1.25rem;
 }
 
 .contactoproptitulo i {
@@ -1314,17 +1290,17 @@ select {
 }
 
 .form-pagina {
-    padding: 20px;
+    padding: 1.25rem;
 }
 
 .form-pagina h3 {
-    padding: 20px;
+    padding: 1.25rem;
     text-align: center;
     font-style: italic;
 }
 
 .cartel-noprop {
-    padding: 40px;
+    padding: 2.5rem;
     font-size: 25px;
     text-align: center;
     font-style: italic;
@@ -1337,7 +1313,7 @@ select {
     display: grid;
     grid-template-rows: 0.3fr 1fr;
     grid-template-columns: 1fr;
-    padding: 20px;
+    padding: 1.25rem;
     margin-top: 2rem;
 }
 
@@ -1371,7 +1347,6 @@ select {
         transition: 0.5s transform ease-in-out;
         overflow-y: hidden;
         z-index: 9999;
-
     }
 
     .menu>li>a {
@@ -1390,7 +1365,6 @@ select {
         top: 0;
         background-color: rgba(33, 33, 33, 1);
         transition: 0.3s transform ease-in-out;
-
     }
 
     .submenu .submenu {
@@ -1530,110 +1504,33 @@ select {
 
     /*----INICIO PROPIEDADES DESTACADAS RESPONSIVE MOBILE ----*/
     .destacadas {
-        padding: 30px;
         text-align: center;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         font-size: 18px;
     }
 
-    #slider {
-        height: 500px;
+    .flip-card {
+        width: 20rem;
+        height: 15rem;
     }
 
-    .slider {
-        border: 1px;
-        margin-top: -60% !important;
-        text-align: left;
-        margin-left: 100%;
-        z-index: 0;
+    .flip-card-front img {
+        width: 20rem;
+        height: 15rem;
     }
 
-    #slide1 {
-        font-family: Verdana;
-        text-align: center;
-        color: #f3f3f3;
-        margin-left: 100%;
-        margin-top: 10%;
+    .flip-card-back {
+        padding: 2rem;
+        font-size: 18px;
     }
 
-    #slide2 {
-        font-family: Verdana;
-        text-align: center;
-        color: #f3f3f3;
-        margin-left: 100%;
-        margin-top: 10%;
+    .botondest {
+        margin-top: 0.7rem;
     }
 
-    #slide3 {
-        font-family: Verdana;
-        text-align: center;
-        color: #f3f3f3;
-        margin-left: 100%;
-        margin-top: 10%;
-    }
-
-    .tipoprop1 {
-        visibility: hidden;
-    }
-
-    #slider>ul.slider li {
-        opacity: 0;
-        transition: opacity .5s;
-    }
-
-    #slider>ul.slider .textotipoprop1 {
-        color: white;
-        position: relative;
-        background-color: rgb(255, 84, 5);
-        top: 127%;
-        width: 320px;
-        left: 0;
-        opacity: 0.9;
-        border-bottom-left-radius: 15px;
-        border-bottom-right-radius: 15px;
-        border-style: none;
-    }
-
-    #slider>ul.slider .w-img {
-        width: 320px;
-        border-top-left-radius: 15px;
-        border-top-right-radius: 15px;
-    }
-
-    #slider>ul.slider li:first-child {
-        opacity: 1;
-    }
-
-    #slider>ul.slider li:target {
-        opacity: 1;
-    }
-
-    #slider>.menuslider {
-        position: relative;
-        color: #f3f3f3;
-        margin-left: 100%;
-        transition: all.7s;
-        cursor: pointer;
-        background: none;
-        margin-top: 70%;
-        z-index: 0;
-    }
-
-    #slider>.menuslider li {
-        display: inline-block;
-        position: relative;
-        text-align: center;
-    }
-
-    #slider>.menuslider li a {
-        display: inline-block;
-        color: white;
-        text-decoration: none;
-        background-color: grey;
-        width: 30px;
-        height: 30px;
-        font-size: 25px;
-        border-radius: 100%;
+    .titulosdest {
+        margin-left: 15%;
+        opacity: 0.8;
     }
 
 
@@ -1848,30 +1745,35 @@ select {
 
     .cuadro1 {
         grid-area: cuadro1;
-        padding: 0;
+        padding: 1rem;
         margin-top: 20px;
         text-align: justify;
     }
 
     .cuadro2 {
         grid-area: cuadro2;
-        padding: 0;
+        padding: 1rem;
         margin-top: 20px;
         text-align: justify;
     }
 
     .cuadro3 {
         grid-area: cuadro3;
-        padding: 0;
+        padding: 1rem;
         margin-top: 20px;
         text-align: justify;
     }
 
     .cuadro4 {
         grid-area: cuadro4;
-        padding: 0;
+        padding: 1rem;
         margin-top: 20px;
+        margin-bottom: 20px;
         text-align: justify;
+    }
+
+    .tipoform input[type=submit] {
+        width: 100%;
     }
 
     /*----FIN PAGINA ADMINISTRACION RESPONSIVE MOBILE -----*/
@@ -1921,9 +1823,118 @@ select {
     .politicas {
         hyphens: auto;
     }
+
+    /*-----fichas movil resposive----*/
+
+     .tarjetapropiedad {
+        display: block;
+    }
+
+    .columna1prop {
+        padding: 0;
+    }
+
+    .titulocasa {
+        display: block;
+        padding: 0.5rem;
+    }
+
+    .titulocasa1,
+    .titulocasa2 {
+        text-align: center;
+        font-size: 14px;
+        margin-top: 10px;
+    }
+
+    .carousel__nav-ficha {
+        display: grid;
+        justify-items: center;
+        grid-template-columns: .5fr .5fr;
+        padding: 10px;
+    }
+    .flip-card-front-ficha img {
+        width: 20rem;
+        height: 10rem;
+    }
+    .flip-card-front-ficha iframe {
+        width: 15rem;
+        height: 7.5rem;
+    }
+
+    .fotos {
+        display: block;
+        padding: 0;
+    }
+
+    .caractgrales {
+        display: block;
+    }
+
+    .caractgrales li {
+        grid-template-columns: 10% 50% 40%;
+    }
+
+    .columna1prop ul {
+        display: block;
+    }
+
+    .caractgrales1 p {
+        text-align: center;
+    }
+
+    .caractgrales3 li {
+        display: block;
+    }
+
+    .descripcion p{
+        font-size: 16px;
+    }
+    .contactprop {
+        height: 46rem;
+    }
+
+    .redes {
+        padding: 0;
+    }
+
+    .menuretorno{
+        font-size: clamp(10px, 11px, 18px);
+    }
+
 }
 
 /*----------FIN RESPONSIVE MOBILE HASTA 480PX-----------*/
+
+
+@media screen and (min-width: 481px) and (max-width: 680px) {
+
+
+    .flip-card {
+        width: 30rem;
+        height: 20rem;
+    }
+
+    .flip-card-front img {
+        width: 30rem;
+        height: 20rem;
+    }
+
+    .flip-card-back {
+        margin-top: 0;
+        padding: 2rem;
+        font-size: 30px;
+    }
+
+    .botondest {
+        margin-top: 2rem;
+    }
+
+    .titulosdest {
+        margin-left: 50%;
+        opacity: 0.8;
+    }
+
+}
 
 /*----INICIO RESPONSIVE TABLET O IPAD 481 A 980----*/
 
@@ -1944,7 +1955,6 @@ select {
         transition: 0.5s transform ease-in-out;
         overflow-y: hidden;
         z-index: 9999;
-
     }
 
     .menu>li>a {
@@ -2038,16 +2048,16 @@ select {
     .buscadortitulo {
         margin-top: 70px;
         text-align: center;
-        font-size: 18px;
+        font-size: 20px;
     }
 
 
     .wrapper {
-        padding: 40px 0px 30px 0px;
+        padding: 20px 0px 30px 0px;
     }
 
     .wrapper h2 {
-        font-size: 32px;
+        font-size: 35px;
     }
 
     .wrapper p {
@@ -2099,106 +2109,7 @@ select {
         text-align: center;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         font-size: 25px;
-
     }
-
-    #slider {
-        width: 100%;
-        padding: 10px 30px 20px 30px;
-        margin-top: -10%;
-        height: 500px;
-    }
-
-    .slider {
-        background-color: lightgray;
-        border-radius: 10px;
-        z-index: 0;
-    }
-
-    #slider>ul,
-    li {
-        list-style: none;
-    }
-
-    #slider>ul.slider {
-        position: relative;
-        width: 100%;
-        background: none;
-        margin-left: 100%;
-    }
-
-    #slider>ul.slider .tipoprop1 {
-        color: white;
-        position: absolute;
-        background-color: rgb(255, 84, 5);
-        padding: 10px;
-        top: 10%;
-        right: 10%;
-        border-style: solid;
-        opacity: 0.9;
-    }
-
-    #slider>ul.slider .textotipoprop1 {
-        margin: auto;
-        color: white;
-        position: absolute;
-        background-color: rgb(255, 84, 5);
-        padding: 10px;
-        top: 60%;
-        left: 5%;
-        opacity: 0.9;
-        border-style: solid;
-    }
-
-
-    #slider>ul.slider li {
-        position: absolute;
-        opacity: 0;
-        width: inherit;
-        height: inherit;
-        transition: opacity .5s;
-    }
-
-    #slider>ul.slider li .w-img {
-        width: 100%;
-        border-radius: 15px;
-    }
-
-    #slider>ul.slider li:first-child {
-        opacity: 1;
-    }
-
-    #slider>ul.slider li:target {
-        opacity: 1;
-    }
-
-    #slider>.menuslider {
-        position: relative;
-        color: aqua;
-        transition: all.7s;
-        cursor: pointer;
-        background: none;
-        margin-left: 100%;
-        z-index: 0;
-    }
-
-    #slider>.menuslider li {
-        display: inline-block;
-        position: relative;
-        text-align: center;
-    }
-
-    #slider>.menuslider li a {
-        display: inline-block;
-        color: white;
-        text-decoration: none;
-        background-color: grey;
-        width: 30px;
-        height: 30px;
-        font-size: 25px;
-        border-radius: 100%;
-    }
-
 
     /*------- FIN DESTACADAS RESPONSIVE-----*/
 
@@ -2259,6 +2170,10 @@ select {
         text-decoration: none;
     }
 
+    .grid-container {
+        display: block;
+    }
+
     /*---- FIN CARTEL DE CONTACTO RESPONSIVE----*/
 
     /*---- PIE DE PAGINA RESPONSIVE----*/
@@ -2304,4 +2219,16 @@ select {
         margin-right: 0;
     }
 
+    /*-----fichas ipad resposive----*/
+    .tarjetapropiedad {
+        display: block;
+    }
+
+    .caractgrales1 p {
+        text-align: center;
+    }
+
+    .contactprop {
+        height: 46rem;
+    }
 }
