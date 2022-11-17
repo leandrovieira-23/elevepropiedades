@@ -1,0 +1,181 @@
+$color_1: white;
+$color_2: #f3f3f3;
+$color_3: black;
+$font-family_1: Verdana, Geneva, Tahoma, sans-serif;
+$font-family_2: Verdana;
+$background-color_1: rgb(255, 102, 0);
+$background-color_2: lightgrey;
+$background-color_3: rgb(255, 84, 5);
+$background-color_4: rgb(182, 62, 7);
+$border-color_1: transparent;
+
+.mainalquiler {
+	display: grid;
+	background-color: $background-color_1;
+	grid-auto-flow: column;
+	grid-template-columns: 100%;
+	gap: 0px 0px;
+	height: 26.875rem;
+	grid-template-areas: "titulo" "seccion-buscador" "seccion-buscador";
+}
+.titulo {
+	margin-top: 5rem;
+	padding: 1.25rem;
+	color: $color_1;
+	text-align: center;
+	grid-area: titulo;
+	font-family: $font-family_1;
+	font-style: italic;
+}
+.seccion-buscador {
+	background-color: $background-color_1;
+	border: 5px solid black;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 10px 0px;
+	grid-template-areas: "subtitle subtitle subtitle" "wrapper-propiedades wrapper-propiedades wrapper-propiedades" "buscador buscador buscador";
+}
+.subtitle {
+	grid-area: subtitle;
+	padding: 0.625rem;
+	font-style: oblique;
+	font-size: 15px;
+	font-family: $font-family_1;
+	color: $color_2;
+}
+.wrapper-propiedades {
+	grid-area: wrapper-propiedades;
+	color: $color_1;
+	text-align: center;
+	font-family: $font-family_1;
+	font-style: italic;
+	font-size: 25px;
+}
+.buscador {
+	padding: 1.25rem;
+	grid-area: buscador;
+	display: grid;
+	grid-template-columns: auto auto auto auto;
+	align-items: center;
+	form {
+		background-color: $background-color_2;
+		height: 60px;
+		padding: 10px;
+	}
+	.formularioalquiler {
+		background-color: $background-color_2;
+		height: 3.75rem;
+		padding: 0.625rem;
+	}
+	input[type=text] {
+		border: solid lightgrey;
+		border-radius: 4px;
+		box-sizing: border-box;
+		width: 100%;
+		height: 2.5rem;
+		display: inline-block;
+	}
+	input[type=search] {
+		border: solid lightgrey;
+		border-radius: 4px;
+		box-sizing: border-box;
+		width: 100%;
+		height: 2.5;
+		display: inline-block;
+	}
+	.buttonalquiler {
+		background-color: $background-color_3;
+		color: $color_1;
+		border-radius: 5px;
+		text-transform: uppercase;
+		font-weight: 300;
+		&:hover {
+			background-color: $background-color_4;
+			cursor: pointer;
+		}
+	}
+}
+select {
+	border: solid lightgrey;
+	border-radius: 4px;
+	box-sizing: border-box;
+	width: 100%;
+	height: 2.5rem;
+	display: inline-block;
+	border: solid lightgrey;
+	border-radius: 4px;
+	box-sizing: border-box;
+	width: 100%;
+	height: 2.5;
+	display: inline-block;
+}
+.buttonalq {
+	background-color: $background-color_2;
+	height: 3.75rem;
+}
+.main {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.df-main {
+	border: 1px;
+	grid-template-columns: 1fr 1fr;
+	width: auto;
+	margin: auto;
+	text-align: left;
+}
+.card-index {
+	margin: 1.25rem;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+}
+.border-card {
+	background-color: $background-color_2;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	font-family: $font-family_2;
+	text-align: center;
+	color: $color_3;
+	h4 {
+		margin-top: 5%;
+		height: 2.5rem;
+	}
+}
+.bg-card {
+	background-color: $background-color_2;
+	color: $color_3;
+	font-family: $font-family_2;
+	border-left: 1px solid lightgrey;
+	border-right: 1px solid lightgrey;
+	border-top: 1px solid lightgrey;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border-bottom-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+	border-bottom: 1px solid lightgrey;
+	width: 20rem;
+}
+.w-img {
+	width: 20rem;
+}
+.botonprop {
+	background-color: $background-color_3;
+	font-family: $font-family_2;
+	color: $color_2;
+	padding: 0.625rem 0.938rem;
+	margin: 0.625rem;
+	border-color: $border-color_1;
+	border-radius: 10px;
+	font-weight: 500;
+	font-size: 15px;
+	font-style: normal;
+	text-decoration: none;
+	&:hover {
+		opacity: 0.7;
+	}
+}

@@ -1,0 +1,32 @@
+$color_1: white;
+$font-family_1: verdana;
+$font-family_2: Verdana;
+$background-color_1: rgb(255, 84, 5);
+
+.porquecontactarnos {
+	display: grid;
+	grid-auto-flow: column;
+	grid-template-columns: 50% 50%;
+	background-image: url(../img/Casa-nueva-casa-antigua.jpg);
+	background-size: cover;
+	height: 25rem;
+}
+.porqueinfo {
+	padding: 1.875rem;
+	background-color: $background-color_1;
+	opacity: 0.8;
+	color: $color_1;
+	font-family: $font-family_1;
+	text-align: center;
+	p {
+		margin-top: 0.625rem;
+	}
+	i {
+		margin-top: 0.938rem;
+	}
+}
+.porqueinfotexto {
+	font-family: $font-family_2;
+	text-decoration: underline;
+}
+

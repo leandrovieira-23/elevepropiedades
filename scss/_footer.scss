@@ -1,0 +1,17 @@
+$color_1: rgb(255, 254, 254);
+$font-family_1: Verdana;
+$background-color_1: black;
+
+.footer {
+	background-color: $background-color_1;
+	padding: 1.875rem;
+	font-family: $font-family_1;
+	font-style: italic;
+	color: $color_1;
+	font-size: 12px;
+	list-style-type: none;
+}
+.linkfooter {
+	text-decoration: none;
+	color: $color_1;
+}

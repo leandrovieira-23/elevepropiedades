@@ -1,0 +1,555 @@
+$color_1: white;
+$color_2: #f3f3f3;
+$color_3: rgb(255, 254, 254);
+$font-family_1: Verdana;
+$font-family_2: Verdana, Geneva, Tahoma, sans-serif;
+$font-family_3: verdana;
+$background-color_1: rgba(33, 33, 33, 1);
+$background-color_2: grey;
+$background-color_3: rgb(255, 102, 0);
+$background-color_4: lightgray;
+$background-color_5: rgb(255, 84, 5);
+$background-color_6: rgb(182, 62, 7);
+$background-color_7: rgb(33, 33, 33);
+$background-color_8: black;
+
+/*----------INICIO RESPONSIVE MOBILE HASTA 480PX-----------*/
+/*----------responsive menu y hamburguesa MOBILE-----------*/
+/*---- PAGINA INDEX RESPONSIVE MOBILE----*/
+/*---- INICIO RESPONSIVE MOBILE BUSCADOR----*/
+/*---- FIN DEL RESPONSIVE MOBILE BUSCADOR ----*/
+/*----INICIO PROPIEDADES DESTACADAS RESPONSIVE MOBILE ----*/
+/*------- FIN DESTACADAS RESPONSIVE MOBILE -----*/
+/*---- POR QUE CONTACTARNOS RESPONSIVE MOBILE  ----*/
+/*---- FIN POR QUE CONTACTARNOS RESPONSIVE MOBILE ----*/
+/*---- CARTEL DE CONTACTO RESPONSIVE MOBILE ----*/
+/*---- FIN CARTEL DE CONTACTO RESPONSIVE MOBILE ----*/
+/*---- PIE DE PAGINA RESPONSIVE MOBILE ----*/
+/*---- FIN PIE DE PAGINA RESPONSIVE MOBILE ----*/
+/*---- FIN DEL MAIN RESPONSIVE MOBILE ----*/
+/*---- FOOTER RESPONSIVE MOBILE ----*/
+/*---- FIN DE FOOTER RESPONSIVE MOBILE ----*/
+/*----PAGINA QUIENES SOMOS RESPOSIVE MOBILE -----*/
+/*---- FIN PAGINA QUIENES SOMOS RESPOSIVE MOBILE -----*/
+/*----PAGINA ADMINISTRACION RESPONSIVE MOBILE -----*/
+/*----FIN PAGINA ADMINISTRACION RESPONSIVE MOBILE -----*/
+/*----PAGINA ALQUILER Y VENTA RESPONSIVE MOBILE -----*/
+/*----FIN PAGINA ALQUILER Y VENTA RESPONSIVE MOBILE -----*/
+/*----PAGINA CONTACTO RESPONSIVE MOBILE -----*/
+/*----FIN PAGINA CONTACTO RESPONSIVE MOBILE -----*/
+/*-----fichas movil resposive----*/
+/*----------FIN RESPONSIVE MOBILE HASTA 480PX-----------*/
+@media screen and (max-width: 480px) {
+	.menu {
+		flex-flow: column;
+		position: absolute;
+		background: black;
+		top: 4.55em;
+		left: 0;
+		right: 0;
+		height: auto;
+		opacity: 0;
+		transform: scaleY(0);
+		transform-origin: top center;
+		transition: 0.5s transform ease-in-out;
+		overflow-y: hidden;
+		z-index: 9999;
+		>li {
+			>a {
+				padding: 20px;
+				font-size: 1rem;
+				color: $color_1;
+			}
+			&:hover {
+				>a+.submenu {
+					position: relative;
+				}
+			}
+		}
+	}
+	.submenu {
+		>li {
+			>a {
+				font-size: 1rem;
+			}
+			&:hover {
+				>a+.submenu {
+					position: relative;
+				}
+			}
+		}
+		left: 15%;
+		width: 75%;
+		top: 0;
+		background-color: $background-color_1;
+		transition: 0.3s transform ease-in-out;
+		.submenu {
+			left: 15%;
+			top: 0;
+			width: 75%;
+			background-color: $background-color_2;
+		}
+		.arrow {
+			transform: rotate(-45deg);
+		}
+	}
+	.hamburger {
+		width: 2em;
+		height: 0.25em;
+		display: block;
+		background: white;
+		margin-bottom: 10px;
+		margin-right: 20px;
+		position: relative;
+		cursor: pointer;
+		transition: 0.2s transform ease-in-out;
+		&::after {
+			content: "";
+			position: absolute;
+			left: 0;
+			background: inherit;
+			width: inherit;
+			height: inherit;
+			transition: 0.2s transform ease-in-out;
+			top: 0.50em;
+		}
+		&::before {
+			content: "";
+			position: absolute;
+			left: 0;
+			background: inherit;
+			width: inherit;
+			height: inherit;
+			transition: 0.2s transform ease-in-out;
+			bottom: 0.50em;
+		}
+	}
+	input[type="checkbox"] {
+		&:checked+.menu {
+			position: absolute;
+			opacity: 1;
+			transform: scaleY(1);
+		}
+	}
+	.buscadorfondo {
+		padding: 20px;
+		font-style: italic;
+		background-color: $background-color_3;
+		grid-template-rows: 100px 80px 250px;
+		gap: 5px 0px;
+		font-family: $font-family_1;
+		color: $color_2;
+		height: 500px;
+		width: 100%;
+	}
+	.buscadortitulo {
+		margin-top: 70px;
+		h1 {
+			text-align: center;
+			font-style: oblique;
+			font-family: $font-family_1;
+			color: $color_2;
+			font-size: 18px;
+		}
+	}
+	.wrapper {
+		margin: auto;
+		align-items: center;
+		padding: 0px;
+		h2 {
+			font-size: 22px;
+		}
+		p {
+			font-size: 18px;
+		}
+	}
+	.fondopropiedades {
+		margin-top: auto;
+		background-color: $background-color_4;
+		border-radius: 10px;
+		display: block;
+	}
+	input[type=text] {
+		border-radius: 4px;
+	}
+	select {
+		border-radius: 4px;
+		border: solid lightgray;
+		border-radius: 4px;
+		box-sizing: border-box;
+		width: 100%;
+		padding: 10px;
+		display: inline-block;
+	}
+	input[type=search] {
+		border: solid lightgray;
+		border-radius: 4px;
+		box-sizing: border-box;
+		width: 100%;
+		padding: 10px;
+		display: inline-block;
+	}
+	.buttonindex {
+		background-color: $background-color_5;
+		color: $color_1;
+		border-radius: 5px;
+		text-transform: uppercase;
+		font-weight: 300;
+		width: 100%;
+		text-align: center;
+	}
+	.button {
+		&:hover {
+			background-color: $background-color_6;
+			cursor: pointer;
+		}
+	}
+	.destacadas {
+		text-align: center;
+		font-family: $font-family_2;
+		font-size: 18px;
+	}
+	.flip-card {
+		width: 20rem;
+		height: 15rem;
+	}
+	.flip-card-front {
+		img {
+			width: 20rem;
+			height: 15rem;
+		}
+	}
+	.flip-card-back {
+		padding: 2rem;
+		font-size: 18px;
+	}
+	.botondest {
+		margin-top: 0.7rem;
+	}
+	.titulosdest {
+		margin-left: 15%;
+		opacity: 0.8;
+	}
+	.porquecontactarnos {
+		background-attachment: local;
+		background-position-x: center;
+		grid-template-columns: 0% 100%;
+	}
+	.porqueinfo {
+		padding: 30px;
+		margin-left: 0;
+		background-color: $background-color_5;
+		opacity: 0.8;
+		color: $color_1;
+		font-family: $font-family_3;
+		p {
+			margin-top: 6px;
+		}
+		i {
+			margin-top: 8px;
+		}
+	}
+	#cartelcontacto {
+		padding: 0;
+		position: relative;
+		display: grid;
+		grid-auto-flow: row;
+		grid-template-rows: 100px 100px 100px;
+		background-color: $background-color_3;
+		height: 450px;
+		li {
+			margin: 10px;
+		}
+		i {
+			margin-top: 10px;
+		}
+	}
+	.carteldecontacto {
+		text-align: center;
+		text-decoration: none;
+		font-style: italic;
+		padding: 30px;
+		grid-template-columns: none;
+	}
+	.cartel1 {
+		color: $color_1;
+		text-decoration: none;
+	}
+	#piedepagina {
+		padding: 0;
+		position: relative;
+		display: inline;
+		display: grid;
+		grid-auto-flow: row;
+		background-color: $background-color_7;
+	}
+	.piedepagina {
+		color: $color_1;
+		text-align: center;
+		text-decoration: none;
+		font-style: italic;
+	}
+	.logopie {
+		padding: 20px 20px 10px 20px;
+	}
+	.textopie {
+		font-size: 12px;
+		color: $color_1;
+		text-decoration: none;
+		a {
+			color: $color_1;
+			text-decoration: none;
+		}
+	}
+	.titulomenupie {
+		font-size: 20px;
+	}
+	.textomenupie {
+		font-size: 15px;
+	}
+	.newsletter {
+		font-size: 20px;
+		input[type=text] {
+			width: 70%;
+			padding: 12px;
+			margin: 8px 0;
+			display: inline-block;
+			border: 1px solid #ccc;
+			box-sizing: border-box;
+		}
+		input[type=submit] {
+			background-color: $background-color_5;
+			color: $color_1;
+			border: none;
+			text-transform: uppercase;
+			font-weight: 300;
+			&:hover {
+				opacity: 0.8;
+			}
+		}
+	}
+	input[type=submit] {
+		width: 70%;
+		padding: 12px;
+		margin: 8px 0;
+		display: inline-block;
+		border: 1px solid #ccc;
+		box-sizing: border-box;
+	}
+	.redespie {
+		font-size: 20px;
+		i {
+			margin-top: 20px;
+			margin: 20px 0;
+		}
+	}
+	.footer {
+		background-color: $background-color_8;
+		padding: 30px;
+		font-family: $font-family_1;
+		font-style: italic;
+		color: $color_3;
+		font-size: 12px;
+	}
+	.linkfooter {
+		text-decoration: none;
+		color: $color_3;
+	}
+	.quienessomosfondo {
+		padding: 20px;
+		font-style: italic;
+		background-color: $background-color_3;
+		font-family: $font-family_1;
+		color: $color_2;
+		height: 200px;
+	}
+	.fondoadm {
+		background-image: url(../img/admin.jpg);
+		background-attachment: local;
+		background-position-x: center;
+		display: grid;
+		grid-template-columns: 100%;
+		grid-template-rows: 1fr;
+		grid-auto-rows: 1fr;
+		gap: 9px 0px;
+		grid-auto-flow: row;
+		grid-template-areas: "porqueadmin";
+		width: 100%;
+	}
+	.porqueadmin {
+		width: 100%;
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: 2fr;
+		gap: 0px 0px;
+		grid-auto-flow: row;
+		grid-template-areas: "tituloadmin" "cuadro1" "cuadro2" "cuadro3" "cuadro4";
+		grid-area: porqueadmin;
+	}
+	.tituloadmin {
+		grid-area: tituloadmin;
+		margin-top: 60px;
+		text-align: center;
+	}
+	.cuadro1 {
+		grid-area: cuadro1;
+		padding: 1rem;
+		margin-top: 20px;
+		text-align: justify;
+	}
+	.cuadro2 {
+		grid-area: cuadro2;
+		padding: 1rem;
+		margin-top: 20px;
+		text-align: justify;
+	}
+	.cuadro3 {
+		grid-area: cuadro3;
+		padding: 1rem;
+		margin-top: 20px;
+		text-align: justify;
+	}
+	.cuadro4 {
+		grid-area: cuadro4;
+		padding: 1rem;
+		margin-top: 20px;
+		margin-bottom: 20px;
+		text-align: justify;
+	}
+	.tipoform {
+		input[type=submit] {
+			width: 100%;
+		}
+	}
+	.mainalquiler {
+		height: 600px;
+	}
+	.titulo {
+		margin-top: 80px;
+		font-size: 12px;
+	}
+	.subtitle {
+		font-size: 12px;
+	}
+	.wrapper-propiedades {
+		font-size: 15px;
+	}
+	.buscador {
+		display: block;
+		.buttonalq {
+			text-align: center;
+		}
+	}
+	.grid-container {
+		grid-auto-flow: column;
+		grid-template-columns: auto;
+		grid-template-rows: auto auto;
+		column-gap: 10px;
+		padding: 10px;
+	}
+	.polprivacidad {
+		h1 {
+			font-size: 20px;
+		}
+	}
+	.politicas {
+		hyphens: auto;
+	}
+	.tarjetapropiedad {
+		display: block;
+	}
+	.columna1prop {
+		padding: 0;
+		ul {
+			display: block;
+		}
+	}
+	.titulocasa {
+		display: block;
+		padding: 0.5rem;
+	}
+	.titulocasa1 {
+		text-align: center;
+		font-size: 14px;
+		margin-top: 10px;
+	}
+	.titulocasa2 {
+		text-align: center;
+		font-size: 14px;
+		margin-top: 10px;
+	}
+	.carousel__nav-ficha {
+		display: grid;
+		justify-items: center;
+		grid-template-columns: .5fr .5fr;
+		padding: 10px;
+	}
+	.flip-card-front-ficha {
+		img {
+			width: 20rem;
+			height: 10rem;
+		}
+		iframe {
+			width: 15rem;
+			height: 7.5rem;
+		}
+	}
+	.fotos {
+		display: block;
+		padding: 0;
+	}
+	.caractgrales {
+		display: block;
+		li {
+			grid-template-columns: 10% 50% 40%;
+		}
+	}
+	.caractgrales1 {
+		p {
+			text-align: center;
+		}
+	}
+	.caractgrales3 {
+		li {
+			display: block;
+		}
+	}
+	.descripcion {
+		p {
+			font-size: 16px;
+		}
+	}
+	.contactprop {
+		height: 46rem;
+	}
+	.redes {
+		padding: 0;
+	}
+	.menuretorno {
+		font-size: clamp(10px, 11px, 18px);
+	}
+}
+@media screen and (min-width: 481px) and (max-width: 680px) {
+	.flip-card {
+		width: 30rem;
+		height: 20rem;
+	}
+	.flip-card-front {
+		img {
+			width: 30rem;
+			height: 20rem;
+		}
+	}
+	.flip-card-back {
+		margin-top: 0;
+		padding: 2rem;
+		font-size: 30px;
+	}
+	.botondest {
+		margin-top: 2rem;
+	}
+	.titulosdest {
+		margin-left: 50%;
+		opacity: 0.8;
+	}
+}

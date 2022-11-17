@@ -1,0 +1,112 @@
+$color_1: black;
+$color_2: gray;
+$color_3: orangered;
+$color_4: #fff;
+$color_5: #FFF;
+$font-family_1: sans-serif;
+$background-color_1: #25d366;
+
+.menuretorno {
+	padding: 0.7rem;
+	display: grid;
+	grid-auto-flow: column;
+	grid-template-areas: "index index2 index3 index4 page";
+	font-family: $font-family_1;
+	font-weight: 400;
+	justify-content: right;
+	font-size: 15px;
+	margin-right: 1.25rem;
+}
+.index {
+	grid-area: index;
+	text-align: right;
+	a {
+		text-decoration: none;
+		color: $color_1;
+	}
+	&:hover {
+		a {
+			border-radius: 5px;
+			color: $color_3;
+			transition: all 0.5s ease;
+		}
+	}
+}
+.index2 {
+	a {
+		text-decoration: none;
+		color: $color_1;
+	}
+	&:hover {
+		a {
+			border-radius: 5px;
+			color: $color_3;
+			transition: all 0.5s ease;
+		}
+	}
+}
+.index3 {
+	a {
+		text-decoration: none;
+		color: $color_1;
+	}
+	&:hover {
+		a {
+			border-radius: 5px;
+			color: $color_3;
+			transition: all 0.5s ease;
+		}
+	}
+}
+.index4 {
+	a {
+		text-decoration: none;
+		color: $color_1;
+	}
+	&:hover {
+		a {
+			border-radius: 5px;
+			color: $color_3;
+			transition: all 0.5s ease;
+		}
+	}
+}
+.page {
+	grid-area: page;
+	color: $color_2;
+}
+.back-to-top {
+	position: fixed;
+	display: none;
+	background: rgb(255, 102, 0);
+	border: 2px solid white;
+	color: $color_4;
+	width: 2.75rem;
+	height: 2.75rem;
+	text-align: center;
+	font-size: 18px;
+	border-radius: 50%;
+	right: 1.25rem;
+	bottom: 3.75rem;
+	transition: all 0.5s;
+	i {
+		padding-top: 0.75rem;
+		color: $color_4;
+	}
+}
+.whatsapp {
+	position: fixed;
+	width: 3.125rem;
+	height: 3.125rem;
+	bottom: 5px;
+	right: 1.125rem;
+	background-color: $background-color_1;
+	color: $color_5;
+	border-radius: 50px;
+	text-align: center;
+	font-size: 30px;
+	z-index: 100;
+}
+.whatsapp-icon {
+	margin-top: 0.625rem;
+}

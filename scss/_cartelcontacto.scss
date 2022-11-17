@@ -1,0 +1,38 @@
+$color_1: white;
+$color_2: #f3f3f3;
+$font-family_1: Verdana, Geneva, Tahoma, sans-serif;
+$background-color_1: rgb(255, 102, 0);
+
+#cartelcontacto {
+	display: grid;
+	grid-auto-flow: column;
+	grid-auto-rows: 1fr;
+	grid-template-columns: 100%;
+	gap: 0px 12px;
+	background-color: $background-color_1;
+	padding: 1.875rem;
+	list-style-type: none;
+}
+.carteldecontacto {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr;
+	gap: 10px 0px;
+	text-align: center;
+	font-family: $font-family_1;
+	font-style: italic;
+	li {
+		text-decoration: none;
+		color: $color_1;
+		font-size: 15px;
+		margin: 3px;
+	}
+	a {
+		color: $color_2;
+		text-decoration: none;
+	}
+}
+.cartel1 {
+	color: $color_2;
+	text-decoration: none;
+}

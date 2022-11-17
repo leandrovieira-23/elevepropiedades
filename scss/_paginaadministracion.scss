@@ -1,0 +1,78 @@
+$color_1: white;
+$color_2: #f3f3f3;
+$color_3: #000;
+$font-family_1: Verdana, Geneva, Tahoma, sans-serif;
+$font-family_2: Verdana;
+$background-color_1: rgb(255, 84, 5);
+$background-color_2: rgb(255, 102, 0);
+
+
+.fondoadm {
+	background-image: url(../img/admin.jpg);
+	background-attachment: fixed;
+	background-size: cover;
+	display: grid;
+	grid-auto-flow: column dense;
+	grid-auto-rows: 1fr;
+	grid-template-columns: 100%;
+	gap: 20px 20px;
+}
+.porqueadmin {
+	padding: 1.875;
+	margin-right: 50%;
+	margin-top: 5rem;
+	background-color: $background-color_1;
+	opacity: 0.8;
+	color: $color_1;
+	font-family: $font-family_1;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 0.2fr 1fr 1fr 1fr;
+	gap: 0px 0px;
+	grid-template-areas: "tituloadmin tituloadmin" "tituloadmin tituloadmin" "cuadro1 cuadro2" "cuadro3 cuadro4";
+	grid-area: 1 / 1 / 2 / 2;
+}
+.tituloadmin {
+	grid-area: tituloadmin;
+	text-align: center;
+	font-style: italic;
+	p {
+		font-size: medium;
+		text-align: justify;
+		margin-top: 0.938rem;
+		padding: 1rem;
+	}
+}
+.cuadro1 {
+	grid-area: cuadro1;
+	padding: 1.25rem;
+	hyphens: auto;
+	font-size: medium;
+}
+.cuadro2 {
+	grid-area: cuadro2;
+	padding: 1.25rem;
+	hyphens: auto;
+	font-size: medium;
+}
+.cuadro3 {
+	grid-area: cuadro3;
+	padding: 1.25rem;
+	hyphens: auto;
+	font-size: medium;
+}
+.cuadro4 {
+	grid-area: cuadro4;
+	padding: 1.25rem;
+	hyphens: auto;
+	font-size: medium;
+}
+.tituloformcontacto {
+	padding: 1.25rem;
+	font-family: $font-family_2;
+	font-style: italic;
+	font-size: 20px;
+	text-align: center;
+	background-color: $background-color_2;
+	color: $color_2;
+}

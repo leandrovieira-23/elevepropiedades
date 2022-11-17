@@ -1,0 +1,257 @@
+$color_1: black;
+$color_2: white;
+$color_3: rgb(255, 84, 5);
+$color_4: rgb(255, 102, 0);
+$font-family_1: Verdana, Geneva, Tahoma, sans-serif;
+$font-family_2: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+$background-color_1: orangered;
+$background-color_2: rgb(255, 102, 0);
+
+
+.tarjetapropiedad {
+	padding: 1.25rem;
+	display: grid;
+	grid-template-columns: 70% 30%;
+	grid-template-rows: 1fr;
+	gap: 0px 10px;
+	grid-auto-flow: row;
+	grid-template-areas: "columna1prop contactprop";
+	width: 100%;
+	height: 100%;
+}
+.margenbien {
+	padding-top: 5rem;
+}
+.columna1prop {
+	padding: 1.25rem;
+	font-family: $font-family_1;
+	border: 2px solid lightgray;
+	grid-template-columns: 1fr;
+	gap: 0px 0px;
+	grid-auto-flow: row;
+	grid-template-areas: "titulocasa titulocasa titulocasa" "fyselect fyselect fyselect" "fotos fotos fotos" "caractgrales caractgrales caractgrales" "descripcion descripcion descripcion" "ambientes ambientes ambientes" "comodidades comodidades comodidades" "resumeningreso resumeningreso resumeningreso" "servicios servicios servicios";
+	grid-area: columna1prop;
+	ul {
+		margin-top: 0.625rem;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+	li {
+		i {
+			color: $color_4;
+			border-radius: 100px;
+		}
+	}
+}
+.titulocasa {
+	padding: 1.25rem;
+	grid-area: titulocasa;
+	border-bottom: 2px solid rgb(224, 224, 224);
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+}
+.titulocasa1 {
+	text-align: left;
+	p {
+		font-size: 12px;
+		margin-top: 0.313rem;
+	}
+}
+.titulocasa2 {
+	align-self: center;
+	text-align: right;
+}
+.carouselficha {
+	overflow: hidden;
+}
+.slidesficha {
+	width: auto;
+	display: flex;
+	overflow-x: scroll;
+	scrollbar-width: none;
+	scroll-snap-type: x mandatory;
+	scroll-behavior: smooth;
+	&::-webkit-scrollbar {
+		display: none;
+	}
+	img {
+		width: 40rem;
+		height: 32.5rem;
+	}
+}
+.slides-item-ficha {
+	margin-top: 1.25rem;
+	display: flex;
+	flex-shrink: 0;
+	font-size: 100px;
+	position: relative;
+	scroll-snap-align: start;
+	transform: scale(1);
+	transform-origin: center center;
+	transition: transform .5s;
+	width: 100%;
+	justify-content: center;
+	border-bottom: 2px solid lightgray;
+}
+.carousel__nav-ficha {
+	padding: 1.5rem;
+	text-align: center;
+}
+.slider-nav-ficha {
+	padding: 0.5rem;
+	color: $color_1;
+	position: relative;
+	text-decoration: none;
+	border: 2px solid orangered;
+	width: 7rem;
+	&:focus {
+		background-color: $background-color_1;
+		color: $color_2;
+	}
+}
+.flip-card-front-ficha {
+	img {
+		width: 40rem;
+		height: 20rem;
+	}
+}
+.fotos {
+	padding: 1.25rem;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	gap: 0px 0px;
+	grid-auto-flow: row;
+	grid-template-areas: "resumen1 resumen1 resumen2 resumen2" "resumen1 resumen1 resumen2 resumen2";
+	grid-area: fotos;
+}
+.resumen1 {
+	padding: 1.25rem;
+	grid-area: resumen1;
+	border-bottom: 2px solid rgb(224, 224, 224);
+	border: 2px solid lightgray;
+	h4 {
+		margin-top: 0.313rem;
+		margin-bottom: 0.625rem;
+		color: $color_3;
+		font-weight: 600;
+		font-size: 30px;
+		font-family: $font-family_2;
+	}
+	p {
+		margin-top: 0.313rem;
+		margin-bottom: 0.313rem;
+		color: $color_3;
+		font-size: 20px;
+		font-family: $font-family_2;
+	}
+}
+.resumen2 {
+	padding: 1.25rem;
+	grid-area: resumen2;
+	border-bottom: 2px solid rgb(224, 224, 224);
+	border: 2px solid lightgray;
+	h4 {
+		margin-top: 0.313rem;
+		margin-bottom: 0.625rem;
+		color: $color_3;
+		font-weight: 600;
+		font-size: 30px;
+		font-family: $font-family_2;
+	}
+	p {
+		margin-top: 0.313rem;
+		margin-bottom: 0.313rem;
+		color: $color_3;
+		font-size: 20px;
+		font-family: $font-family_2;
+	}
+}
+.caractgrales {
+	display: grid;
+	padding: 1.25rem;
+	border-bottom: 2px solid lightgray;
+	h3 {
+		width: 100%;
+	}
+	p {
+		color: $color_4;
+		text-align: left;
+	}
+}
+.caractgrales1 {
+	li {
+		display: grid;
+		grid-template-columns: 6% 30% 40%;
+	}
+}
+.caractgrales2 {
+	li {
+		display: grid;
+		grid-template-columns: 6% 50% 40%;
+	}
+}
+.caractgrales3 {
+	li {
+		display: grid;
+		grid-template-columns: 6% 50%;
+	}
+}
+.descripcion {
+	grid-area: descripcion;
+	border-bottom: 2px solid rgb(224, 224, 224);
+	padding: 1.25rem;
+	p {
+		margin-top: 0.625rem;
+		text-align: justify;
+	}
+}
+.contactprop {
+	grid-area: contactprop;
+	border: 2px solid lightgray;
+	grid-auto-flow: row;
+	grid-template-rows: 0.4fr;
+	height: 40rem;
+	font-family: $font-family_1;
+}
+.contactoproptitulo {
+	background-color: $background-color_2;
+	color: $color_2;
+	padding: 1.25rem;
+	text-align: center;
+	font-style: italic;
+	h3 {
+		margin-top: 1.25rem;
+	}
+	i {
+		color: $color_2;
+		font-size: 40px;
+	}
+}
+.form-pagina {
+	padding: 1.25rem;
+	h3 {
+		padding: 1.25rem;
+		text-align: center;
+		font-style: italic;
+	}
+}
+.cartel-noprop {
+	padding: 2.5rem;
+	font-size: 25px;
+	text-align: center;
+	font-style: italic;
+	font-family: $font-family_1;
+}
+.redes {
+	grid-area: redes;
+	text-align: center;
+	display: grid;
+	grid-template-rows: 0.3fr 1fr;
+	grid-template-columns: 1fr;
+	padding: 1.25rem;
+	margin-top: 2rem;
+	i {
+		color: $color_1;
+		font-size: 40px;
+	}
+}
