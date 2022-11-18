@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcout icon" href="./images/favicon-32x32.png">
     <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="../css/bootstrap.css">
     <title>Eleve Negocios Inmobiliarios</title>
     <script src="https://kit.fontawesome.com/11d6824348.js" crossorigin="anonymous"></script>
 </head>
@@ -146,18 +147,25 @@
             <div class="grid-container">
                 <div class="formcontacto">
                     <div class="tipoform">
-                        <form action="./formpage.html" method="get" enctype="application/x-www-form-urlencoded">
-                            <label for="Nombre"></label><input id="Nombre" type="text" name="nombre"
-                                placeholder="Ingresa tu Nombre">
-                            <label for="telefono"> </label><input id="telefono" type="text" name="telefono"
-                                placeholder="Ingresa tu Teléfono">
-                            <label for="Email"> </label><input id="Email" type="text" name="email"
-                                placeholder="Ingresa tu Email">
-                            <label for="mensaje"></label><textarea name="mensaje" id="mensaje"
-                                placeholder="Tu Mensaje"></textarea>
-                            <input type="submit" value="Enviar formulario" call="btn-enviar" />
-                        </form>
-                    </div>
+                        <div class="form-floating mb-3">
+                            <input type="tezt" class="form-control" id="floatingInput" placeholder="name">
+                            <label for="floatingInput">Nombre</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="tezt" class="form-control" id="floatingInput" placeholder="phone">
+                            <label for="floatingInput">Teléfono</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                            <label for="floatingInput">Correo electrónico</label>
+                        </div>
+                        <div class="form-floating">
+                            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+                                style="height: 100px"></textarea>
+                            <label for="floatingTextarea2">Tu Mensaje</label>
+                        </div>
+                        <input type="submit" value="Enviar formulario" call="btn-enviar" />
+                                      </div>
                 </div>
                 <div class="formmap"><iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3347.8246760778566!2d-60.65321898481346!3d-32.955637980918446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b7ab12ba391c31%3A0x7b1698044e00dcb7!2sAv.%20Pellegrini%201811%2C%20S2000BUF%20Rosario%2C%20Santa%20Fe!5e0!3m2!1ses!2sar!4v1666912227965!5m2!1ses!2sar"
