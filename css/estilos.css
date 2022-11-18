@@ -1291,7 +1291,7 @@ select {
   border: 2px solid lightgray;
   grid-auto-flow: row;
   grid-template-rows: 0.4fr;
-  height: 40rem;
+  height: 44rem;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -1914,7 +1914,7 @@ select {
   }
 
   .contactprop {
-    height: 46rem;
+    height: 50rem;
   }
 
   .redes {
@@ -2242,6 +2242,6 @@ select {
   }
 
   .contactprop {
-    height: 46rem;
+    height: 50rem;
   }
 }
