@@ -1,7 +1,7 @@
 {
   "name": "elevepropiedades",
   "version": "1.0.0",
-  "description": "Pagina web inmobiliaria, con fichas para alquileres y ventas.",
+  "description": "Pagina web inmobiliaria, con fichas para alquileres y ventas. Todo el código hecho a mano, salvo por bootstrap que este ultimo es sólo para los formularios.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
